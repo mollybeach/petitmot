@@ -10,65 +10,59 @@ export default function Header() {
 
   return (
     <header className="nav-french">
-      <div className="max-w-6xl mx-auto px-4 py-4">
-        {isHomePage ? (
-          // Home page header
-          <div className="flex items-center justify-center mb-2">
+      <div className="max-w-6xl mx-auto px-4 py-2">
+        <div className="flex items-center justify-between">
+          {/* Logo and Title */}
+          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <Image 
-              src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627668880/skeletoncrest_t9zecb.svg" 
+              src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627668649/verticalheadcrest_zegh6d.svg" 
               alt="French Learning Logo" 
-              width={48}
-              height={48}
-              className="mr-3"
+              width={32}
+              height={32}
+              className="mr-2"
             />
-            <h1 className="heading-french-large text-center">
-              🇫🇷 French Learning App
+            <h1 className="heading-french-medium">
+              Petitmot 🇫🇷
             </h1>
+          </Link>
+
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link 
+              href="/" 
+              className={`nav-link-french ${pathname === '/' ? 'font-semibold' : ''}`}
+            >
+              Home
+            </Link>
+            <Link 
+              href="/lessons/personal-info" 
+              className={`nav-link-french ${pathname.includes('/lessons') ? 'font-semibold' : ''}`}
+            >
+              Lessons
+            </Link>
+            <Link 
+              href="/about" 
+              className="nav-link-french"
+            >
+              About
+            </Link>
+            <Link 
+              href="/contact" 
+              className="nav-link-french"
+            >
+              Contact
+            </Link>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button className="nav-link-french">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
-        ) : (
-          // Other pages header
-          <div className="flex items-center justify-between">
-            <div>
-              <Link 
-                href="/" 
-                className="nav-link-french inline-flex items-center"
-              >
-                <svg 
-                  className="w-5 h-5 mr-2" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  viewBox="0 0 24 24"
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    strokeWidth={2} 
-                    d="M15 19l-7-7 7-7" 
-                  />
-                </svg>
-                Back to Lessons
-              </Link>
-            </div>
-            <div className="flex items-center">
-              <Image 
-                src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627668880/skeletoncrest_t9zecb.svg" 
-                alt="French Learning Logo" 
-                width={40}
-                height={40}
-                className="mr-3"
-              />
-              <h1 className="heading-french-medium">
-                🇫🇷 French Learning
-              </h1>
-            </div>
-          </div>
-        )}
-        
-        {isHomePage && (
-          <p className="text-center english-text">
-            Practice French phrases with pronunciation
-          </p>
-        )}
+        </div>
       </div>
     </header>
   );

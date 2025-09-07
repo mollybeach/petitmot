@@ -111,7 +111,7 @@ body::before {
 /* French Learning App Styling */
 .container-french {
   width: 95%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: auto;
   font-family: var(--font-primary);
   background: linear-gradient(135deg, var(--salon-pink) 0%, #f0d6d5 100%);
@@ -121,7 +121,7 @@ body::before {
   padding-left: 0;
   border-radius: 20px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .container-french::before {
@@ -274,22 +274,28 @@ body::before {
   background: var(--salon-white) !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   border-bottom: 3px solid var(--salon-beige);
-  padding: 1rem 0 !important;
+  padding: 0.5rem 0 !important;
 }
 
 .nav-link-french {
   color: var(--salon-text);
   font-weight: var(--font-weight-medium);
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   transition: all 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .nav-link-french:hover {
   background: var(--salon-pink);
   color: var(--salon-text);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+}
+
+.nav-link-french.font-semibold {
+  font-weight: var(--font-weight-semibold);
+  color: var(--salon-text);
 }
 
 /* Phrase Card Specific Styling */
@@ -356,6 +362,17 @@ body::before {
 
 .phrase-card-french:hover::after {
   opacity: 0.2;
+}
+
+/* Side Images Styling */
+.side-image {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.side-image:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
 }
 
 /* Responsive Design */

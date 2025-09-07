@@ -1,5 +1,6 @@
 import { lessons } from '@/lib/data/phrases';
 import LessonCard from '@/components/LessonCard';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -21,6 +22,56 @@ export default function Home() {
             <LessonCard key={lesson.id} lesson={lesson} />
           ))}
         </div>
+      </div>
+
+      {/* Left Side Images */}
+      <div className="hidden lg:flex flex-col space-y-4 absolute -left-16 top-1/2 transform -translate-y-1/2">
+        <Image 
+          src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669562/hairgirl_adatvb.jpg"
+          alt="Hair styling"
+          width={120}
+          height={120}
+          className="side-image rounded-lg border-2 border-white shadow-md"
+        />
+        <Image 
+          src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669635/victoriancrest_qg1wyx.svg"
+          alt="Victorian Crest"
+          width={120}
+          height={120}
+          className="side-image rounded-lg border-2 border-white shadow-md"
+        />
+        <Image 
+          src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669445/lookingbackgirl_u5ssmo.jpg"
+          alt="Looking back girl"
+          width={120}
+          height={120}
+          className="side-image rounded-lg border-2 border-white shadow-md"
+        />
+      </div>
+
+      {/* Right Side Images */}
+      <div className="hidden lg:flex flex-col space-y-4 absolute -right-16 top-1/2 transform -translate-y-1/2">
+        <Image 
+          src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669061/crosswalk_whiqif.png"
+          alt="Nails"
+          width={120}
+          height={120}
+          className="side-image rounded-lg border-2 border-white shadow-md"
+        />
+        <Image 
+          src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669667/windowdressgirl_zrdxmf.jpg"
+          alt="Window Dress Girl"
+          width={120}
+          height={120}
+          className="side-image rounded-lg border-2 border-white shadow-md"
+        />
+        <Image 
+          src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669602/eiffeltowergirl_aiasuh.jpg"
+          alt="Eiffel Tower Girl"
+          width={120}
+          height={120}
+          className="side-image rounded-lg border-2 border-white shadow-md"
+        />
       </div>
     </div>
   );
