@@ -1,5 +1,5 @@
 export class SpeechService {
-  private synth: SpeechSynthesis;
+  private synth: SpeechSynthesis | null = null;
   private voices: SpeechSynthesisVoice[] = [];
   private frenchVoice: SpeechSynthesisVoice | null = null;
 
@@ -16,6 +16,8 @@ export class SpeechService {
   }
 
   private loadVoices() {
+    if (!this.synth) return;
+    
     this.voices = this.synth.getVoices();
     
     // Try to find a French voice
