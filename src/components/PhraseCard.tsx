@@ -38,7 +38,7 @@ export default function PhraseCard({ phrase }: PhraseCardProps) {
   const isAnySpeaking = Object.values(speakingStates).some(state => state);
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+    <div className="phrase-card-french">
       <div className="space-y-4">
         {/* French Phrase */}
         <div className="text-center">
@@ -49,14 +49,14 @@ export default function PhraseCard({ phrase }: PhraseCardProps) {
               
               return (
                 <div key={index} className="mb-4">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                    {part}
-                  </h3>
-                  <button
-                    onClick={() => handleSpeak(part, 'fr', buttonId)}
-                    disabled={isThisButtonSpeaking}
-                    className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed transition-colors"
-                  >
+                <h3 className="french-text mb-2">
+                  {part}
+                </h3>
+                <button
+                  onClick={() => handleSpeak(part, 'fr', buttonId)}
+                  disabled={isThisButtonSpeaking}
+                  className="btn-french inline-flex items-center px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
                     <svg 
                       className="w-4 h-4 mr-2" 
                       fill="currentColor" 
@@ -75,7 +75,7 @@ export default function PhraseCard({ phrase }: PhraseCardProps) {
         {/* English Translation */}
         <div className="text-center">
           {phrase.english.split('\n\n').map((part, index) => (
-            <p key={index} className="text-lg text-gray-600 mb-2">
+            <p key={index} className="english-text mb-2">
               {part}
             </p>
           ))}

@@ -1,26 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* French Salon Color Palette from dandelionCoiffure */
+  --salon-pink: #EBC3C2;
+  --salon-beige: #E0C9C1;
+  --salon-background: #fafafa;
+  --salon-text: #000000;
+  --salon-text-light: #333333;
+  --salon-white: #ffffff;
+  --salon-border: #E0C9C1;
+  
+  /* Typography */
+  --font-primary: 'Roboto Slab', serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-background: var(--salon-background);
+  --color-foreground: var(--salon-text);
+  --font-sans: var(--font-primary);
   --font-mono: var(--font-geist-mono);
 }
 
+/* Force light mode - override dark mode preferences */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --salon-background: #fafafa !important;
+    --salon-text: #000000 !important;
+    --salon-text-light: #333333 !important;
   }
 }
 
+/* Base Styles */
+* {
+  color: var(--salon-text) !important;
+  box-sizing: border-box;
+}
+
+/* Force text visibility in all elements */
+h1, h2, h3, h4, h5, h6, p, span, div, button {
+  color: #000000 !important;
+}
+
+/* Additional aggressive overrides */
+body, html {
+  color: #000000 !important;
+  background-color: #fafafa !important;
+}
+
+/* Override any Tailwind or other framework colors */
+.text-gray-800, .text-gray-600, .text-gray-900, .text-black {
+  color: #000000 !important;
+}
+
+/* Specific overrides for phrase cards */
+.phrase-card-french h1,
+.phrase-card-french h2,
+.phrase-card-french h3,
+.phrase-card-french h4,
+.phrase-card-french h5,
+.phrase-card-french h6,
+.phrase-card-french p,
+.phrase-card-french span,
+.phrase-card-french div {
+  color: #000000 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+html {
+  font-family: var(--font-primary);
+  background-color: var(--salon-background);
+  text-size-adjust: 100%;
+  font-size: 1rem;
+  -webkit-font-smoothing: auto !important;
+  letter-spacing: 0.01em;
+  line-height: 1.625;
+  overflow-wrap: break-word;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: var(--salon-background) !important;
+  color: var(--salon-text) !important;
+  font-family: var(--font-primary);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(235, 195, 194, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(224, 201, 193, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(235, 195, 194, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* French Learning App Styling */
+.container-french {
+  width: 95%;
+  max-width: 960px;
+  margin: auto;
+  font-family: var(--font-primary);
+  background: linear-gradient(135deg, var(--salon-pink) 0%, #f0d6d5 100%);
+  min-height: 410px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-french::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627668880/skeletoncrest_t9zecb.svg');
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: 95% 5%;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.main-french {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  border: 25px solid var(--salon-beige);
+  padding: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: var(--salon-white);
+}
+
+/* Card Styling */
+.card-french {
+  background: var(--salon-white);
+  border-radius: 16px;
+  border: 2px solid var(--salon-beige);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin: 1rem;
+  position: relative;
+}
+
+.card-french::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--salon-pink), var(--salon-beige));
+}
+
+.card-french::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627668880/skeletoncrest_t9zecb.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.card-french:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--salon-pink);
+}
+
+.card-french:hover::after {
+  opacity: 0.15;
+}
+
+/* Typography */
+.heading-french {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-semibold);
+  color: var(--salon-text) !important;
+  margin-bottom: 1rem;
+}
+
+.heading-french-large {
+  font-size: 2rem !important;
+  font-weight: var(--font-weight-bold);
+  color: var(--salon-text) !important;
+}
+
+.heading-french-medium {
+  font-size: 1.5rem !important;
+  font-weight: var(--font-weight-semibold);
+  color: var(--salon-text) !important;
+}
+
+.heading-french-small {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--salon-text) !important;
+}
+
+/* French Text Styling */
+.french-text {
+  font-family: var(--font-primary) !important;
+  font-weight: var(--font-weight-medium) !important;
+  color: #000000 !important;
+  font-size: 1.25rem !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.english-text {
+  font-family: var(--font-primary) !important;
+  font-weight: var(--font-weight-normal) !important;
+  color: #333333 !important;
+  font-size: 1rem !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Button Styling */
+.btn-french {
+  background: var(--salon-pink);
+  color: var(--salon-text);
+  border: 2px solid var(--salon-beige);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-french:hover {
+  background: var(--salon-beige);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-color: var(--salon-pink);
+}
+
+.btn-french:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styling */
+.nav-french {
+  background: var(--salon-white) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-bottom: 3px solid var(--salon-beige);
+  padding: 1rem 0 !important;
+}
+
+.nav-link-french {
+  color: var(--salon-text);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-french:hover {
+  background: var(--salon-pink);
+  color: var(--salon-text);
+  transform: translateY(-2px);
+}
+
+/* Phrase Card Specific Styling */
+.phrase-card-french {
+  background: var(--salon-white) !important;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid var(--salon-beige);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.phrase-card-french * {
+  color: #000000 !important;
+}
+
+.phrase-card-french h3 {
+  color: #000000 !important;
+  font-size: 1.25rem !important;
+  font-weight: var(--font-weight-medium) !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.phrase-card-french p {
+  color: #333333 !important;
+  font-size: 1rem !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.phrase-card-french::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--salon-pink), var(--salon-beige), var(--salon-pink));
+}
+
+.phrase-card-french::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url('https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627668880/skeletoncrest_t9zecb.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.phrase-card-french:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: var(--salon-pink);
+}
+
+.phrase-card-french:hover::after {
+  opacity: 0.2;
+}
+
+/* Responsive Design */
+@media (max-width: 1339px) and (min-width: 600px) {
+  .container-french {
+    width: 95%;
+    max-width: 960px;
+    margin: auto;
+    font-family: var(--font-primary);
+  }
+}
+
+@media (max-width: 768px) {
+  .container-french {
+    padding: 0 1rem;
+  }
+  
+  .main-french {
+    padding: 2%;
+    border: 15px solid var(--salon-beige);
+  }
+  
+  .heading-french-large {
+    font-size: 2rem;
+  }
+  
+  .phrase-card-french {
+    padding: 1.5rem;
+  }
 }
