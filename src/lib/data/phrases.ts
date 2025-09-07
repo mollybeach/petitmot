@@ -19,21 +19,21 @@ export const lessons: Lesson[] = [
     description: "Learn to talk about family and children",
     phrases: [
       {
-        id: "do-you-have-children",
-        french: "Tu as des enfants ?",
-        english: "Do you have children?",
+        id: "do-you-have-children-qa",
+        french: "Tu as des enfants ?\n\nJ'ai deux enfants",
+        english: "Do you have children?\n\nI have two children",
         category: "family"
       },
       {
-        id: "i-have-children",
-        french: "J'ai ... enfants",
-        english: "I have ... children",
+        id: "i-have-no-children-qa",
+        french: "Tu as des enfants ?\n\nJe n'ai pas d'enfant",
+        english: "Do you have children?\n\nI don't have any children",
         category: "family"
       },
       {
-        id: "i-have-no-children",
-        french: "Je n'ai pas d'enfant",
-        english: "I don't have any children",
+        id: "how-many-children-qa",
+        french: "Combien d'enfants as-tu ?\n\nJ'ai trois enfants",
+        english: "How many children do you have?\n\nI have three children",
         category: "family"
       }
     ]
@@ -44,51 +44,39 @@ export const lessons: Lesson[] = [
     description: "Learn to introduce yourself and share personal details",
     phrases: [
       {
-        id: "i-am",
-        french: "Je suis",
-        english: "I am",
+        id: "what-do-you-like-qa",
+        french: "Qu'est-ce que tu aimes ?\n\nJ'aime courir",
+        english: "What do you like?\n\nI like to run",
         category: "personal"
       },
       {
-        id: "what-do-you-like",
-        french: "Qu'est-ce que tu aimes ?",
-        english: "What do you like?",
+        id: "i-dont-like-qa",
+        french: "Qu'est-ce que tu n'aimes pas ?\n\nJe n'aime pas les légumes",
+        english: "What don't you like?\n\nI don't like vegetables",
         category: "personal"
       },
       {
-        id: "i-like",
-        french: "J'aime .............",
-        english: "I like .............",
+        id: "what-is-your-name-qa",
+        french: "Comment tu t'appelles ?\n\nJe m'appelle Marie",
+        english: "What is your name?\n\nMy name is Marie",
         category: "personal"
       },
       {
-        id: "i-dont-like",
-        french: "Je n'aime pas .......",
-        english: "I don't like .......",
+        id: "first-name-qa",
+        french: "Quel est ton prénom ?\n\nMon prénom est Marie",
+        english: "What is your first name?\n\nMy first name is Marie",
         category: "personal"
       },
       {
-        id: "what-is-your-name",
-        french: "Comment tu t'appelles ?",
-        english: "What is your name?",
+        id: "last-name-qa",
+        french: "Quel est ton nom de famille ?\n\nMon nom de famille est Dupont",
+        english: "What is your last name?\n\nMy last name is Dupont",
         category: "personal"
       },
       {
-        id: "my-name-is",
-        french: "Je m'appelle .......",
-        english: "My name is .......",
-        category: "personal"
-      },
-      {
-        id: "first-name",
-        french: "prénom",
-        english: "first name",
-        category: "personal"
-      },
-      {
-        id: "last-name",
-        french: "nom (de famille)",
-        english: "last name",
+        id: "age-qa",
+        french: "Quel âge as-tu ?\n\nJ'ai 29 ans",
+        english: "What is your age?\n\nI am 29 years old",
         category: "personal"
       }
     ]
@@ -152,6 +140,302 @@ export const lessons: Lesson[] = [
         french: "Je ne parle pas ......",
         english: "I don't speak ......",
         category: "languages"
+      }
+    ]
+  },
+  {
+    id: "french-letters",
+    title: "French Letters",
+    description: "Learn the French alphabet and letter pronunciation",
+    phrases: [
+      {
+        id: "letter-a",
+        french: "A",
+        english: "A (ah)",
+        category: "letters"
+      },
+      {
+        id: "letter-b",
+        french: "B",
+        english: "B (bay)",
+        category: "letters"
+      },
+      {
+        id: "letter-c",
+        french: "C",
+        english: "C (say)",
+        category: "letters"
+      },
+      {
+        id: "letter-d",
+        french: "D",
+        english: "D (day)",
+        category: "letters"
+      },
+      {
+        id: "letter-e",
+        french: "E",
+        english: "E (uh)",
+        category: "letters"
+      },
+      {
+        id: "letter-f",
+        french: "F",
+        english: "F (eff)",
+        category: "letters"
+      },
+      {
+        id: "letter-g",
+        french: "G",
+        english: "G (zhay)",
+        category: "letters"
+      },
+      {
+        id: "letter-h",
+        french: "H",
+        english: "H (ahsh)",
+        category: "letters"
+      },
+      {
+        id: "letter-i",
+        french: "I",
+        english: "I (ee)",
+        category: "letters"
+      },
+      {
+        id: "letter-j",
+        french: "J",
+        english: "J (zhee)",
+        category: "letters"
+      },
+      {
+        id: "letter-k",
+        french: "K",
+        english: "K (kah)",
+        category: "letters"
+      },
+      {
+        id: "letter-l",
+        french: "L",
+        english: "L (ell)",
+        category: "letters"
+      },
+      {
+        id: "letter-m",
+        french: "M",
+        english: "M (emm)",
+        category: "letters"
+      },
+      {
+        id: "letter-n",
+        french: "N",
+        english: "N (enn)",
+        category: "letters"
+      },
+      {
+        id: "letter-o",
+        french: "O",
+        english: "O (oh)",
+        category: "letters"
+      },
+      {
+        id: "letter-p",
+        french: "P",
+        english: "P (pay)",
+        category: "letters"
+      },
+      {
+        id: "letter-q",
+        french: "Q",
+        english: "Q (koo)",
+        category: "letters"
+      },
+      {
+        id: "letter-r",
+        french: "R",
+        english: "R (air)",
+        category: "letters"
+      },
+      {
+        id: "letter-s",
+        french: "S",
+        english: "S (ess)",
+        category: "letters"
+      },
+      {
+        id: "letter-t",
+        french: "T",
+        english: "T (tay)",
+        category: "letters"
+      },
+      {
+        id: "letter-u",
+        french: "U",
+        english: "U (oo)",
+        category: "letters"
+      },
+      {
+        id: "letter-v",
+        french: "V",
+        english: "V (vay)",
+        category: "letters"
+      },
+      {
+        id: "letter-w",
+        french: "W",
+        english: "W (doo-bluh-vay)",
+        category: "letters"
+      },
+      {
+        id: "letter-x",
+        french: "X",
+        english: "X (eeks)",
+        category: "letters"
+      },
+      {
+        id: "letter-y",
+        french: "Y",
+        english: "Y (ee-grek)",
+        category: "letters"
+      },
+      {
+        id: "letter-z",
+        french: "Z",
+        english: "Z (zed)",
+        category: "letters"
+      }
+    ]
+  },
+  {
+    id: "french-numbers",
+    title: "French Numbers",
+    description: "Learn to count and pronounce numbers in French",
+    phrases: [
+      {
+        id: "number-0",
+        french: "zéro",
+        english: "zero",
+        category: "numbers"
+      },
+      {
+        id: "number-1",
+        french: "un",
+        english: "one",
+        category: "numbers"
+      },
+      {
+        id: "number-2",
+        french: "deux",
+        english: "two",
+        category: "numbers"
+      },
+      {
+        id: "number-3",
+        french: "trois",
+        english: "three",
+        category: "numbers"
+      },
+      {
+        id: "number-4",
+        french: "quatre",
+        english: "four",
+        category: "numbers"
+      },
+      {
+        id: "number-5",
+        french: "cinq",
+        english: "five",
+        category: "numbers"
+      },
+      {
+        id: "number-6",
+        french: "six",
+        english: "six",
+        category: "numbers"
+      },
+      {
+        id: "number-7",
+        french: "sept",
+        english: "seven",
+        category: "numbers"
+      },
+      {
+        id: "number-8",
+        french: "huit",
+        english: "eight",
+        category: "numbers"
+      },
+      {
+        id: "number-9",
+        french: "neuf",
+        english: "nine",
+        category: "numbers"
+      },
+      {
+        id: "number-10",
+        french: "dix",
+        english: "ten",
+        category: "numbers"
+      },
+      {
+        id: "number-11",
+        french: "onze",
+        english: "eleven",
+        category: "numbers"
+      },
+      {
+        id: "number-12",
+        french: "douze",
+        english: "twelve",
+        category: "numbers"
+      },
+      {
+        id: "number-13",
+        french: "treize",
+        english: "thirteen",
+        category: "numbers"
+      },
+      {
+        id: "number-14",
+        french: "quatorze",
+        english: "fourteen",
+        category: "numbers"
+      },
+      {
+        id: "number-15",
+        french: "quinze",
+        english: "fifteen",
+        category: "numbers"
+      },
+      {
+        id: "number-16",
+        french: "seize",
+        english: "sixteen",
+        category: "numbers"
+      },
+      {
+        id: "number-17",
+        french: "dix-sept",
+        english: "seventeen",
+        category: "numbers"
+      },
+      {
+        id: "number-18",
+        french: "dix-huit",
+        english: "eighteen",
+        category: "numbers"
+      },
+      {
+        id: "number-19",
+        french: "dix-neuf",
+        english: "nineteen",
+        category: "numbers"
+      },
+      {
+        id: "number-20",
+        french: "vingt",
+        english: "twenty",
+        category: "numbers"
       }
     ]
   }
