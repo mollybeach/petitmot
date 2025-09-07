@@ -3,6 +3,10 @@ export interface FrenchPhrase {
   french: string;
   english: string;
   category: string;
+  formal?: {
+    french: string;
+    english: string;
+  };
 }
 
 export interface Lesson {
@@ -22,19 +26,31 @@ export const lessons: Lesson[] = [
         id: "do-you-have-children-qa",
         french: "Tu as des enfants ?\n\nJ'ai deux enfants",
         english: "Do you have children?\n\nI have two children",
-        category: "family"
+        category: "family",
+        formal: {
+          french: "Avez-vous des enfants ?\n\nJ'ai deux enfants",
+          english: "Do you have children?\n\nI have two children"
+        }
       },
       {
         id: "i-have-no-children-qa",
         french: "Tu as des enfants ?\n\nJe n'ai pas d'enfant",
         english: "Do you have children?\n\nI don't have any children",
-        category: "family"
+        category: "family",
+        formal: {
+          french: "Avez-vous des enfants ?\n\nJe n'ai pas d'enfant",
+          english: "Do you have children?\n\nI don't have any children"
+        }
       },
       {
         id: "how-many-children-qa",
         french: "Combien d'enfants as-tu ?\n\nJ'ai trois enfants",
         english: "How many children do you have?\n\nI have three children",
-        category: "family"
+        category: "family",
+        formal: {
+          french: "Combien d'enfants avez-vous ?\n\nJ'ai trois enfants",
+          english: "How many children do you have?\n\nI have three children"
+        }
       }
     ]
   },
@@ -47,37 +63,61 @@ export const lessons: Lesson[] = [
         id: "what-do-you-like-qa",
         french: "Qu'est-ce que tu aimes ?\n\nJ'aime courir",
         english: "What do you like?\n\nI like to run",
-        category: "personal"
+        category: "personal",
+        formal: {
+          french: "Qu'est-ce que vous aimez ?\n\nJ'aime courir",
+          english: "What do you like?\n\nI like to run"
+        }
       },
       {
         id: "i-dont-like-qa",
         french: "Qu'est-ce que tu n'aimes pas ?\n\nJe n'aime pas les légumes",
         english: "What don't you like?\n\nI don't like vegetables",
-        category: "personal"
+        category: "personal",
+        formal: {
+          french: "Qu'est-ce que vous n'aimez pas ?\n\nJe n'aime pas les légumes",
+          english: "What don't you like?\n\nI don't like vegetables"
+        }
       },
       {
         id: "what-is-your-name-qa",
         french: "Comment tu t'appelles ?\n\nJe m'appelle Marie",
         english: "What is your name?\n\nMy name is Marie",
-        category: "personal"
+        category: "personal",
+        formal: {
+          french: "Comment vous appelez-vous ?\n\nJe m'appelle Marie",
+          english: "What is your name?\n\nMy name is Marie"
+        }
       },
       {
         id: "first-name-qa",
         french: "Quel est ton prénom ?\n\nMon prénom est Marie",
         english: "What is your first name?\n\nMy first name is Marie",
-        category: "personal"
+        category: "personal",
+        formal: {
+          french: "Quel est votre prénom ?\n\nMon prénom est Marie",
+          english: "What is your first name?\n\nMy first name is Marie"
+        }
       },
       {
         id: "last-name-qa",
         french: "Quel est ton nom de famille ?\n\nMon nom de famille est Dupont",
         english: "What is your last name?\n\nMy last name is Dupont",
-        category: "personal"
+        category: "personal",
+        formal: {
+          french: "Quel est votre nom de famille ?\n\nMon nom de famille est Dupont",
+          english: "What is your last name?\n\nMy last name is Dupont"
+        }
       },
       {
         id: "age-qa",
         french: "Quel âge as-tu ?\n\nJ'ai 29 ans",
         english: "What is your age?\n\nI am 29 years old",
-        category: "personal"
+        category: "personal",
+        formal: {
+          french: "Quel âge avez-vous ?\n\nJ'ai 29 ans",
+          english: "What is your age?\n\nI am 29 years old"
+        }
       }
     ]
   },
@@ -90,31 +130,51 @@ export const lessons: Lesson[] = [
         id: "are-you-married",
         french: "Tu es marié(e) ?",
         english: "Are you married?",
-        category: "marital"
+        category: "marital",
+        formal: {
+          french: "Êtes-vous marié(e) ?",
+          english: "Are you married?"
+        }
       },
       {
         id: "i-am-married",
         french: "Je suis marié(e)",
         english: "I am married",
-        category: "marital"
+        category: "marital",
+        formal: {
+          french: "Je suis marié(e)",
+          english: "I am married"
+        }
       },
       {
         id: "i-am-not-married",
         french: "Je ne suis pas marié(e)",
         english: "I am not married",
-        category: "marital"
+        category: "marital",
+        formal: {
+          french: "Je ne suis pas marié(e)",
+          english: "I am not married"
+        }
       },
       {
         id: "i-am-single",
         french: "Je suis célibataire",
         english: "I am single",
-        category: "marital"
+        category: "marital",
+        formal: {
+          french: "Je suis célibataire",
+          english: "I am single"
+        }
       },
       {
         id: "i-am-widowed",
         french: "Je suis veuf / veuve",
         english: "I am widowed",
-        category: "marital"
+        category: "marital",
+        formal: {
+          french: "Je suis veuf / veuve",
+          english: "I am widowed"
+        }
       }
     ]
   },
@@ -127,19 +187,31 @@ export const lessons: Lesson[] = [
         id: "what-language-do-you-speak",
         french: "Tu parles quelle langue ?",
         english: "What language do you speak?",
-        category: "languages"
+        category: "languages",
+        formal: {
+          french: "Quelle langue parlez-vous ?",
+          english: "What language do you speak?"
+        }
       },
       {
         id: "i-speak",
         french: "Je parle .............",
         english: "I speak .............",
-        category: "languages"
+        category: "languages",
+        formal: {
+          french: "Je parle .............",
+          english: "I speak ............."
+        }
       },
       {
         id: "i-dont-speak",
         french: "Je ne parle pas ......",
         english: "I don't speak ......",
-        category: "languages"
+        category: "languages",
+        formal: {
+          french: "Je ne parle pas ......",
+          english: "I don't speak ......"
+        }
       }
     ]
   },

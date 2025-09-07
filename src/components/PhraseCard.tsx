@@ -6,11 +6,28 @@ import { speechService } from '@/lib/utils/speech';
 
 interface PhraseCardProps {
   phrase: FrenchPhrase;
+  isFormal?: boolean;
 }
 
-export default function PhraseCard({ phrase }: PhraseCardProps) {
+export default function PhraseCard({ phrase, isFormal = false }: PhraseCardProps) {
   const [speakingStates, setSpeakingStates] = useState<{ [key: string]: boolean }>({});
   const [speechError, setSpeechError] = useState<string | null>(null);
+
+  // Get the appropriate version based on formal/informal toggle
+  const getDisplayText = () => {
+    if (isFormal && phrase.formal) {
+      return {
+        french: phrase.formal.french,
+        english: phrase.formal.english
+      };
+    }
+    return {
+      french: phrase.french,
+      english: phrase.english
+    };
+  };
+
+  const displayText = getDisplayText();
 
   const handleSpeak = async (text: string, language: 'fr' | 'en', buttonId: string) => {
     if (!speechService.isSupported()) {
@@ -43,7 +60,7 @@ export default function PhraseCard({ phrase }: PhraseCardProps) {
         {/* French Phrase */}
         <div className="text-center">
           <div className="mb-4">
-            {phrase.french.split('\n\n').map((part, index) => {
+            {displayText.french.split('\n\n').map((part, index) => {
               const buttonId = `${phrase.id}-${index}`;
               const isThisButtonSpeaking = speakingStates[buttonId] || false;
               
@@ -74,7 +91,7 @@ export default function PhraseCard({ phrase }: PhraseCardProps) {
 
         {/* English Translation */}
         <div className="text-center">
-          {phrase.english.split('\n\n').map((part, index) => (
+          {displayText.english.split('\n\n').map((part, index) => (
             <p key={index} className="english-text mb-2">
               {part}
             </p>
