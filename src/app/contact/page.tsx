@@ -17,9 +17,9 @@ export default function ContactPage() {
             <div className="phrase-card-french p-6">
               <h2 className="heading-french-medium mb-4">Get in Touch</h2>
               <p className="english-text mb-6">
-                We'd love to hear from you! Whether you have questions about using Petitmot, 
+                We&apos;d love to hear from you! Whether you have questions about using Petitmot, 
                 suggestions for new features, or feedback on your learning experience, 
-                we're here to help.
+                we&apos;re here to help.
               </p>
               
               <div className="space-y-4">
@@ -80,7 +80,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="heading-french-small mb-2">How do I use the pronunciation feature?</h3>
                   <p className="english-text text-sm">
-                    Simply click the "Speak French" button next to any phrase to hear the pronunciation. 
+                    Simply click the &quot;Speak French&quot; button next to any phrase to hear the pronunciation. 
                     The text-to-speech feature uses high-quality French voices.
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="heading-french-small mb-2">Are there more lessons coming?</h3>
                   <p className="english-text text-sm">
-                    Yes! We're constantly adding new lessons and phrases. 
+                    Yes! We&apos;re constantly adding new lessons and phrases. 
                     Check back regularly for updates and new content.
                   </p>
                 </div>
@@ -115,13 +115,13 @@ export default function ContactPage() {
           <div className="phrase-card-french p-6">
             <h2 className="heading-french-medium mb-4">Send Us a Message</h2>
             <p className="english-text mb-4">
-              Have a specific question or suggestion? We'd love to hear from you!
+              Have a specific question or suggestion? We&apos;d love to hear from you!
             </p>
             
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="english-text text-sm text-gray-600 mb-4">
                 For now, please reach out to us via email or GitHub. 
-                We're working on adding a contact form in a future update.
+                We&apos;re working on adding a contact form in a future update.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">

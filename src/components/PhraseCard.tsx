@@ -47,12 +47,6 @@ export default function PhraseCard({ phrase, isFormal = false }: PhraseCardProps
     }
   };
 
-  const handleStop = () => {
-    speechService.stop();
-    setSpeakingStates({});
-  };
-
-  const isAnySpeaking = Object.values(speakingStates).some(state => state);
 
   return (
     <div className="phrase-card-french">
