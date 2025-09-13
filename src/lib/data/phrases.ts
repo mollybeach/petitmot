@@ -27,8 +27,8 @@ export interface LessonGroup {
 export const lessonGroups: LessonGroup[] = [
   {
     id: "lesson_1",
-    title: "Lesson 1",
-    description: "Essential French vocabulary and phrases for beginners",
+    title: "Leçon 1 Bonjour ! / Lesson 1 Hello!",
+    description: "Objectifs: Saluer, se présenter et prendre congé - Connaître des formules pour saluer et prendre congé - Le son [y] vs [u] - Situation formelle (vous) ou informelle (tu) - Les articles indéfinis (un, une, des) / Objectives: Greet, introduce yourself and say goodbye - Know formulas for greeting and saying goodbye - The sound [y] vs [u] - Formal (vous) or informal (tu) situation - Indefinite articles (un, une, des)",
     lessons: [
   {
     id: "transportation",
@@ -2069,8 +2069,8 @@ export const lessonGroups: LessonGroup[] = [
 },
   {
     id:"lesson_2",
-    title: "Lesson 2",
-    description: "Where does it happen? Transportation vocabulary and asking for information",
+    title: "Leçon 2 Ca se passe où ? / Lesson 2 Where does it happen?",
+    description: "Lexique: Les moyens de transport - Grammaire: Demander et donner des informations - Utiliser Où ? Qui ? Quand ? Quoi ? - Focus langue: Les nombres / Vocabulary: Means of transportation - Grammar: Ask and give information - Use Where? Who? When? What? - Language focus: Numbers",
     lessons: [
       {
         id: "transportation-vocabulary",
