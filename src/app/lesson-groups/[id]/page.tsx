@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getLessonGroupById } from '@/lib/data/phrases';
+import { getLessonGroupById, lessonGroups } from '@/lib/data/phrases';
 import LessonCard from '@/components/LessonCard';
 
 interface LessonGroupPageProps {
@@ -46,7 +46,6 @@ export default async function LessonGroup({ params }: LessonGroupPageProps) {
 }
 
 export function generateStaticParams() {
-  const { lessonGroups } = require('@/lib/data/phrases');
   return lessonGroups.map((group: { id: string }) => ({
     id: group.id,
   }));
