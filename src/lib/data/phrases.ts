@@ -18,6 +18,97 @@ export interface Lesson {
 
 export const lessons: Lesson[] = [
   {
+    id: "transportation",
+    title: "Transportation",
+    description: "Learn transportation vocabulary and travel phrases",
+    phrases: [
+      {
+        id: "airport",
+        french: "un aéroport",
+        english: "an airport",
+        category: "transportation"
+      },
+      {
+        id: "bus-stop",
+        french: "un arrêt de bus",
+        english: "a bus stop",
+        category: "transportation"
+      },
+      {
+        id: "bus-station",
+        french: "une gare routière",
+        english: "a bus station",
+        category: "transportation"
+      },
+      {
+        id: "train-station",
+        french: "une gare",
+        english: "a train station",
+        category: "transportation"
+      },
+      {
+        id: "ticket",
+        french: "un billet",
+        english: "a ticket",
+        category: "transportation"
+      },
+      {
+        id: "plane",
+        french: "un avion",
+        english: "a plane",
+        category: "transportation"
+      },
+      {
+        id: "car",
+        french: "une voiture",
+        english: "a car",
+        category: "transportation"
+      },
+      {
+        id: "bus",
+        french: "un bus",
+        english: "a bus",
+        category: "transportation"
+      },
+      {
+        id: "subway",
+        french: "un métro",
+        english: "a subway",
+        category: "transportation"
+      },
+      {
+        id: "train",
+        french: "un train",
+        english: "a train",
+        category: "transportation"
+      },
+      {
+        id: "tramway",
+        french: "un tramway",
+        english: "a tramway",
+        category: "transportation"
+      },
+      {
+        id: "i-want-to-take-bus",
+        french: "Je veux prendre un bus",
+        english: "I want to take a bus",
+        category: "transportation"
+      },
+      {
+        id: "i-want-to-go-paris",
+        french: "Je veux aller à Paris",
+        english: "I want to go to Paris",
+        category: "transportation"
+      },
+      {
+        id: "i-am-looking-for-route",
+        french: "Je cherche ma route",
+        english: "I am looking for my route",
+        category: "transportation"
+      }
+    ]
+  },
+  {
     id: "greetings-farewells",
     title: "Greetings & Farewells",
     description: "Learn essential greetings and farewells in French",
@@ -115,6 +206,181 @@ export const lessons: Lesson[] = [
     ]
   },
   {
+    id: "time-calendar",
+    title: "Time & Calendar",
+    description: "Learn days of the week, months, and time periods",
+    phrases: [
+      {
+        id: "monday",
+        french: "lundi",
+        english: "Monday",
+        category: "days"
+      },
+      {
+        id: "tuesday",
+        french: "mardi",
+        english: "Tuesday",
+        category: "days"
+      },
+      {
+        id: "wednesday",
+        french: "mercredi",
+        english: "Wednesday",
+        category: "days"
+      },
+      {
+        id: "thursday",
+        french: "jeudi",
+        english: "Thursday",
+        category: "days"
+      },
+      {
+        id: "friday",
+        french: "vendredi",
+        english: "Friday",
+        category: "days"
+      },
+      {
+        id: "saturday",
+        french: "samedi",
+        english: "Saturday",
+        category: "days"
+      },
+      {
+        id: "sunday",
+        french: "dimanche",
+        english: "Sunday",
+        category: "days"
+      },
+      {
+        id: "january",
+        french: "janvier",
+        english: "January",
+        category: "months"
+      },
+      {
+        id: "february",
+        french: "février",
+        english: "February",
+        category: "months"
+      },
+      {
+        id: "march",
+        french: "mars",
+        english: "March",
+        category: "months"
+      },
+      {
+        id: "april",
+        french: "avril",
+        english: "April",
+        category: "months"
+      },
+      {
+        id: "may",
+        french: "mai",
+        english: "May",
+        category: "months"
+      },
+      {
+        id: "june",
+        french: "juin",
+        english: "June",
+        category: "months"
+      },
+      {
+        id: "july",
+        french: "juillet",
+        english: "July",
+        category: "months"
+      },
+      {
+        id: "august",
+        french: "août",
+        english: "August",
+        category: "months"
+      },
+      {
+        id: "september",
+        french: "septembre",
+        english: "September",
+        category: "months"
+      },
+      {
+        id: "october",
+        french: "octobre",
+        english: "October",
+        category: "months"
+      },
+      {
+        id: "november",
+        french: "novembre",
+        english: "November",
+        category: "months"
+      },
+      {
+        id: "december",
+        french: "décembre",
+        english: "December",
+        category: "months"
+      },
+      {
+        id: "morning",
+        french: "le matin",
+        english: "the morning",
+        category: "time"
+      },
+      {
+        id: "noon",
+        french: "le midi",
+        english: "at noon",
+        category: "time"
+      },
+      {
+        id: "afternoon",
+        french: "l'après-midi",
+        english: "the afternoon",
+        category: "time"
+      },
+      {
+        id: "evening",
+        french: "le soir",
+        english: "the evening",
+        category: "time"
+      },
+      {
+        id: "night",
+        french: "la nuit",
+        english: "at night",
+        category: "time"
+      },
+      {
+        id: "day",
+        french: "le jour",
+        english: "the day",
+        category: "time"
+      },
+      {
+        id: "week",
+        french: "la semaine",
+        english: "the week",
+        category: "time"
+      },
+      {
+        id: "month",
+        french: "le mois",
+        english: "the month",
+        category: "time"
+      },
+      {
+        id: "year",
+        french: "l'année",
+        english: "the year",
+        category: "time"
+      }
+    ]
+  },
+  {
     id: "family-children",
     title: "Family & Children",
     description: "Learn to talk about family and children",
@@ -148,6 +414,43 @@ export const lessons: Lesson[] = [
           french: "Combien d'enfants avez-vous ?\n\nJ'ai trois enfants",
           english: "How many children do you have?\n\nI have three children"
         }
+      }
+    ]
+  },
+  {
+    id: "directions",
+    title: "Directions",
+    description: "Learn cardinal directions and location words",
+    phrases: [
+      {
+        id: "north",
+        french: "au nord",
+        english: "to the north",
+        category: "directions"
+      },
+      {
+        id: "east",
+        french: "à l'est",
+        english: "to the east",
+        category: "directions"
+      },
+      {
+        id: "south",
+        french: "au sud",
+        english: "to the south",
+        category: "directions"
+      },
+      {
+        id: "west",
+        french: "à l'ouest",
+        english: "to the west",
+        category: "directions"
+      },
+      {
+        id: "center",
+        french: "au centre",
+        english: "in the center",
+        category: "directions"
       }
     ]
   },
@@ -249,6 +552,73 @@ export const lessons: Lesson[] = [
     ]
   },
   {
+    id: "places",
+    title: "Places & Buildings",
+    description: "Learn vocabulary for different places and buildings",
+    phrases: [
+      {
+        id: "camping",
+        french: "un camping",
+        english: "camping",
+        category: "places"
+      },
+      {
+        id: "house",
+        french: "une maison",
+        english: "a house",
+        category: "places"
+      },
+      {
+        id: "bedroom",
+        french: "une chambre",
+        english: "a bedroom",
+        category: "places"
+      },
+      {
+        id: "hotel",
+        french: "un hôtel",
+        english: "a hotel",
+        category: "places"
+      },
+      {
+        id: "apartment",
+        french: "un appartement",
+        english: "a flat",
+        category: "places"
+      },
+      {
+        id: "castle",
+        french: "un château",
+        english: "a castle",
+        category: "places"
+      },
+      {
+        id: "cafe",
+        french: "un café",
+        english: "a café",
+        category: "places"
+      },
+      {
+        id: "bar",
+        french: "un bar",
+        english: "a pub",
+        category: "places"
+      },
+      {
+        id: "restaurant",
+        french: "un restaurant",
+        english: "a restaurant",
+        category: "places"
+      },
+      {
+        id: "shop",
+        french: "un magasin",
+        english: "a shop",
+        category: "places"
+      }
+    ]
+  },
+  {
     id: "marital-status",
     title: "Marital Status",
     description: "Learn to talk about your relationship status",
@@ -306,6 +676,181 @@ export const lessons: Lesson[] = [
     ]
   },
   {
+    id: "countries",
+    title: "Countries",
+    description: "Learn country names and their gender rules",
+    phrases: [
+      {
+        id: "canada",
+        french: "le Canada",
+        english: "Canada (masculine)",
+        category: "countries"
+      },
+      {
+        id: "peru",
+        french: "le Pérou",
+        english: "Peru (masculine)",
+        category: "countries"
+      },
+      {
+        id: "brazil",
+        french: "le Brésil",
+        english: "Brazil (masculine)",
+        category: "countries"
+      },
+      {
+        id: "texas",
+        french: "le Texas",
+        english: "Texas (masculine)",
+        category: "countries"
+      },
+      {
+        id: "mexico",
+        french: "le Mexique",
+        english: "Mexico (masculine)",
+        category: "countries"
+      },
+      {
+        id: "japan",
+        french: "le Japon",
+        english: "Japan (masculine)",
+        category: "countries"
+      },
+      {
+        id: "vietnam",
+        french: "le Vietnam",
+        english: "Vietnam (masculine)",
+        category: "countries"
+      },
+      {
+        id: "france",
+        french: "la France",
+        english: "France (feminine)",
+        category: "countries"
+      },
+      {
+        id: "belgium",
+        french: "la Belgique",
+        english: "Belgium (feminine)",
+        category: "countries"
+      },
+      {
+        id: "california",
+        french: "la Californie",
+        english: "California (feminine)",
+        category: "countries"
+      },
+      {
+        id: "florida",
+        french: "la Floride",
+        english: "Florida (feminine)",
+        category: "countries"
+      },
+      {
+        id: "russia",
+        french: "la Russie",
+        english: "Russia (feminine)",
+        category: "countries"
+      },
+      {
+        id: "china",
+        french: "la Chine",
+        english: "China (feminine)",
+        category: "countries"
+      },
+      {
+        id: "louisiana",
+        french: "la Louisiane",
+        english: "Louisiana (feminine)",
+        category: "countries"
+      },
+      {
+        id: "thailand",
+        french: "la Thaïlande",
+        english: "Thailand (feminine)",
+        category: "countries"
+      },
+      {
+        id: "switzerland",
+        french: "la Suisse",
+        english: "Switzerland (feminine)",
+        category: "countries"
+      },
+      {
+        id: "england",
+        french: "l'Angleterre",
+        english: "England (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "italy",
+        french: "l'Italie",
+        english: "Italy (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "spain",
+        french: "l'Espagne",
+        english: "Spain (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "australia",
+        french: "l'Australie",
+        english: "Australia (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "germany",
+        french: "l'Allemagne",
+        english: "Germany (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "alaska",
+        french: "l'Alaska",
+        english: "Alaska (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "india",
+        french: "l'Inde",
+        english: "India (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "utah",
+        french: "l'Utah",
+        english: "Utah (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "arizona",
+        french: "l'Arizona",
+        english: "Arizona (starts with vowel)",
+        category: "countries"
+      },
+      {
+        id: "united-states",
+        french: "les États-Unis",
+        english: "United States (plural)",
+        category: "countries"
+      },
+      {
+        id: "netherlands",
+        french: "les Pays-Bas",
+        english: "Netherlands (plural)",
+        category: "countries"
+      },
+      {
+        id: "uae",
+        french: "les Émirats Arabes Unis",
+        english: "United Arab Emirates (plural)",
+        category: "countries"
+      }
+    ]
+  },
+  {
     id: "languages",
     title: "Languages",
     description: "Learn to talk about the languages you speak",
@@ -339,6 +884,193 @@ export const lessons: Lesson[] = [
           french: "Je ne parle pas ......",
           english: "I don't speak ......"
         }
+      }
+    ]
+  },
+  {
+    id: "verb-conjugations",
+    title: "Verb Conjugations",
+    description: "Learn common French verb conjugations",
+    phrases: [
+      {
+        id: "avoir-i-have",
+        french: "j'ai",
+        english: "I have",
+        category: "verbs"
+      },
+      {
+        id: "avoir-you-have",
+        french: "tu as",
+        english: "you have",
+        category: "verbs"
+      },
+      {
+        id: "avoir-he-has",
+        french: "il a",
+        english: "he has",
+        category: "verbs"
+      },
+      {
+        id: "avoir-we-have",
+        french: "nous avons",
+        english: "we have",
+        category: "verbs"
+      },
+      {
+        id: "avoir-you-have-formal",
+        french: "vous avez",
+        english: "you have (formal)",
+        category: "verbs"
+      },
+      {
+        id: "avoir-they-have",
+        french: "ils ont",
+        english: "they have",
+        category: "verbs"
+      },
+      {
+        id: "etre-i-am",
+        french: "je suis",
+        english: "I am",
+        category: "verbs"
+      },
+      {
+        id: "etre-you-are",
+        french: "tu es",
+        english: "you are",
+        category: "verbs"
+      },
+      {
+        id: "etre-he-is",
+        french: "il est",
+        english: "he is",
+        category: "verbs"
+      },
+      {
+        id: "etre-we-are",
+        french: "nous sommes",
+        english: "we are",
+        category: "verbs"
+      },
+      {
+        id: "etre-you-are-formal",
+        french: "vous êtes",
+        english: "you are (formal)",
+        category: "verbs"
+      },
+      {
+        id: "etre-they-are",
+        french: "ils sont",
+        english: "they are",
+        category: "verbs"
+      },
+      {
+        id: "aller-i-go",
+        french: "je vais",
+        english: "I go",
+        category: "verbs"
+      },
+      {
+        id: "aller-you-go",
+        french: "tu vas",
+        english: "you go",
+        category: "verbs"
+      },
+      {
+        id: "aller-he-goes",
+        french: "il va",
+        english: "he goes",
+        category: "verbs"
+      },
+      {
+        id: "aller-we-go",
+        french: "nous allons",
+        english: "we go",
+        category: "verbs"
+      },
+      {
+        id: "aller-you-go-formal",
+        french: "vous allez",
+        english: "you go (formal)",
+        category: "verbs"
+      },
+      {
+        id: "aller-they-go",
+        french: "ils vont",
+        english: "they go",
+        category: "verbs"
+      },
+      {
+        id: "venir-i-come",
+        french: "je viens",
+        english: "I come",
+        category: "verbs"
+      },
+      {
+        id: "venir-you-come",
+        french: "tu viens",
+        english: "you come",
+        category: "verbs"
+      },
+      {
+        id: "venir-he-comes",
+        french: "il vient",
+        english: "he comes",
+        category: "verbs"
+      },
+      {
+        id: "venir-we-come",
+        french: "nous venons",
+        english: "we come",
+        category: "verbs"
+      },
+      {
+        id: "venir-you-come-formal",
+        french: "vous venez",
+        english: "you come (formal)",
+        category: "verbs"
+      },
+      {
+        id: "venir-they-come",
+        french: "ils viennent",
+        english: "they come",
+        category: "verbs"
+      },
+      {
+        id: "vouloir-i-want",
+        french: "je veux",
+        english: "I want",
+        category: "verbs"
+      },
+      {
+        id: "vouloir-you-want",
+        french: "tu veux",
+        english: "you want",
+        category: "verbs"
+      },
+      {
+        id: "vouloir-he-wants",
+        french: "il veut",
+        english: "he wants",
+        category: "verbs"
+      },
+      {
+        id: "vouloir-we-want",
+        french: "nous voulons",
+        english: "we want",
+        category: "verbs"
+      },
+      {
+        id: "vouloir-you-want-formal",
+        french: "vous voulez",
+        english: "you want (formal)",
+        category: "verbs"
+      },
+      {
+        id: "vouloir-they-want",
+        french: "ils veulent",
+        english: "they want",
+        category: "verbs"
       }
     ]
   },
@@ -442,6 +1174,73 @@ export const lessons: Lesson[] = [
         french: "des rencontres",
         english: "some meetings",
         category: "articles"
+      }
+    ]
+  },
+  {
+    id: "prepositions",
+    title: "Prepositions",
+    description: "Learn prepositions à, au, aux, en for countries and places",
+    phrases: [
+      {
+        id: "prep-a-city",
+        french: "à + ville",
+        english: "to/in + city (J'habite à La Nouvelle Orléans)",
+        category: "prepositions"
+      },
+      {
+        id: "prep-au-masculine",
+        french: "au + pays masculin",
+        english: "to/in + masculine country (Je vais au Pérou)",
+        category: "prepositions"
+      },
+      {
+        id: "prep-en-feminine",
+        french: "en + pays féminin",
+        english: "to/in + feminine country (Je vais en France)",
+        category: "prepositions"
+      },
+      {
+        id: "prep-aux-plural",
+        french: "aux + pays au pluriel",
+        english: "to/in + plural country (Je suis aux Pays-Bas)",
+        category: "prepositions"
+      },
+      {
+        id: "prep-en-vowel",
+        french: "en + pays commençant par voyelle",
+        english: "to/in + country starting with vowel (Je suis en Espagne)",
+        category: "prepositions"
+      },
+      {
+        id: "i-live-in-canada",
+        french: "J'habite au Canada",
+        english: "I live in Canada",
+        category: "prepositions"
+      },
+      {
+        id: "i-go-to-france",
+        french: "Je vais en France",
+        english: "I go to France",
+        category: "prepositions"
+      },
+      {
+        id: "i-am-in-spain",
+        french: "Je suis en Espagne",
+        english: "I am in Spain",
+        category: "prepositions"
+      },
+      {
+        id: "i-come-from-louisiana",
+        french: "Je viens de Louisiane",
+        english: "I come from Louisiana",
+        category: "prepositions"
+      },
+      {
+        id: "i-go-to-bordeaux",
+        french: "Je viens à Bordeaux",
+        english: "I come to Bordeaux",
+        category: "prepositions"
       }
     ]
   },
@@ -822,6 +1621,120 @@ export const lessons: Lesson[] = [
         id: "number-20",
         french: "vingt",
         english: "twenty",
+        category: "numbers"
+      },
+      {
+        id: "number-30",
+        french: "trente",
+        english: "thirty",
+        category: "numbers"
+      },
+      {
+        id: "number-40",
+        french: "quarante",
+        english: "forty",
+        category: "numbers"
+      },
+      {
+        id: "number-50",
+        french: "cinquante",
+        english: "fifty",
+        category: "numbers"
+      },
+      {
+        id: "number-60",
+        french: "soixante",
+        english: "sixty",
+        category: "numbers"
+      },
+      {
+        id: "number-70",
+        french: "soixante-dix",
+        english: "seventy",
+        category: "numbers"
+      },
+      {
+        id: "number-71",
+        french: "soixante et onze",
+        english: "seventy-one",
+        category: "numbers"
+      },
+      {
+        id: "number-72",
+        french: "soixante-douze",
+        english: "seventy-two",
+        category: "numbers"
+      },
+      {
+        id: "number-80",
+        french: "quatre-vingt",
+        english: "eighty",
+        category: "numbers"
+      },
+      {
+        id: "number-81",
+        french: "quatre-vingt-un",
+        english: "eighty-one",
+        category: "numbers"
+      },
+      {
+        id: "number-82",
+        french: "quatre-vingt-deux",
+        english: "eighty-two",
+        category: "numbers"
+      },
+      {
+        id: "number-90",
+        french: "quatre-vingt-dix",
+        english: "ninety",
+        category: "numbers"
+      },
+      {
+        id: "number-91",
+        french: "quatre-vingt-onze",
+        english: "ninety-one",
+        category: "numbers"
+      },
+      {
+        id: "number-92",
+        french: "quatre-vingt-douze",
+        english: "ninety-two",
+        category: "numbers"
+      },
+      {
+        id: "number-100",
+        french: "cent",
+        english: "one hundred",
+        category: "numbers"
+      },
+      {
+        id: "number-200",
+        french: "deux-cents",
+        english: "two hundred",
+        category: "numbers"
+      },
+      {
+        id: "number-300",
+        french: "trois-cents",
+        english: "three hundred",
+        category: "numbers"
+      },
+      {
+        id: "number-875",
+        french: "huit-cent-soixante-quinze",
+        english: "eight hundred seventy-five",
+        category: "numbers"
+      },
+      {
+        id: "number-1000",
+        french: "mille",
+        english: "one thousand",
+        category: "numbers"
+      },
+      {
+        id: "number-1400",
+        french: "mille-quatre-cents",
+        english: "one thousand four hundred",
         category: "numbers"
       }
     ]

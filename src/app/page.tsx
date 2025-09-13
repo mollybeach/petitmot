@@ -1,6 +1,6 @@
 import { lessons } from '@/lib/data/phrases';
 import LessonCard from '@/components/LessonCard';
-import Image from 'next/image';
+//import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Left Side Images */}
+      {/* Left Side Images
       <div className="hidden lg:flex flex-col space-y-4 absolute -left-16 top-1/2 transform -translate-y-1/2">
         <Image 
           src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669562/hairgirl_adatvb.jpg"
@@ -49,7 +49,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Right Side Images */}
+      {/* Right Side Images 
       <div className="hidden lg:flex flex-col space-y-4 absolute -right-16 top-1/2 transform -translate-y-1/2">
         <Image 
           src="https://res.cloudinary.com/storagemanagementcontainer/image/upload/v1627669061/crosswalk_whiqif.png"
@@ -72,7 +72,7 @@ export default function Home() {
           height={120}
           className="side-image rounded-lg border-2 border-white shadow-md"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
