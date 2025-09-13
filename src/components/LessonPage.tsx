@@ -81,7 +81,7 @@ export default function LessonPage({ lesson }: LessonPageProps) {
           onClose={closeModal}
           title={modalData.title}
           type={modalData.type}
-          data={modalData.data}
+          data={modalData.data as any} // eslint-disable-line @typescript-eslint/no-explicit-any
         />
       )}
     </div>
