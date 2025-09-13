@@ -34,8 +34,8 @@ export default function Header() {
               Home
             </Link>
             <Link 
-              href="/lessons/personal-info" 
-              className={`nav-link-french ${pathname.includes('/lessons') ? 'font-semibold' : ''}`}
+              href="/lesson-groups/lesson_1" 
+              className={`nav-link-french ${pathname.includes('/lesson-groups') || pathname.includes('/lessons') ? 'font-semibold' : ''}`}
             >
               Lessons
             </Link>

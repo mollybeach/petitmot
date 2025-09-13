@@ -17,7 +17,19 @@ export interface Lesson {
   phrases: FrenchPhrase[];
 }
 
-export const lessons: Lesson[] = [
+export interface LessonGroup {
+  id: string;
+  title: string;
+  description: string;
+  lessons: Lesson[];
+}
+
+export const lessonGroups: LessonGroup[] = [
+  {
+    id: "lesson_1",
+    title: "Lesson 1",
+    description: "Essential French vocabulary and phrases for beginners",
+    lessons: [
   {
     id: "transportation",
     title: "Transportation",
@@ -2053,7 +2065,18 @@ export const lessons: Lesson[] = [
       }
     ]
   }
-];
+]
+},
+{
+  id:"lesson_2",
+  title: "Lesson 2",
+  description: "Day two lesson",
+  lessons: []
+}
+]
+
+// Export all lessons as a flat array for backward compatibility
+export const lessons: Lesson[] = lessonGroups.flatMap(group => group.lessons);
 
 export const getAllPhrases = (): FrenchPhrase[] => {
   return lessons.flatMap(lesson => lesson.phrases);
@@ -2065,4 +2088,8 @@ export const getPhrasesByCategory = (category: string): FrenchPhrase[] => {
 
 export const getLessonById = (id: string): Lesson | undefined => {
   return lessons.find(lesson => lesson.id === id);
+};
+
+export const getLessonGroupById = (id: string): LessonGroup | undefined => {
+  return lessonGroups.find(group => group.id === id);
 };

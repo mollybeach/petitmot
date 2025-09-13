@@ -1,5 +1,5 @@
-import { lessons } from '@/lib/data/phrases';
-import LessonCard from '@/components/LessonCard';
+import { lessonGroups } from '@/lib/data/phrases';
+import LessonGroupCard from '../components/LessonGroupCard';
 //import Image from 'next/image';
 
 export default function Home() {
@@ -8,18 +8,18 @@ export default function Home() {
       <div className="main-french">
         <div className="mb-8 w-full">
           <h2 className="heading-french-medium mb-4">
-            Choose a Lesson
+            Choose a Lesson Group
           </h2>
           <p className="english-text">
-            Select a lesson below to start practicing French phrases. Each phrase includes 
-            pronunciation buttons to help you learn the correct pronunciation.
+            Select a lesson group below to start practicing French phrases. Each group contains 
+            multiple lessons with pronunciation buttons to help you learn the correct pronunciation.
           </p>
         </div>
 
-        {/* Lessons Grid */}
+        {/* Lesson Groups Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          {lessons.map((lesson) => (
-            <LessonCard key={lesson.id} lesson={lesson} />
+          {lessonGroups.map((group) => (
+            <LessonGroupCard key={group.id} group={group} />
           ))}
         </div>
       </div>
