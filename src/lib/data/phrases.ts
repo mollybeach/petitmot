@@ -2078,11 +2078,67 @@ export const lessonGroups: LessonGroup[] = [
         description: "Learn transportation vocabulary and locations",
         phrases: [
           {
+            id: "plane",
+            french: "un avion",
+            english: "a plane",
+            category: "transportation",
+            emoji: "✈️"
+          },
+          {
             id: "airport",
             french: "un aéroport",
             english: "an airport",
             category: "transportation",
-            emoji: "✈️"
+            emoji: "🏢"
+          },
+          {
+            id: "plane-ticket",
+            french: "un billet d'avion",
+            english: "a plane ticket",
+            category: "transportation",
+            emoji: "🎫✈️"
+          },
+          {
+            id: "car",
+            french: "une voiture",
+            english: "a car",
+            category: "transportation",
+            emoji: "🚗"
+          },
+          {
+            id: "train",
+            french: "un train",
+            english: "a train",
+            category: "transportation",
+            emoji: "🚂"
+          },
+          {
+            id: "train-station",
+            french: "une gare",
+            english: "a train station",
+            category: "transportation",
+            emoji: "🚉"
+          },
+          {
+            id: "platform",
+            french: "un quai",
+            english: "a platform",
+            category: "transportation",
+            emoji: "🚉"
+          },
+          {
+            id: "train-ticket",
+            french: "un ticket de train",
+            english: "a train ticket",
+            category: "transportation",
+            emoji: "🎫🚂"
+          },
+          {
+            id: "bus",
+            french: "un bus",
+            english: "a bus",
+            category: "transportation",
+            emoji: "🚌"
           },
           {
             id: "bus-station",
@@ -2092,18 +2148,18 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "🚌"
           },
           {
-            id: "road",
-            french: "une route",
-            english: "a road",
+            id: "bus-stop",
+            french: "un arrêt",
+            english: "a stop",
             category: "transportation",
-            emoji: "🛣️"
+            emoji: "🚏"
           },
           {
-            id: "train-station",
-            french: "une gare",
-            english: "a train station",
+            id: "bus-stop-location",
+            french: "un arrêt de bus",
+            english: "a bus stop",
             category: "transportation",
-            emoji: "🚉"
+            emoji: "🚏🚌"
           }
         ]
       },
@@ -2139,6 +2195,13 @@ export const lessonGroups: LessonGroup[] = [
             english: "What?",
             category: "questions",
             emoji: "❓"
+          },
+          {
+            id: "how-much",
+            french: "Combien ?",
+            english: "How much?",
+            category: "questions",
+            emoji: "💰"
           }
         ]
       },
@@ -2148,25 +2211,81 @@ export const lessonGroups: LessonGroup[] = [
         description: "Learn to ask for information politely",
         phrases: [
           {
-            id: "i-would-like-ticket",
-            french: "Je voudrais un billet d'avion pour Nice, s'il vous plaît.",
-            english: "I would like a plane ticket to Nice, please.",
-            category: "requests",
-            emoji: "✈️🎫"
-          },
-          {
-            id: "excuse-me-train",
-            french: "Pardon Monsieur, le train pour Berlin, c'est bien ici ?",
-            english: "Excuse me sir, is the train to Berlin here?",
+            id: "excuse-me-where-train",
+            french: "Excusez-moi Monsieur, Madame, vous savez où est le train pour Paris ?",
+            english: "Excuse me sir/madam, do you know where the train to Paris is?",
             category: "requests",
             emoji: "🚂❓"
           },
           {
-            id: "excuse-me-bus",
-            french: "Excusez-moi Monsieur, c'est le bus pour Toulouse ?",
-            english: "Excuse me sir, is this the bus to Toulouse?",
+            id: "excuse-me-when-train",
+            french: "Pardon, Monsieur, Madame, vous savez quand part le train ?",
+            english: "Excuse me sir/madam, do you know when the train leaves?",
             category: "requests",
-            emoji: "🚌❓"
+            emoji: "⏰❓"
+          },
+          {
+            id: "i-would-like-ticket",
+            french: "Je voudrais un billet pour Paris s'il vous plaît.",
+            english: "I would like a ticket to Paris please.",
+            category: "requests",
+            emoji: "🎫"
+          }
+        ]
+      },
+      {
+        id: "question-answer-patterns",
+        title: "Question & Answer Patterns",
+        description: "Learn common question and answer patterns for travel",
+        phrases: [
+          {
+            id: "where-train-leaves",
+            french: "Le train part où ?\n\nLe train part à Paris",
+            english: "Where does the train leave from?\n\nThe train leaves from Paris",
+            category: "qa-patterns",
+            emoji: "🚂📍"
+          },
+          {
+            id: "where-train-arrives",
+            french: "Le train arrive où ?\n\nLe train arrive à Paris",
+            english: "Where does the train arrive?\n\nThe train arrives in Paris",
+            category: "qa-patterns",
+            emoji: "🚂🏁"
+          },
+          {
+            id: "who-travels-train",
+            french: "Qui voyage dans le train ?\n\nIl y a deux personnes",
+            english: "Who travels on the train?\n\nThere are two people",
+            category: "qa-patterns",
+            emoji: "👥🚂"
+          },
+          {
+            id: "when-train-leaves",
+            french: "Le train part quand ?\n\nLe train part à 14h",
+            english: "When does the train leave?\n\nThe train leaves at 2 PM",
+            category: "qa-patterns",
+            emoji: "⏰🚂"
+          },
+          {
+            id: "when-train-arrives",
+            french: "Le train arrive quand ?\n\nLe train arrive à 16h",
+            english: "When does the train arrive?\n\nThe train arrives at 4 PM",
+            category: "qa-patterns",
+            emoji: "⏰🏁"
+          },
+          {
+            id: "what-do-you-want",
+            french: "Vous voulez quoi ?\n\nJe voudrais un billet de train",
+            english: "What do you want?\n\nI would like a train ticket",
+            category: "qa-patterns",
+            emoji: "❓🎫"
+          },
+          {
+            id: "how-much-costs",
+            french: "Ça coûte combien ?\n\nÇa coûte 25 €",
+            english: "How much does it cost?\n\nIt costs 25 euros",
+            category: "qa-patterns",
+            emoji: "💰"
           }
         ]
       }
