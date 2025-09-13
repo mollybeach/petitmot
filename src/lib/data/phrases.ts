@@ -18,6 +18,103 @@ export interface Lesson {
 
 export const lessons: Lesson[] = [
   {
+    id: "greetings-farewells",
+    title: "Greetings & Farewells",
+    description: "Learn essential greetings and farewells in French",
+    phrases: [
+      {
+        id: "hello-formal",
+        french: "Bonjour",
+        english: "Hello (formal)",
+        category: "greetings",
+        formal: {
+          french: "Bonjour",
+          english: "Hello (formal)"
+        }
+      },
+      {
+        id: "hello-informal",
+        french: "Salut",
+        english: "Hi (informal)",
+        category: "greetings",
+        formal: {
+          french: "Bonjour",
+          english: "Hello (formal)"
+        }
+      },
+      {
+        id: "hello-casual",
+        french: "Coucou",
+        english: "Hey there (very casual)",
+        category: "greetings",
+        formal: {
+          french: "Bonjour",
+          english: "Hello (formal)"
+        }
+      },
+      {
+        id: "goodbye-formal",
+        french: "Au revoir",
+        english: "Goodbye (formal)",
+        category: "farewells",
+        formal: {
+          french: "Au revoir",
+          english: "Goodbye (formal)"
+        }
+      },
+      {
+        id: "see-you-later",
+        french: "À plus tard",
+        english: "See you later",
+        category: "farewells",
+        formal: {
+          french: "À plus tard",
+          english: "See you later"
+        }
+      },
+      {
+        id: "see-you-soon",
+        french: "À bientôt",
+        english: "See you soon",
+        category: "farewells",
+        formal: {
+          french: "À bientôt",
+          english: "See you soon"
+        }
+      },
+      {
+        id: "see-you-later-today",
+        french: "À tout à l'heure",
+        english: "See you later today",
+        category: "farewells",
+        formal: {
+          french: "À tout à l'heure",
+          english: "See you later today"
+        }
+      },
+      {
+        id: "good-day",
+        french: "Bonne journée",
+        english: "Have a good day",
+        category: "farewells",
+        formal: {
+          french: "Bonne journée",
+          english: "Have a good day"
+        }
+      },
+      {
+        id: "welcome",
+        french: "Bienvenue",
+        english: "Welcome",
+        category: "greetings",
+        formal: {
+          french: "Bienvenue",
+          english: "Welcome"
+        }
+      }
+    ]
+  },
+  {
     id: "family-children",
     title: "Family & Children",
     description: "Learn to talk about family and children",
@@ -118,6 +215,36 @@ export const lessons: Lesson[] = [
           french: "Quel âge avez-vous ?\n\nJ'ai 29 ans",
           english: "What is your age?\n\nI am 29 years old"
         }
+      },
+      {
+        id: "how-are-you-qa",
+        french: "Comment tu vas ?\n\nÇa va bien, merci",
+        english: "How are you?\n\nI'm doing well, thank you",
+        category: "personal",
+        formal: {
+          french: "Comment allez-vous ?\n\nOui, je vais bien, merci",
+          english: "How are you?\n\nYes, I'm doing well, thank you"
+        }
+      },
+      {
+        id: "how-are-you-casual-qa",
+        french: "Ça va ?\n\nÇa va",
+        english: "How's it going?\n\nIt's going well",
+        category: "personal",
+        formal: {
+          french: "Comment allez-vous ?\n\nOui, je vais bien, merci",
+          english: "How are you?\n\nYes, I'm doing well, thank you"
+        }
+      },
+      {
+        id: "are-you-doing-well-qa",
+        french: "Tu vas bien ?\n\nOui, je vais bien",
+        english: "Are you doing well?\n\nYes, I'm doing well",
+        category: "personal",
+        formal: {
+          french: "Comment allez-vous ?\n\nOui, je vais bien, merci",
+          english: "How are you?\n\nYes, I'm doing well, thank you"
+        }
       }
     ]
   },
@@ -212,6 +339,109 @@ export const lessons: Lesson[] = [
           french: "Je ne parle pas ......",
           english: "I don't speak ......"
         }
+      }
+    ]
+  },
+  {
+    id: "indefinite-articles",
+    title: "Indefinite Articles",
+    description: "Learn the French indefinite articles: un, une, des",
+    phrases: [
+      {
+        id: "article-un",
+        french: "un",
+        english: "a/an (masculine singular)",
+        category: "articles"
+      },
+      {
+        id: "article-une",
+        french: "une",
+        english: "a/an (feminine singular)",
+        category: "articles"
+      },
+      {
+        id: "article-des",
+        french: "des",
+        english: "some (plural)",
+        category: "articles"
+      },
+      {
+        id: "un-chien",
+        french: "un chien",
+        english: "a dog",
+        category: "articles"
+      },
+      {
+        id: "une-maison",
+        french: "une maison",
+        english: "a house",
+        category: "articles"
+      },
+      {
+        id: "des-enfants",
+        french: "des enfants",
+        english: "some children",
+        category: "articles"
+      },
+      {
+        id: "un-nom",
+        french: "un nom",
+        english: "a name",
+        category: "articles"
+      },
+      {
+        id: "un-prenom",
+        french: "un prénom",
+        english: "a first name",
+        category: "articles"
+      },
+      {
+        id: "un-cocktail",
+        french: "un cocktail",
+        english: "a cocktail",
+        category: "articles"
+      },
+      {
+        id: "une-nationalite",
+        french: "une nationalité",
+        english: "a nationality",
+        category: "articles"
+      },
+      {
+        id: "une-invitation",
+        french: "une invitation",
+        english: "an invitation",
+        category: "articles"
+      },
+      {
+        id: "une-identite",
+        french: "une identité",
+        english: "an identity",
+        category: "articles"
+      },
+      {
+        id: "des-droits",
+        french: "des droits",
+        english: "some rights",
+        category: "articles"
+      },
+      {
+        id: "des-professionnels",
+        french: "des professionnels",
+        english: "some professionals",
+        category: "articles"
+      },
+      {
+        id: "des-personnes",
+        french: "des personnes",
+        english: "some people",
+        category: "articles"
+      },
+      {
+        id: "des-rencontres",
+        french: "des rencontres",
+        english: "some meetings",
+        category: "articles"
       }
     ]
   },
@@ -375,6 +605,91 @@ export const lessons: Lesson[] = [
         french: "Z",
         english: "Z (zed)",
         category: "letters"
+      }
+    ]
+  },
+  {
+    id: "sound-practice",
+    title: "Sound Practice",
+    description: "Practice French sounds: [y] vs [u] pronunciation",
+    phrases: [
+      {
+        id: "sound-y-salut",
+        french: "Salut",
+        english: "Hi (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-tu",
+        french: "Tu",
+        english: "You (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-plus",
+        french: "À plus tard",
+        english: "See you later (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-bienvenue",
+        french: "Bienvenue",
+        english: "Welcome (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-etudiant",
+        french: "Étudiant",
+        english: "Student (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-universite",
+        french: "Université",
+        english: "University (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-russe",
+        french: "Russe",
+        english: "Russian (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-litterature",
+        french: "Littérature",
+        english: "Literature (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-y-culture",
+        french: "Culture",
+        english: "Culture (sound: [y])",
+        category: "sounds"
+      },
+      {
+        id: "sound-u-bonjour",
+        french: "Bonjour",
+        english: "Hello (sound: [u])",
+        category: "sounds"
+      },
+      {
+        id: "sound-u-vous",
+        french: "Vous",
+        english: "You (formal) (sound: [u])",
+        category: "sounds"
+      },
+      {
+        id: "sound-u-beaucoup",
+        french: "Beaucoup",
+        english: "A lot (sound: [u])",
+        category: "sounds"
+      },
+      {
+        id: "sound-u-cours",
+        french: "Cours",
+        english: "Course (sound: [u])",
+        category: "sounds"
       }
     ]
   },
