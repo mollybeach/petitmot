@@ -5,10 +5,42 @@ interface LessonCardProps {
   lesson: Lesson;
 }
 
+// Function to get lesson emoji based on lesson ID
+const getLessonEmoji = (lessonId: string): string => {
+  const emojiMap: { [key: string]: string } = {
+    'transportation': '🚗',
+    'greetings-farewells': '👋',
+    'time-calendar': '📅',
+    'family-children': '👨‍👩‍👧‍👦',
+    'directions': '🧭',
+    'personal-info': '👤',
+    'places': '🏠',
+    'marital-status': '💍',
+    'countries': '🌍',
+    'languages': '🗣️',
+    'verb-conjugations': '📝',
+    'indefinite-articles': '📄',
+    'french-letters': '🔤',
+    'sound-practice': '🎵',
+    'french-numbers': '🔢',
+    'colors': '🎨',
+    'spatial-prepositions': '📍',
+    'prepositions': '🔗'
+  };
+  return emojiMap[lessonId] || '📚';
+};
+
 export default function LessonCard({ lesson }: LessonCardProps) {
   return (
     <Link href={`/lessons/${lesson.id}`}>
       <div className="card-french p-6 cursor-pointer">
+        {/* Lesson Emoji */}
+        <div className="text-center mb-3">
+          <div className="text-3xl">
+            {getLessonEmoji(lesson.id)}
+          </div>
+        </div>
+        
         <h3 className="heading-french-small mb-2">
           {lesson.title}
         </h3>

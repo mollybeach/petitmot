@@ -51,6 +51,15 @@ export default function PhraseCard({ phrase, isFormal = false }: PhraseCardProps
   return (
     <div className="phrase-card-french">
       <div className="space-y-4">
+        {/* Emoji Header */}
+        {phrase.emoji && (
+          <div className="text-center mb-4">
+            <div className="text-4xl mb-2">
+              {phrase.emoji}
+            </div>
+          </div>
+        )}
+        
         {/* French Phrase */}
         <div className="text-center">
           <div className="mb-4">

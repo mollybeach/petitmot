@@ -311,6 +311,25 @@ body::before {
   margin: 1rem 0;
 }
 
+/* Emoji Styling */
+.phrase-card-french .text-4xl {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.2s ease;
+}
+
+.phrase-card-french:hover .text-4xl {
+  transform: scale(1.1);
+}
+
+.card-french .text-3xl {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.2s ease;
+}
+
+.card-french:hover .text-3xl {
+  transform: scale(1.1);
+}
+
 .phrase-card-french * {
   color: #000000 !important;
 }

@@ -3,6 +3,7 @@ export interface FrenchPhrase {
   french: string;
   english: string;
   category: string;
+  emoji?: string;
   formal?: {
     french: string;
     english: string;
@@ -26,85 +27,99 @@ export const lessons: Lesson[] = [
         id: "airport",
         french: "un aéroport",
         english: "an airport",
-        category: "transportation"
+        category: "transportation",
+        emoji: "✈️"
       },
       {
         id: "bus-stop",
         french: "un arrêt de bus",
         english: "a bus stop",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚏"
       },
       {
         id: "bus-station",
         french: "une gare routière",
         english: "a bus station",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚌"
       },
       {
         id: "train-station",
         french: "une gare",
         english: "a train station",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚉"
       },
       {
         id: "ticket",
         french: "un billet",
         english: "a ticket",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🎫"
       },
       {
         id: "plane",
         french: "un avion",
         english: "a plane",
-        category: "transportation"
+        category: "transportation",
+        emoji: "✈️"
       },
       {
         id: "car",
         french: "une voiture",
         english: "a car",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚗"
       },
       {
         id: "bus",
         french: "un bus",
         english: "a bus",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚌"
       },
       {
         id: "subway",
         french: "un métro",
         english: "a subway",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚇"
       },
       {
         id: "train",
         french: "un train",
         english: "a train",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚂"
       },
       {
         id: "tramway",
         french: "un tramway",
         english: "a tramway",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚋"
       },
       {
         id: "i-want-to-take-bus",
         french: "Je veux prendre un bus",
         english: "I want to take a bus",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🚌💭"
       },
       {
         id: "i-want-to-go-paris",
         french: "Je veux aller à Paris",
         english: "I want to go to Paris",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🗼✈️"
       },
       {
         id: "i-am-looking-for-route",
         french: "Je cherche ma route",
         english: "I am looking for my route",
-        category: "transportation"
+        category: "transportation",
+        emoji: "🗺️🔍"
       }
     ]
   },
@@ -118,6 +133,7 @@ export const lessons: Lesson[] = [
         french: "Bonjour",
         english: "Hello (formal)",
         category: "greetings",
+        emoji: "👋",
         formal: {
           french: "Bonjour",
           english: "Hello (formal)"
@@ -128,6 +144,7 @@ export const lessons: Lesson[] = [
         french: "Salut",
         english: "Hi (informal)",
         category: "greetings",
+        emoji: "👋😊",
         formal: {
           french: "Bonjour",
           english: "Hello (formal)"
@@ -138,6 +155,7 @@ export const lessons: Lesson[] = [
         french: "Coucou",
         english: "Hey there (very casual)",
         category: "greetings",
+        emoji: "👋😄",
         formal: {
           french: "Bonjour",
           english: "Hello (formal)"
@@ -148,6 +166,7 @@ export const lessons: Lesson[] = [
         french: "Au revoir",
         english: "Goodbye (formal)",
         category: "farewells",
+        emoji: "👋",
         formal: {
           french: "Au revoir",
           english: "Goodbye (formal)"
@@ -158,6 +177,7 @@ export const lessons: Lesson[] = [
         french: "À plus tard",
         english: "See you later",
         category: "farewells",
+        emoji: "👋⏰",
         formal: {
           french: "À plus tard",
           english: "See you later"
@@ -168,6 +188,7 @@ export const lessons: Lesson[] = [
         french: "À bientôt",
         english: "See you soon",
         category: "farewells",
+        emoji: "👋⏱️",
         formal: {
           french: "À bientôt",
           english: "See you soon"
@@ -178,6 +199,7 @@ export const lessons: Lesson[] = [
         french: "À tout à l'heure",
         english: "See you later today",
         category: "farewells",
+        emoji: "👋🌅",
         formal: {
           french: "À tout à l'heure",
           english: "See you later today"
@@ -188,6 +210,7 @@ export const lessons: Lesson[] = [
         french: "Bonne journée",
         english: "Have a good day",
         category: "farewells",
+        emoji: "👋☀️",
         formal: {
           french: "Bonne journée",
           english: "Have a good day"
@@ -198,6 +221,7 @@ export const lessons: Lesson[] = [
         french: "Bienvenue",
         english: "Welcome",
         category: "greetings",
+        emoji: "👋🏠",
         formal: {
           french: "Bienvenue",
           english: "Welcome"
@@ -214,169 +238,197 @@ export const lessons: Lesson[] = [
         id: "monday",
         french: "lundi",
         english: "Monday",
-        category: "days"
+        category: "days",
+        emoji: "📅"
       },
       {
         id: "tuesday",
         french: "mardi",
         english: "Tuesday",
-        category: "days"
+        category: "days",
+        emoji: "📅"
       },
       {
         id: "wednesday",
         french: "mercredi",
         english: "Wednesday",
-        category: "days"
+        category: "days",
+        emoji: "📅"
       },
       {
         id: "thursday",
         french: "jeudi",
         english: "Thursday",
-        category: "days"
+        category: "days",
+        emoji: "📅"
       },
       {
         id: "friday",
         french: "vendredi",
         english: "Friday",
-        category: "days"
+        category: "days",
+        emoji: "📅"
       },
       {
         id: "saturday",
         french: "samedi",
         english: "Saturday",
-        category: "days"
+        category: "days",
+        emoji: "📅"
       },
       {
         id: "sunday",
         french: "dimanche",
         english: "Sunday",
-        category: "days"
+        category: "days",
+        emoji: "📅"
       },
       {
         id: "january",
         french: "janvier",
         english: "January",
-        category: "months"
+        category: "months",
+        emoji: "❄️"
       },
       {
         id: "february",
         french: "février",
         english: "February",
-        category: "months"
+        category: "months",
+        emoji: "💝"
       },
       {
         id: "march",
         french: "mars",
         english: "March",
-        category: "months"
+        category: "months",
+        emoji: "🌸"
       },
       {
         id: "april",
         french: "avril",
         english: "April",
-        category: "months"
+        category: "months",
+        emoji: "🌷"
       },
       {
         id: "may",
         french: "mai",
         english: "May",
-        category: "months"
+        category: "months",
+        emoji: "🌺"
       },
       {
         id: "june",
         french: "juin",
         english: "June",
-        category: "months"
+        category: "months",
+        emoji: "☀️"
       },
       {
         id: "july",
         french: "juillet",
         english: "July",
-        category: "months"
+        category: "months",
+        emoji: "🏖️"
       },
       {
         id: "august",
         french: "août",
         english: "August",
-        category: "months"
+        category: "months",
+        emoji: "🌞"
       },
       {
         id: "september",
         french: "septembre",
         english: "September",
-        category: "months"
+        category: "months",
+        emoji: "🍂"
       },
       {
         id: "october",
         french: "octobre",
         english: "October",
-        category: "months"
+        category: "months",
+        emoji: "🎃"
       },
       {
         id: "november",
         french: "novembre",
         english: "November",
-        category: "months"
+        category: "months",
+        emoji: "🍁"
       },
       {
         id: "december",
         french: "décembre",
         english: "December",
-        category: "months"
+        category: "months",
+        emoji: "🎄"
       },
       {
         id: "morning",
         french: "le matin",
         english: "the morning",
-        category: "time"
+        category: "time",
+        emoji: "🌅"
       },
       {
         id: "noon",
         french: "le midi",
         english: "at noon",
-        category: "time"
+        category: "time",
+        emoji: "☀️"
       },
       {
         id: "afternoon",
         french: "l'après-midi",
         english: "the afternoon",
-        category: "time"
+        category: "time",
+        emoji: "🌤️"
       },
       {
         id: "evening",
         french: "le soir",
         english: "the evening",
-        category: "time"
+        category: "time",
+        emoji: "🌆"
       },
       {
         id: "night",
         french: "la nuit",
         english: "at night",
-        category: "time"
+        category: "time",
+        emoji: "🌙"
       },
       {
         id: "day",
         french: "le jour",
         english: "the day",
-        category: "time"
+        category: "time",
+        emoji: "☀️"
       },
       {
         id: "week",
         french: "la semaine",
         english: "the week",
-        category: "time"
+        category: "time",
+        emoji: "📅"
       },
       {
         id: "month",
         french: "le mois",
         english: "the month",
-        category: "time"
+        category: "time",
+        emoji: "📆"
       },
       {
         id: "year",
         french: "l'année",
         english: "the year",
-        category: "time"
+        category: "time",
+        emoji: "🗓️"
       }
     ]
   },
@@ -464,6 +516,7 @@ export const lessons: Lesson[] = [
         french: "Qu'est-ce que tu aimes ?\n\nJ'aime courir",
         english: "What do you like?\n\nI like to run",
         category: "personal",
+        emoji: "❤️🏃‍♀️",
         formal: {
           french: "Qu'est-ce que vous aimez ?\n\nJ'aime courir",
           english: "What do you like?\n\nI like to run"
@@ -474,6 +527,7 @@ export const lessons: Lesson[] = [
         french: "Qu'est-ce que tu n'aimes pas ?\n\nJe n'aime pas les légumes",
         english: "What don't you like?\n\nI don't like vegetables",
         category: "personal",
+        emoji: "❌🥕",
         formal: {
           french: "Qu'est-ce que vous n'aimez pas ?\n\nJe n'aime pas les légumes",
           english: "What don't you like?\n\nI don't like vegetables"
@@ -484,6 +538,7 @@ export const lessons: Lesson[] = [
         french: "Comment tu t'appelles ?\n\nJe m'appelle Marie",
         english: "What is your name?\n\nMy name is Marie",
         category: "personal",
+        emoji: "👤📝",
         formal: {
           french: "Comment vous appelez-vous ?\n\nJe m'appelle Marie",
           english: "What is your name?\n\nMy name is Marie"
@@ -494,6 +549,7 @@ export const lessons: Lesson[] = [
         french: "Quel est ton prénom ?\n\nMon prénom est Marie",
         english: "What is your first name?\n\nMy first name is Marie",
         category: "personal",
+        emoji: "✏️👤",
         formal: {
           french: "Quel est votre prénom ?\n\nMon prénom est Marie",
           english: "What is your first name?\n\nMy first name is Marie"
@@ -504,6 +560,7 @@ export const lessons: Lesson[] = [
         french: "Quel est ton nom de famille ?\n\nMon nom de famille est Dupont",
         english: "What is your last name?\n\nMy last name is Dupont",
         category: "personal",
+        emoji: "👨‍👩‍👧‍👦📝",
         formal: {
           french: "Quel est votre nom de famille ?\n\nMon nom de famille est Dupont",
           english: "What is your last name?\n\nMy last name is Dupont"
@@ -514,6 +571,7 @@ export const lessons: Lesson[] = [
         french: "Quel âge as-tu ?\n\nJ'ai 29 ans",
         english: "What is your age?\n\nI am 29 years old",
         category: "personal",
+        emoji: "🎂🔢",
         formal: {
           french: "Quel âge avez-vous ?\n\nJ'ai 29 ans",
           english: "What is your age?\n\nI am 29 years old"
@@ -524,6 +582,7 @@ export const lessons: Lesson[] = [
         french: "Comment tu vas ?\n\nÇa va bien, merci",
         english: "How are you?\n\nI'm doing well, thank you",
         category: "personal",
+        emoji: "😊👍",
         formal: {
           french: "Comment allez-vous ?\n\nOui, je vais bien, merci",
           english: "How are you?\n\nYes, I'm doing well, thank you"
@@ -534,6 +593,7 @@ export const lessons: Lesson[] = [
         french: "Ça va ?\n\nÇa va",
         english: "How's it going?\n\nIt's going well",
         category: "personal",
+        emoji: "😊✅",
         formal: {
           french: "Comment allez-vous ?\n\nOui, je vais bien, merci",
           english: "How are you?\n\nYes, I'm doing well, thank you"
@@ -544,6 +604,7 @@ export const lessons: Lesson[] = [
         french: "Tu vas bien ?\n\nOui, je vais bien",
         english: "Are you doing well?\n\nYes, I'm doing well",
         category: "personal",
+        emoji: "😊👍",
         formal: {
           french: "Comment allez-vous ?\n\nOui, je vais bien, merci",
           english: "How are you?\n\nYes, I'm doing well, thank you"
@@ -560,61 +621,71 @@ export const lessons: Lesson[] = [
         id: "camping",
         french: "un camping",
         english: "camping",
-        category: "places"
+        category: "places",
+        emoji: "🏕️"
       },
       {
         id: "house",
         french: "une maison",
         english: "a house",
-        category: "places"
+        category: "places",
+        emoji: "🏠"
       },
       {
         id: "bedroom",
         french: "une chambre",
         english: "a bedroom",
-        category: "places"
+        category: "places",
+        emoji: "🛏️"
       },
       {
         id: "hotel",
         french: "un hôtel",
         english: "a hotel",
-        category: "places"
+        category: "places",
+        emoji: "🏨"
       },
       {
         id: "apartment",
         french: "un appartement",
         english: "a flat",
-        category: "places"
+        category: "places",
+        emoji: "🏢"
       },
       {
         id: "castle",
         french: "un château",
         english: "a castle",
-        category: "places"
+        category: "places",
+        emoji: "🏰"
       },
       {
         id: "cafe",
         french: "un café",
         english: "a café",
-        category: "places"
+        category: "places",
+        emoji: "☕"
       },
       {
         id: "bar",
         french: "un bar",
         english: "a pub",
-        category: "places"
+        category: "places",
+        emoji: "🍺"
       },
       {
         id: "restaurant",
         french: "un restaurant",
         english: "a restaurant",
-        category: "places"
+        category: "places",
+        emoji: "🍽️"
       },
       {
         id: "shop",
         french: "un magasin",
         english: "a shop",
-        category: "places"
+        category: "places",
+        emoji: "🛍️"
       }
     ]
   },
@@ -684,169 +755,197 @@ export const lessons: Lesson[] = [
         id: "canada",
         french: "le Canada",
         english: "Canada (masculine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇨🇦"
       },
       {
         id: "peru",
         french: "le Pérou",
         english: "Peru (masculine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇵🇪"
       },
       {
         id: "brazil",
         french: "le Brésil",
         english: "Brazil (masculine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇧🇷"
       },
       {
         id: "texas",
         french: "le Texas",
         english: "Texas (masculine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🤠"
       },
       {
         id: "mexico",
         french: "le Mexique",
         english: "Mexico (masculine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇲🇽"
       },
       {
         id: "japan",
         french: "le Japon",
         english: "Japan (masculine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇯🇵"
       },
       {
         id: "vietnam",
         french: "le Vietnam",
         english: "Vietnam (masculine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇻🇳"
       },
       {
         id: "france",
         french: "la France",
         english: "France (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇫🇷"
       },
       {
         id: "belgium",
         french: "la Belgique",
         english: "Belgium (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇧🇪"
       },
       {
         id: "california",
         french: "la Californie",
         english: "California (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🌴"
       },
       {
         id: "florida",
         french: "la Floride",
         english: "Florida (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🦩"
       },
       {
         id: "russia",
         french: "la Russie",
         english: "Russia (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇷🇺"
       },
       {
         id: "china",
         french: "la Chine",
         english: "China (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇨🇳"
       },
       {
         id: "louisiana",
         french: "la Louisiane",
         english: "Louisiana (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🎷"
       },
       {
         id: "thailand",
         french: "la Thaïlande",
         english: "Thailand (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇹🇭"
       },
       {
         id: "switzerland",
         french: "la Suisse",
         english: "Switzerland (feminine)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇨🇭"
       },
       {
         id: "england",
         french: "l'Angleterre",
         english: "England (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇬🇧"
       },
       {
         id: "italy",
         french: "l'Italie",
         english: "Italy (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇮🇹"
       },
       {
         id: "spain",
         french: "l'Espagne",
         english: "Spain (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇪🇸"
       },
       {
         id: "australia",
         french: "l'Australie",
         english: "Australia (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇦🇺"
       },
       {
         id: "germany",
         french: "l'Allemagne",
         english: "Germany (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇩🇪"
       },
       {
         id: "alaska",
         french: "l'Alaska",
         english: "Alaska (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "❄️"
       },
       {
         id: "india",
         french: "l'Inde",
         english: "India (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇮🇳"
       },
       {
         id: "utah",
         french: "l'Utah",
         english: "Utah (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🏔️"
       },
       {
         id: "arizona",
         french: "l'Arizona",
         english: "Arizona (starts with vowel)",
-        category: "countries"
+        category: "countries",
+        emoji: "🏜️"
       },
       {
         id: "united-states",
         french: "les États-Unis",
         english: "United States (plural)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇺🇸"
       },
       {
         id: "netherlands",
         french: "les Pays-Bas",
         english: "Netherlands (plural)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇳🇱"
       },
       {
         id: "uae",
         french: "les Émirats Arabes Unis",
         english: "United Arab Emirates (plural)",
-        category: "countries"
+        category: "countries",
+        emoji: "🇦🇪"
       }
     ]
   },
@@ -1083,97 +1182,288 @@ export const lessons: Lesson[] = [
         id: "article-un",
         french: "un",
         english: "a/an (masculine singular)",
-        category: "articles"
+        category: "articles",
+        emoji: "♂️"
       },
       {
         id: "article-une",
         french: "une",
         english: "a/an (feminine singular)",
-        category: "articles"
+        category: "articles",
+        emoji: "♀️"
       },
       {
         id: "article-des",
         french: "des",
         english: "some (plural)",
-        category: "articles"
+        category: "articles",
+        emoji: "📦"
       },
       {
         id: "un-chien",
         french: "un chien",
         english: "a dog",
-        category: "articles"
+        category: "articles",
+        emoji: "🐕"
       },
       {
         id: "une-maison",
         french: "une maison",
         english: "a house",
-        category: "articles"
+        category: "articles",
+        emoji: "🏠"
       },
       {
         id: "des-enfants",
         french: "des enfants",
         english: "some children",
-        category: "articles"
+        category: "articles",
+        emoji: "👶👧👦"
       },
       {
         id: "un-nom",
         french: "un nom",
         english: "a name",
-        category: "articles"
+        category: "articles",
+        emoji: "📝"
       },
       {
         id: "un-prenom",
         french: "un prénom",
         english: "a first name",
-        category: "articles"
+        category: "articles",
+        emoji: "✏️"
       },
       {
         id: "un-cocktail",
         french: "un cocktail",
         english: "a cocktail",
-        category: "articles"
+        category: "articles",
+        emoji: "🍹"
       },
       {
         id: "une-nationalite",
         french: "une nationalité",
         english: "a nationality",
-        category: "articles"
+        category: "articles",
+        emoji: "🌍"
       },
       {
         id: "une-invitation",
         french: "une invitation",
         english: "an invitation",
-        category: "articles"
+        category: "articles",
+        emoji: "💌"
       },
       {
         id: "une-identite",
         french: "une identité",
         english: "an identity",
-        category: "articles"
+        category: "articles",
+        emoji: "🆔"
       },
       {
         id: "des-droits",
         french: "des droits",
         english: "some rights",
-        category: "articles"
+        category: "articles",
+        emoji: "⚖️"
       },
       {
         id: "des-professionnels",
         french: "des professionnels",
         english: "some professionals",
-        category: "articles"
+        category: "articles",
+        emoji: "👔"
       },
       {
         id: "des-personnes",
         french: "des personnes",
         english: "some people",
-        category: "articles"
+        category: "articles",
+        emoji: "👥"
       },
       {
         id: "des-rencontres",
         french: "des rencontres",
         english: "some meetings",
-        category: "articles"
+        category: "articles",
+        emoji: "🤝"
+      }
+    ]
+  },
+  {
+    id: "colors",
+    title: "Colors",
+    description: "Learn French color names and pronunciation",
+    phrases: [
+      {
+        id: "blanc",
+        french: "blanc",
+        english: "white",
+        category: "colors",
+        emoji: "⚪"
+      },
+      {
+        id: "orange",
+        french: "orange",
+        english: "orange",
+        category: "colors",
+        emoji: "🟠"
+      },
+      {
+        id: "rose",
+        french: "rose",
+        english: "pink",
+        category: "colors",
+        emoji: "🩷"
+      },
+      {
+        id: "vert",
+        french: "vert",
+        english: "green",
+        category: "colors",
+        emoji: "🟢"
+      },
+      {
+        id: "marron",
+        french: "marron",
+        english: "brown",
+        category: "colors",
+        emoji: "🟤"
+      },
+      {
+        id: "noir",
+        french: "noir",
+        english: "black",
+        category: "colors",
+        emoji: "⚫"
+      },
+      {
+        id: "jaune",
+        french: "jaune",
+        english: "yellow",
+        category: "colors",
+        emoji: "🟡"
+      },
+      {
+        id: "rouge",
+        french: "rouge",
+        english: "red",
+        category: "colors",
+        emoji: "🔴"
+      },
+      {
+        id: "bleu",
+        french: "bleu",
+        english: "blue",
+        category: "colors",
+        emoji: "🔵"
+      },
+      {
+        id: "violet",
+        french: "violet",
+        english: "purple",
+        category: "colors",
+        emoji: "🟣"
+      },
+      {
+        id: "gris",
+        french: "gris",
+        english: "gray",
+        category: "colors",
+        emoji: "⚪"
+      }
+    ]
+  },
+  {
+    id: "spatial-prepositions",
+    title: "Spatial Prepositions",
+    description: "Learn prepositions for describing position and location",
+    phrases: [
+      {
+        id: "sur",
+        french: "sur",
+        english: "on (the ball is on the box)",
+        category: "prepositions",
+        emoji: "🔴📦"
+      },
+      {
+        id: "sous",
+        french: "sous",
+        english: "under (the ball is under the box)",
+        category: "prepositions",
+        emoji: "📦🔴"
+      },
+      {
+        id: "devant",
+        french: "devant",
+        english: "in front of (the ball is in front of the box)",
+        category: "prepositions",
+        emoji: "🔴📦"
+      },
+      {
+        id: "derriere",
+        french: "derrière",
+        english: "behind (the ball is behind the box)",
+        category: "prepositions",
+        emoji: "📦🔴"
+      },
+      {
+        id: "dans",
+        french: "dans",
+        english: "in (the ball is in the box)",
+        category: "prepositions",
+        emoji: "📦🔴"
+      },
+      {
+        id: "entre",
+        french: "entre",
+        english: "between (the ball is between the boxes)",
+        category: "prepositions",
+        emoji: "📦🔴📦"
+      },
+      {
+        id: "a-gauche-de",
+        french: "à gauche de",
+        english: "to the left of (the ball is to the left of the box)",
+        category: "prepositions",
+        emoji: "🔴📦"
+      },
+      {
+        id: "a-droite-de",
+        french: "à droite de",
+        english: "to the right of (the ball is to the right of the box)",
+        category: "prepositions",
+        emoji: "📦🔴"
+      },
+      {
+        id: "a-cote-de",
+        french: "à côté de",
+        english: "next to (the ball is next to the box)",
+        category: "prepositions",
+        emoji: "🔴📦"
+      },
+      {
+        id: "loin-de",
+        french: "loin de",
+        english: "far from (the ball is far from the box)",
+        category: "prepositions",
+        emoji: "🔴📦"
+      },
+      {
+        id: "pres-de",
+        french: "près de",
+        english: "near (the ball is near the box)",
+        category: "prepositions",
+        emoji: "🔴📦"
+      },
+      {
+        id: "en-face-de",
+        french: "en face de",
+        english: "facing (the boxes are facing each other)",
+        category: "prepositions",
+        emoji: "📦📦"
       }
     ]
   },
@@ -1416,79 +1706,92 @@ export const lessons: Lesson[] = [
         id: "sound-y-salut",
         french: "Salut",
         english: "Hi (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "👋"
       },
       {
         id: "sound-y-tu",
         french: "Tu",
         english: "You (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "👤"
       },
       {
         id: "sound-y-plus",
         french: "À plus tard",
         english: "See you later (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "👋⏰"
       },
       {
         id: "sound-y-bienvenue",
         french: "Bienvenue",
         english: "Welcome (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "👋🏠"
       },
       {
         id: "sound-y-etudiant",
         french: "Étudiant",
         english: "Student (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "🎓"
       },
       {
         id: "sound-y-universite",
         french: "Université",
         english: "University (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "🏫"
       },
       {
         id: "sound-y-russe",
         french: "Russe",
         english: "Russian (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "🇷🇺"
       },
       {
         id: "sound-y-litterature",
         french: "Littérature",
         english: "Literature (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "📚"
       },
       {
         id: "sound-y-culture",
         french: "Culture",
         english: "Culture (sound: [y])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "🎭"
       },
       {
         id: "sound-u-bonjour",
         french: "Bonjour",
         english: "Hello (sound: [u])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "👋"
       },
       {
         id: "sound-u-vous",
         french: "Vous",
         english: "You (formal) (sound: [u])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "👥"
       },
       {
         id: "sound-u-beaucoup",
         french: "Beaucoup",
         english: "A lot (sound: [u])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "📊"
       },
       {
         id: "sound-u-cours",
         french: "Cours",
         english: "Course (sound: [u])",
-        category: "sounds"
+        category: "sounds",
+        emoji: "📖"
       }
     ]
   },
@@ -1501,67 +1804,78 @@ export const lessons: Lesson[] = [
         id: "number-0",
         french: "zéro",
         english: "zero",
-        category: "numbers"
+        category: "numbers",
+        emoji: "0️⃣"
       },
       {
         id: "number-1",
         french: "un",
         english: "one",
-        category: "numbers"
+        category: "numbers",
+        emoji: "1️⃣"
       },
       {
         id: "number-2",
         french: "deux",
         english: "two",
-        category: "numbers"
+        category: "numbers",
+        emoji: "2️⃣"
       },
       {
         id: "number-3",
         french: "trois",
         english: "three",
-        category: "numbers"
+        category: "numbers",
+        emoji: "3️⃣"
       },
       {
         id: "number-4",
         french: "quatre",
         english: "four",
-        category: "numbers"
+        category: "numbers",
+        emoji: "4️⃣"
       },
       {
         id: "number-5",
         french: "cinq",
         english: "five",
-        category: "numbers"
+        category: "numbers",
+        emoji: "5️⃣"
       },
       {
         id: "number-6",
         french: "six",
         english: "six",
-        category: "numbers"
+        category: "numbers",
+        emoji: "6️⃣"
       },
       {
         id: "number-7",
         french: "sept",
         english: "seven",
-        category: "numbers"
+        category: "numbers",
+        emoji: "7️⃣"
       },
       {
         id: "number-8",
         french: "huit",
         english: "eight",
-        category: "numbers"
+        category: "numbers",
+        emoji: "8️⃣"
       },
       {
         id: "number-9",
         french: "neuf",
         english: "nine",
-        category: "numbers"
+        category: "numbers",
+        emoji: "9️⃣"
       },
       {
         id: "number-10",
         french: "dix",
         english: "ten",
-        category: "numbers"
+        category: "numbers",
+        emoji: "🔟"
       },
       {
         id: "number-11",
