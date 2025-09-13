@@ -269,6 +269,32 @@ body::before {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.btn-french-secondary {
+  background: var(--salon-beige);
+  color: var(--salon-text);
+  border: 2px solid var(--salon-pink);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-french-secondary:hover {
+  background: var(--salon-pink);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-color: var(--salon-beige);
+}
+
+.btn-french-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 /* Navigation Styling */
 .nav-french {
   background: var(--salon-white) !important;

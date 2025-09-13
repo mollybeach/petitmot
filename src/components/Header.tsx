@@ -25,6 +25,16 @@ export default function Header() {
             </h1>
           </Link>
 
+          {/* Cosmopolite Link */}
+          <a 
+            href="https://cosmopolite.hachettefle.fr/cosmopolite-1_livre-de-l-eleve_fr.html" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center text-pink-600 hover:text-pink-700 transition-colors font-medium"
+          >
+            📖 Cosmopolite
+          </a>
+
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link 

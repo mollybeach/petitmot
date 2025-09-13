@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { Lesson } from '@/lib/data/phrases';
 import PhraseCard from './PhraseCard';
+import GrammarModal from './GrammarModal';
+import { useGrammarModal } from '@/hooks/useGrammarModal';
 
 interface LessonPageProps {
   lesson: Lesson;
@@ -10,6 +12,7 @@ interface LessonPageProps {
 
 export default function LessonPage({ lesson }: LessonPageProps) {
   const [isFormal, setIsFormal] = useState(false);
+  const { isOpen, modalData, openModal, closeModal } = useGrammarModal();
 
   // Check if any phrases have formal versions
   const hasFormalVersions = lesson.phrases.some(phrase => phrase.formal);
@@ -58,6 +61,7 @@ export default function LessonPage({ lesson }: LessonPageProps) {
               key={phrase.id} 
               phrase={phrase} 
               isFormal={isFormal}
+              onOpenGrammar={openModal}
             />
           ))}
         </div>
@@ -69,6 +73,17 @@ export default function LessonPage({ lesson }: LessonPageProps) {
           </p>
         </div>
       </div>
+
+      {/* Grammar Modal */}
+      {modalData && (
+        <GrammarModal
+          isOpen={isOpen}
+          onClose={closeModal}
+          title={modalData.title}
+          type={modalData.type}
+          data={modalData.data}
+        />
+      )}
     </div>
   );
 }

@@ -1807,11 +1807,238 @@ export const lessonGroups: LessonGroup[] = [
       }
     ]
   },
-  {
-    id: "french-numbers",
-    title: "French Numbers",
-    description: "Learn to count and pronounce numbers in French",
-    phrases: [
+      {
+        id: "invitation-document",
+        title: "Invitation Document",
+        description: "Learn vocabulary from an embassy invitation and practice reading comprehension",
+        phrases: [
+          {
+            id: "embassy",
+            french: "une ambassade",
+            english: "an embassy",
+            category: "places",
+            emoji: "🏛️"
+          },
+          {
+            id: "invitation",
+            french: "une invitation",
+            english: "an invitation",
+            category: "events",
+            emoji: "💌"
+          },
+          {
+            id: "children-rights-day",
+            french: "Journée internationale des droits de l'enfant",
+            english: "International Children's Rights Day",
+            category: "events",
+            emoji: "🧒🌍"
+          },
+          {
+            id: "identity",
+            french: "une identité",
+            english: "an identity",
+            category: "personal",
+            emoji: "🆔"
+          },
+          {
+            id: "nationality",
+            french: "une nationalité",
+            english: "a nationality",
+            category: "personal",
+            emoji: "🌍"
+          },
+          {
+            id: "cocktail",
+            french: "un cocktail",
+            english: "a cocktail",
+            category: "events",
+            emoji: "🍹"
+          },
+          {
+            id: "meetings",
+            french: "des rencontres",
+            english: "meetings",
+            category: "events",
+            emoji: "🤝"
+          },
+          {
+            id: "professionals",
+            french: "des professionnels",
+            english: "professionals",
+            category: "people",
+            emoji: "👔"
+          },
+          {
+            id: "rights",
+            french: "des droits",
+            english: "rights",
+            category: "concepts",
+            emoji: "⚖️"
+          },
+          {
+            id: "people",
+            french: "des personnes",
+            english: "people",
+            category: "people",
+            emoji: "👥"
+          }
+        ]
+      },
+      {
+        id: "indefinite-articles-practice",
+        title: "Indefinite Articles Practice",
+        description: "Practice using un, une, des with masculine, feminine, and plural nouns",
+        phrases: [
+          {
+            id: "un-nom",
+            french: "un nom",
+            english: "a name (masculine)",
+            category: "articles",
+            emoji: "📝"
+          },
+          {
+            id: "un-prenom",
+            french: "un prénom",
+            english: "a first name (masculine)",
+            category: "articles",
+            emoji: "✏️"
+          },
+          {
+            id: "un-cocktail",
+            french: "un cocktail",
+            english: "a cocktail (masculine)",
+            category: "articles",
+            emoji: "🍹"
+          },
+          {
+            id: "une-nationalite",
+            french: "une nationalité",
+            english: "a nationality (feminine)",
+            category: "articles",
+            emoji: "🌍"
+          },
+          {
+            id: "une-invitation",
+            french: "une invitation",
+            english: "an invitation (feminine)",
+            category: "articles",
+            emoji: "💌"
+          },
+          {
+            id: "une-identite",
+            french: "une identité",
+            english: "an identity (feminine)",
+            category: "articles",
+            emoji: "🆔"
+          },
+          {
+            id: "des-droits",
+            french: "des droits",
+            english: "some rights (plural)",
+            category: "articles",
+            emoji: "⚖️"
+          },
+          {
+            id: "des-professionnels",
+            french: "des professionnels",
+            english: "some professionals (plural)",
+            category: "articles",
+            emoji: "👔"
+          },
+          {
+            id: "des-personnes",
+            french: "des personnes",
+            english: "some people (plural)",
+            category: "articles",
+            emoji: "👥"
+          },
+          {
+            id: "des-rencontres",
+            french: "des rencontres",
+            english: "some meetings (plural)",
+            category: "articles",
+            emoji: "🤝"
+          }
+        ]
+      },
+      {
+        id: "conversation-practice",
+        title: "Conversation Practice",
+        description: "Practice formal and informal greetings, introductions, and farewells",
+        phrases: [
+          {
+            id: "greeting-formal",
+            french: "Bonjour, comment allez-vous ?",
+            english: "Hello, how are you? (formal)",
+            category: "greetings",
+            emoji: "👋",
+            formal: {
+              french: "Bonjour, comment allez-vous ?",
+              english: "Hello, how are you? (formal)"
+            }
+          },
+          {
+            id: "greeting-informal",
+            french: "Salut, ça va ?",
+            english: "Hi, how's it going? (informal)",
+            category: "greetings",
+            emoji: "👋😊",
+            formal: {
+              french: "Bonjour, comment allez-vous ?",
+              english: "Hello, how are you? (formal)"
+            }
+          },
+          {
+            id: "introduction-formal",
+            french: "Je me présente : je m'appelle [nom], [prénom]",
+            english: "Let me introduce myself: my name is [last name], [first name] (formal)",
+            category: "introductions",
+            emoji: "👤📝",
+            formal: {
+              french: "Je me présente : je m'appelle [nom], [prénom]",
+              english: "Let me introduce myself: my name is [last name], [first name] (formal)"
+            }
+          },
+          {
+            id: "introduction-informal",
+            french: "Moi, c'est [prénom]",
+            english: "I'm [first name] (informal)",
+            category: "introductions",
+            emoji: "👤😊",
+            formal: {
+              french: "Je me présente : je m'appelle [nom], [prénom]",
+              english: "Let me introduce myself: my name is [last name], [first name] (formal)"
+            }
+          },
+          {
+            id: "farewell-formal",
+            french: "Au revoir, bonne journée",
+            english: "Goodbye, have a good day (formal)",
+            category: "farewells",
+            emoji: "👋☀️",
+            formal: {
+              french: "Au revoir, bonne journée",
+              english: "Goodbye, have a good day (formal)"
+            }
+          },
+          {
+            id: "farewell-informal",
+            french: "À plus !",
+            english: "See you later! (informal)",
+            category: "farewells",
+            emoji: "👋⏰",
+            formal: {
+              french: "Au revoir, bonne journée",
+              english: "Goodbye, have a good day (formal)"
+            }
+          }
+        ]
+      },
+      {
+        id: "french-numbers",
+        title: "French Numbers",
+        description: "Learn to count and pronounce numbers in French",
+        phrases: [
       {
         id: "number-0",
         french: "zéro",

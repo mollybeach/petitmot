@@ -3,13 +3,36 @@
 import { useState } from 'react';
 import { FrenchPhrase } from '@/lib/data/phrases';
 import { speechService } from '@/lib/utils/speech';
+import { 
+  verbConjugations, 
+  articleData, 
+  pronounData, 
+  nounGenderData, 
+  prepositionData,
+  daysData,
+  monthsData,
+  timeData,
+  familyData,
+  directionsData,
+  colorsData,
+  lettersData,
+  soundsData,
+  numbersData,
+  languagesData,
+  maritalData,
+  eventsData,
+  peopleData,
+  conceptsData,
+  introductionsData
+} from '@/lib/data/grammar';
 
 interface PhraseCardProps {
   phrase: FrenchPhrase;
   isFormal?: boolean;
+  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions', data: unknown) => void;
 }
 
-export default function PhraseCard({ phrase, isFormal = false }: PhraseCardProps) {
+export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: PhraseCardProps) {
   const [speakingStates, setSpeakingStates] = useState<{ [key: string]: boolean }>({});
   const [speechError, setSpeechError] = useState<string | null>(null);
 
@@ -45,6 +68,108 @@ export default function PhraseCard({ phrase, isFormal = false }: PhraseCardProps
     } finally {
       setSpeakingStates(prev => ({ ...prev, [buttonId]: false }));
     }
+  };
+
+  const handleGrammarClick = () => {
+    if (!onOpenGrammar) return;
+
+    switch (phrase.category) {
+      case 'verbs':
+        // Find the verb in our conjugations data
+        const verbKey = Object.keys(verbConjugations).find(key => 
+          phrase.french.toLowerCase().includes(key.toLowerCase())
+        ) as keyof typeof verbConjugations;
+        if (verbKey) {
+          onOpenGrammar(`Verb: ${verbConjugations[verbKey].infinitive}`, 'verb-conjugation', verbConjugations[verbKey]);
+        }
+        break;
+      case 'articles':
+        onOpenGrammar('Indefinite Articles', 'articles', articleData.indefinite);
+        break;
+      case 'prepositions':
+        onOpenGrammar('Prepositions', 'prepositions', prepositionData);
+        break;
+      case 'places':
+      case 'transportation':
+        // For places and transportation, detect gender based on article
+        if (phrase.french.includes('une ')) {
+          onOpenGrammar('Feminine Nouns', 'noun-gender', nounGenderData.feminine);
+        } else {
+          onOpenGrammar('Masculine Nouns', 'noun-gender', nounGenderData.masculine);
+        }
+        break;
+      case 'personal':
+        onOpenGrammar('Subject Pronouns', 'pronouns', pronounData.subject);
+        break;
+      case 'greetings':
+      case 'farewells':
+        onOpenGrammar('Subject Pronouns', 'pronouns', pronounData.subject);
+        break;
+      case 'countries':
+        // For countries, show both masculine and feminine rules
+        if (phrase.french.includes('le ')) {
+          onOpenGrammar('Masculine Countries', 'noun-gender', nounGenderData.masculine);
+        } else if (phrase.french.includes('la ')) {
+          onOpenGrammar('Feminine Countries', 'noun-gender', nounGenderData.feminine);
+        } else {
+          onOpenGrammar('Country Gender Rules', 'noun-gender', nounGenderData.masculine);
+        }
+        break;
+      case 'days':
+        onOpenGrammar('Days of the Week', 'days', daysData);
+        break;
+      case 'months':
+        onOpenGrammar('Months of the Year', 'months', monthsData);
+        break;
+      case 'time':
+        onOpenGrammar('Time Expressions', 'time', timeData);
+        break;
+      case 'family':
+        onOpenGrammar('Family Members', 'family', familyData);
+        break;
+      case 'directions':
+        onOpenGrammar('Directions', 'directions', directionsData);
+        break;
+      case 'colors':
+        onOpenGrammar('Colors', 'colors', colorsData);
+        break;
+      case 'letters':
+        onOpenGrammar('French Alphabet', 'letters', lettersData);
+        break;
+      case 'sounds':
+        onOpenGrammar('French Sounds', 'sounds', soundsData);
+        break;
+      case 'numbers':
+        onOpenGrammar('French Numbers', 'numbers', numbersData);
+        break;
+      case 'languages':
+        onOpenGrammar('Languages', 'languages', languagesData);
+        break;
+      case 'marital':
+        onOpenGrammar('Marital Status', 'marital', maritalData);
+        break;
+      case 'events':
+        onOpenGrammar('Events', 'events', eventsData);
+        break;
+      case 'people':
+        onOpenGrammar('People', 'people', peopleData);
+        break;
+      case 'concepts':
+        onOpenGrammar('Concepts', 'concepts', conceptsData);
+        break;
+      case 'introductions':
+        onOpenGrammar('Introduction Phrases', 'introductions', introductionsData);
+        break;
+      default:
+        // For other categories, show subject pronouns as default
+        onOpenGrammar('Subject Pronouns', 'pronouns', pronounData.subject);
+        break;
+    }
+  };
+
+  const shouldShowGrammarButton = () => {
+    // Show grammar button for ALL categories
+    return true;
   };
 
 
@@ -101,6 +226,21 @@ export default function PhraseCard({ phrase, isFormal = false }: PhraseCardProps
           ))}
         </div>
 
+
+        {/* Grammar Button */}
+        {shouldShowGrammarButton() && onOpenGrammar && (
+          <div className="text-center mt-4">
+            <button
+              onClick={handleGrammarClick}
+              className="btn-french-secondary inline-flex items-center px-4 py-2"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Grammar
+            </button>
+          </div>
+        )}
 
         {/* Error Message */}
         {speechError && (
