@@ -2067,12 +2067,111 @@ export const lessonGroups: LessonGroup[] = [
   }
 ]
 },
-{
-  id:"lesson_2",
-  title: "Lesson 2",
-  description: "Day two lesson",
-  lessons: []
-}
+  {
+    id:"lesson_2",
+    title: "Lesson 2",
+    description: "Where does it happen? Transportation vocabulary and asking for information",
+    lessons: [
+      {
+        id: "transportation-vocabulary",
+        title: "Transportation Vocabulary",
+        description: "Learn transportation vocabulary and locations",
+        phrases: [
+          {
+            id: "airport",
+            french: "un aéroport",
+            english: "an airport",
+            category: "transportation",
+            emoji: "✈️"
+          },
+          {
+            id: "bus-station",
+            french: "une gare routière",
+            english: "a bus station",
+            category: "transportation",
+            emoji: "🚌"
+          },
+          {
+            id: "road",
+            french: "une route",
+            english: "a road",
+            category: "transportation",
+            emoji: "🛣️"
+          },
+          {
+            id: "train-station",
+            french: "une gare",
+            english: "a train station",
+            category: "transportation",
+            emoji: "🚉"
+          }
+        ]
+      },
+      {
+        id: "question-words",
+        title: "Question Words",
+        description: "Learn to ask questions with Où? Qui? Quand? Quoi?",
+        phrases: [
+          {
+            id: "where",
+            french: "Où ?",
+            english: "Where?",
+            category: "questions",
+            emoji: "📍"
+          },
+          {
+            id: "who",
+            french: "Qui ?",
+            english: "Who?",
+            category: "questions",
+            emoji: "👤"
+          },
+          {
+            id: "when",
+            french: "Quand ?",
+            english: "When?",
+            category: "questions",
+            emoji: "⏰"
+          },
+          {
+            id: "what",
+            french: "Quoi ?",
+            english: "What?",
+            category: "questions",
+            emoji: "❓"
+          }
+        ]
+      },
+      {
+        id: "asking-for-information",
+        title: "Asking for Information",
+        description: "Learn to ask for information politely",
+        phrases: [
+          {
+            id: "i-would-like-ticket",
+            french: "Je voudrais un billet d'avion pour Nice, s'il vous plaît.",
+            english: "I would like a plane ticket to Nice, please.",
+            category: "requests",
+            emoji: "✈️🎫"
+          },
+          {
+            id: "excuse-me-train",
+            french: "Pardon Monsieur, le train pour Berlin, c'est bien ici ?",
+            english: "Excuse me sir, is the train to Berlin here?",
+            category: "requests",
+            emoji: "🚂❓"
+          },
+          {
+            id: "excuse-me-bus",
+            french: "Excusez-moi Monsieur, c'est le bus pour Toulouse ?",
+            english: "Excuse me sir, is this the bus to Toulouse?",
+            category: "requests",
+            emoji: "🚌❓"
+          }
+        ]
+      }
+    ]
+  }
 ]
 
 // Export all lessons as a flat array for backward compatibility
