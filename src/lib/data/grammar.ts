@@ -1115,3 +1115,82 @@ export const verbEtrePracticeData = {
     'Nationality': 'Nationalities are adjectives that agree with gender'
   }
 };
+
+// Lesson 3 - Francophone Program
+export const francophoneProgramData = {
+  type: 'francophone-program',
+  program: 'La francophonie du Nord au Sud',
+  artists: {
+    'Slimane Ould Mohand': 'peintre algérien (Algerian painter)',
+    'Pierre Ravach': 'réalisateur (director)',
+    'Xavier Dolan': 'acteur (actor)',
+    'Gemma Arterton': 'actrice anglaise (English actress)',
+    'Saidou Abatcha': 'humoriste (comedian)',
+    'Maurane': 'chanteuse belge (Belgian singer)'
+  },
+  events: {
+    'Jeudi - Exposition': 'Thursday - Exhibition',
+    'Vendredi - Cinéma': 'Friday - Cinema',
+    'Samedi - Spectacle d\'humour': 'Saturday - Comedy show',
+    'Dimanche - Concert': 'Sunday - Concert'
+  },
+  culturalGroups: {
+    'Orchestre national symphonique du Vietnam': 'Vietnam National Symphony Orchestra',
+    'Orchestre national de Barbès': 'Barbès National Orchestra (Algerian group)'
+  },
+  rules: {
+    'Artist Identification': 'Name + profession + nationality (Maurane, chanteuse belge)',
+    'Cultural Diversity': 'Francophone events include artists from many countries',
+    'Program Structure': 'Events organized by days of the week',
+    'Profession + Nationality': 'Learn to describe people by their work and origin'
+  }
+};
+
+// Lesson 3 - Profession Sentences with ÊTRE
+export const professionSentencesData = {
+  type: 'profession-sentences',
+  verb: 'être',
+  meaning: 'to be',
+  conjugations: {
+    'Je suis': 'I am',
+    'Tu es': 'You are (informal)',
+    'Il est': 'He is',
+    'Elle est': 'She is',
+    'Nous sommes': 'We are',
+    'Vous êtes': 'You are (formal/plural)',
+    'Ils sont': 'They are (masculine)',
+    'Elles sont': 'They are (feminine)'
+  },
+  negativeConjugations: {
+    'Je ne suis pas': 'I am not',
+    'Tu n\'es pas': 'You are not (informal)',
+    'Il n\'est pas': 'He is not',
+    'Elle n\'est pas': 'She is not',
+    'Nous ne sommes pas': 'We are not',
+    'Vous n\'êtes pas': 'You are not (formal/plural)',
+    'Ils ne sont pas': 'They are not (masculine)',
+    'Elles ne sont pas': 'They are not (feminine)'
+  },
+  professionExamples: {
+    'Je suis comédien/comédienne': 'I am an actor/comedian',
+    'Tu es électricien/électricienne': 'You are an electrician',
+    'Il est acteur': 'He is an actor',
+    'Elle est actrice': 'She is an actress',
+    'Il est producteur': 'He is a producer',
+    'Elle est productrice': 'She is a producer',
+    'Nous sommes instituteurs': 'We are teachers',
+    'Vous êtes chanteurs': 'You are singers',
+    'Ils sont coiffeurs': 'They are hairdressers (masculine)',
+    'Elles sont coiffeuses': 'They are hairdressers (feminine)',
+    'Nous sommes comédiens': 'We are comedians',
+    'Ils sont producteurs': 'They are producers'
+  },
+  rules: {
+    'Verb Agreement': 'ÊTRE conjugates with the subject pronoun',
+    'Gender Agreement': 'Professions agree with the person\'s gender',
+    'Plural Agreement': 'Add -s for plural professions (instituteurs)',
+    'Negation': 'Use ne...pas around the verb (Je ne suis pas)',
+    'Formal vs Informal': 'Tu/Vous changes the verb form (tu es / vous êtes)',
+    'Profession Usage': 'No article needed after être + profession (Je suis acteur)'
+  }
+};

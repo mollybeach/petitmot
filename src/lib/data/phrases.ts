@@ -3741,6 +3741,378 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "✅🎬"
           }
         ]
+      },
+      {
+        id: "francophone-program",
+        title: "Francophone Cultural Program",
+        description: "Learn about francophone artists and their professions/nationalities from a cultural program",
+        phrases: [
+          {
+            id: "slimane-ould-mohand",
+            french: "Slimane Ould Mohand, peintre algérien",
+            english: "Slimane Ould Mohand, Algerian painter",
+            category: "francophone-program",
+            emoji: "🎨🇩🇿"
+          },
+          {
+            id: "pierre-ravach-director",
+            french: "Pierre Ravach, réalisateur",
+            english: "Pierre Ravach, director",
+            category: "francophone-program",
+            emoji: "🎬🇫🇷"
+          },
+          {
+            id: "vietnamese-musician-film",
+            french: "« Haï, parcours d'un musicien vietnamien »",
+            english: "\"Haï, journey of a Vietnamese musician\"",
+            category: "francophone-program",
+            emoji: "🎵🇻🇳"
+          },
+          {
+            id: "xavier-dolan-actor",
+            french: "Xavier Dolan, acteur",
+            english: "Xavier Dolan, actor",
+            category: "francophone-program",
+            emoji: "🎭🇨🇦"
+          },
+          {
+            id: "gemma-arterton-actress",
+            french: "Gemma Arterton, actrice anglaise",
+            english: "Gemma Arterton, English actress",
+            category: "francophone-program",
+            emoji: "🎭🇬🇧"
+          },
+          {
+            id: "saidou-abatcha-comedian",
+            french: "Saidou Abatcha, humoriste",
+            english: "Saidou Abatcha, comedian",
+            category: "francophone-program",
+            emoji: "😂🌍"
+          },
+          {
+            id: "vietnam-orchestra",
+            french: "Orchestre national symphonique du Vietnam",
+            english: "Vietnam National Symphony Orchestra",
+            category: "francophone-program",
+            emoji: "🎼🇻🇳"
+          },
+          {
+            id: "to-hai-tribute",
+            french: "Hommage à Tô Hai",
+            english: "Tribute to Tô Hai",
+            category: "francophone-program",
+            emoji: "🎵💐"
+          },
+          {
+            id: "barbes-orchestra",
+            french: "Orchestre national de Barbès, groupe algérien",
+            english: "Barbès National Orchestra, Algerian group",
+            category: "francophone-program",
+            emoji: "🎶🇩🇿"
+          },
+          {
+            id: "maurane-singer",
+            french: "Maurane, chanteuse belge",
+            english: "Maurane, Belgian singer",
+            category: "francophone-program",
+            emoji: "🎤🇧🇪"
+          },
+          {
+            id: "thursday-exposition",
+            french: "Jeudi - Exposition",
+            english: "Thursday - Exhibition",
+            category: "francophone-program",
+            emoji: "📅🎨"
+          },
+          {
+            id: "friday-cinema",
+            french: "Vendredi - Cinéma",
+            english: "Friday - Cinema",
+            category: "francophone-program",
+            emoji: "📅🎬"
+          },
+          {
+            id: "saturday-comedy",
+            french: "Samedi - Spectacle d'humour",
+            english: "Saturday - Comedy show",
+            category: "francophone-program",
+            emoji: "📅😂"
+          },
+          {
+            id: "sunday-concert",
+            french: "Dimanche - Concert de musiques actuelles",
+            english: "Sunday - Contemporary music concert",
+            category: "francophone-program",
+            emoji: "📅🎵"
+          }
+        ]
+      },
+      {
+        id: "profession-sentences-etre",
+        title: "Profession Sentences with ÊTRE",
+        description: "Practice using professions in complete sentences with all pronouns (je, tu, il/elle, nous, vous, ils/elles)",
+        phrases: [
+          {
+            id: "i-am-comedian",
+            french: "Je suis comédien/comédienne",
+            english: "I am an actor/comedian",
+            category: "profession-sentences",
+            emoji: "🎭",
+            formal: {
+              french: "Je suis comédienne",
+              english: "I am an actress/comedian (feminine)"
+            }
+          },
+          {
+            id: "you-are-electrician",
+            french: "Tu es électricien/électricienne",
+            english: "You are an electrician",
+            category: "profession-sentences",
+            emoji: "⚡",
+            formal: {
+              french: "Vous êtes électricien/électricienne",
+              english: "You are an electrician (formal)"
+            }
+          },
+          {
+            id: "he-is-actor",
+            french: "Il est acteur",
+            english: "He is an actor",
+            category: "profession-sentences",
+            emoji: "🎬"
+          },
+          {
+            id: "she-is-actress",
+            french: "Elle est actrice",
+            english: "She is an actress",
+            category: "profession-sentences",
+            emoji: "🎬"
+          },
+          {
+            id: "we-are-teachers",
+            french: "Nous sommes instituteurs/institutrices",
+            english: "We are elementary teachers",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫"
+          },
+          {
+            id: "you-plural-are-singers",
+            french: "Vous êtes chanteurs/chanteuses",
+            english: "You (plural) are singers",
+            category: "profession-sentences",
+            emoji: "🎤"
+          },
+          {
+            id: "they-masculine-are-hairdressers",
+            french: "Ils sont coiffeurs",
+            english: "They (masculine) are hairdressers",
+            category: "profession-sentences",
+            emoji: "💇‍♂️"
+          },
+          {
+            id: "they-feminine-are-hairdressers",
+            french: "Elles sont coiffeuses",
+            english: "They (feminine) are hairdressers",
+            category: "profession-sentences",
+            emoji: "💇‍♀️"
+          },
+          {
+            id: "i-am-nurse",
+            french: "Je suis infirmier/infirmière",
+            english: "I am a nurse",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️",
+            formal: {
+              french: "Je suis infirmière",
+              english: "I am a nurse (feminine)"
+            }
+          },
+          {
+            id: "you-are-baker",
+            french: "Tu es boulanger/boulangère",
+            english: "You are a baker",
+            category: "profession-sentences",
+            emoji: "🥖",
+            formal: {
+              french: "Vous êtes boulanger/boulangère",
+              english: "You are a baker (formal)"
+            }
+          },
+          {
+            id: "he-is-journalist",
+            french: "Il est journaliste",
+            english: "He is a journalist",
+            category: "profession-sentences",
+            emoji: "📰"
+          },
+          {
+            id: "she-is-journalist",
+            french: "Elle est journaliste",
+            english: "She is a journalist",
+            category: "profession-sentences",
+            emoji: "📰"
+          },
+          {
+            id: "we-are-veterinarians",
+            french: "Nous sommes vétérinaires",
+            english: "We are veterinarians",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️🐕"
+          },
+          {
+            id: "you-plural-are-software-engineers",
+            french: "Vous êtes ingénieurs logiciel",
+            english: "You (plural) are software engineers",
+            category: "profession-sentences",
+            emoji: "👨‍💻"
+          },
+          {
+            id: "they-masculine-are-software-engineers",
+            french: "Ils sont ingénieurs logiciel",
+            english: "They (masculine) are software engineers",
+            category: "profession-sentences",
+            emoji: "👨‍💻"
+          },
+          {
+            id: "they-feminine-are-software-engineers",
+            french: "Elles sont ingénieures logiciel",
+            english: "They (feminine) are software engineers",
+            category: "profession-sentences",
+            emoji: "👩‍💻"
+          },
+          {
+            id: "i-am-not-actor",
+            french: "Je ne suis pas acteur/actrice",
+            english: "I am not an actor/actress",
+            category: "profession-sentences",
+            emoji: "🎬❌"
+          },
+          {
+            id: "you-are-not-singer",
+            french: "Tu n'es pas chanteur/chanteuse",
+            english: "You are not a singer",
+            category: "profession-sentences",
+            emoji: "🎤❌",
+            formal: {
+              french: "Vous n'êtes pas chanteur/chanteuse",
+              english: "You are not a singer (formal)"
+            }
+          },
+          {
+            id: "we-are-not-electricians",
+            french: "Nous ne sommes pas électriciens/électriciennes",
+            english: "We are not electricians",
+            category: "profession-sentences",
+            emoji: "⚡❌"
+          },
+          {
+            id: "they-are-not-bakers",
+            french: "Ils/Elles ne sont pas boulangers/boulangères",
+            english: "They are not bakers",
+            category: "profession-sentences",
+            emoji: "🥖❌"
+          },
+          {
+            id: "i-am-producer",
+            french: "Je suis producteur/productrice",
+            english: "I am a producer",
+            category: "profession-sentences",
+            emoji: "🎬📺",
+            formal: {
+              french: "Je suis productrice",
+              english: "I am a producer (feminine)"
+            }
+          },
+          {
+            id: "you-are-producer",
+            french: "Tu es producteur/productrice",
+            english: "You are a producer",
+            category: "profession-sentences",
+            emoji: "🎬📺",
+            formal: {
+              french: "Vous êtes producteur/productrice",
+              english: "You are a producer (formal)"
+            }
+          },
+          {
+            id: "he-is-producer",
+            french: "Il est producteur",
+            english: "He is a producer",
+            category: "profession-sentences",
+            emoji: "🎬📺"
+          },
+          {
+            id: "she-is-producer",
+            french: "Elle est productrice",
+            english: "She is a producer",
+            category: "profession-sentences",
+            emoji: "🎬📺"
+          },
+          {
+            id: "we-are-producers",
+            french: "Nous sommes producteurs/productrices",
+            english: "We are producers",
+            category: "profession-sentences",
+            emoji: "🎬📺"
+          },
+          {
+            id: "they-are-producers",
+            french: "Ils/Elles sont producteurs/productrices",
+            english: "They are producers",
+            category: "profession-sentences",
+            emoji: "🎬📺"
+          },
+          {
+            id: "i-am-comedian-sentence",
+            french: "Je suis comédien/comédienne",
+            english: "I am a comedian",
+            category: "profession-sentences",
+            emoji: "😂🎭",
+            formal: {
+              french: "Je suis comédienne",
+              english: "I am a comedian (feminine)"
+            }
+          },
+          {
+            id: "you-are-comedian",
+            french: "Tu es comédien/comédienne",
+            english: "You are a comedian",
+            category: "profession-sentences",
+            emoji: "😂🎭",
+            formal: {
+              french: "Vous êtes comédien/comédienne",
+              english: "You are a comedian (formal)"
+            }
+          },
+          {
+            id: "he-is-comedian",
+            french: "Il est comédien",
+            english: "He is a comedian",
+            category: "profession-sentences",
+            emoji: "😂🎭"
+          },
+          {
+            id: "she-is-comedian",
+            french: "Elle est comédienne",
+            english: "She is a comedian",
+            category: "profession-sentences",
+            emoji: "😂🎭"
+          },
+          {
+            id: "we-are-comedians",
+            french: "Nous sommes comédiens/comédiennes",
+            english: "We are comedians",
+            category: "profession-sentences",
+            emoji: "😂🎭"
+          },
+          {
+            id: "they-are-comedians",
+            french: "Ils/Elles sont comédiens/comédiennes",
+            english: "They are comedians",
+            category: "profession-sentences",
+            emoji: "😂🎭"
+          }
+        ]
       }
     ]
   }
