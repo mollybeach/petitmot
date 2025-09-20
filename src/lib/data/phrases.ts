@@ -4174,6 +4174,300 @@ export const lessonGroups: LessonGroup[] = [
             english: "They are comedians",
             category: "profession-sentences",
             emoji: "😂🎭"
+          },
+          {
+            id: "i-am-server",
+            french: "Je suis serveur/serveuse",
+            english: "I am a server",
+            category: "profession-sentences",
+            emoji: "🍽️"
+          },
+          {
+            id: "you-are-server",
+            french: "Tu es serveur/serveuse",
+            english: "You are a server",
+            category: "profession-sentences",
+            emoji: "🍽️"
+          },
+          {
+            id: "he-is-server",
+            french: "Il est serveur",
+            english: "He is a server",
+            category: "profession-sentences",
+            emoji: "🍽️👨"
+          },
+          {
+            id: "she-is-server",
+            french: "Elle est serveuse",
+            english: "She is a server",
+            category: "profession-sentences",
+            emoji: "🍽️👩"
+          },
+          {
+            id: "we-are-servers",
+            french: "Nous sommes serveurs/serveuses",
+            english: "We are servers",
+            category: "profession-sentences",
+            emoji: "🍽️👥"
+          },
+          {
+            id: "you-plural-are-servers",
+            french: "Vous êtes serveurs/serveuses",
+            english: "You (plural) are servers",
+            category: "profession-sentences",
+            emoji: "🍽️👥"
+          },
+          {
+            id: "they-are-servers",
+            french: "Ils/Elles sont serveurs/serveuses",
+            english: "They are servers",
+            category: "profession-sentences",
+            emoji: "🍽️👥"
+          },
+          {
+            id: "i-am-not-server",
+            french: "Je ne suis pas serveur/serveuse",
+            english: "I am not a server",
+            category: "profession-sentences",
+            emoji: "🍽️❌"
+          },
+          {
+            id: "we-are-not-servers",
+            french: "Nous ne sommes pas serveurs/serveuses",
+            english: "We are not servers",
+            category: "profession-sentences",
+            emoji: "🍽️❌👥"
+          },
+          {
+            id: "i-am-baker",
+            french: "Je suis boulanger/boulangère",
+            english: "I am a baker",
+            category: "profession-sentences",
+            emoji: "🥖"
+          },
+          {
+            id: "he-is-baker",
+            french: "Il est boulanger",
+            english: "He is a baker",
+            category: "profession-sentences",
+            emoji: "🥖👨"
+          },
+          {
+            id: "she-is-baker",
+            french: "Elle est boulangère",
+            english: "She is a baker",
+            category: "profession-sentences",
+            emoji: "🥖👩"
+          },
+          {
+            id: "we-are-bakers",
+            french: "Nous sommes boulangers/boulangères",
+            english: "We are bakers",
+            category: "profession-sentences",
+            emoji: "🥖👥"
+          },
+          {
+            id: "you-plural-are-bakers",
+            french: "Vous êtes boulangers/boulangères",
+            english: "You (plural) are bakers",
+            category: "profession-sentences",
+            emoji: "🥖👥"
+          },
+          {
+            id: "they-are-bakers",
+            french: "Ils/Elles sont boulangers/boulangères",
+            english: "They are bakers",
+            category: "profession-sentences",
+            emoji: "🥖👥"
+          },
+          {
+            id: "you-are-not-baker",
+            french: "Tu n'es pas boulanger/boulangère",
+            english: "You are not a baker",
+            category: "profession-sentences",
+            emoji: "🥖❌"
+          },
+          {
+            id: "i-am-doctor",
+            french: "Je suis docteur/docteure",
+            english: "I am a doctor",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️"
+          },
+          {
+            id: "you-are-doctor",
+            french: "Tu es docteur/docteure",
+            english: "You are a doctor",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️"
+          },
+          {
+            id: "he-is-doctor",
+            french: "Il est docteur",
+            english: "He is a doctor",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️"
+          },
+          {
+            id: "she-is-doctor",
+            french: "Elle est docteure",
+            english: "She is a doctor",
+            category: "profession-sentences",
+            emoji: "👩‍⚕️"
+          },
+          {
+            id: "we-are-doctors",
+            french: "Nous sommes docteurs/docteures",
+            english: "We are doctors",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️👥"
+          },
+          {
+            id: "you-plural-are-doctors",
+            french: "Vous êtes docteurs/docteures",
+            english: "You (plural) are doctors",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️👥"
+          },
+          {
+            id: "they-are-doctors",
+            french: "Ils/Elles sont docteurs/docteures",
+            english: "They are doctors",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️👥"
+          },
+          {
+            id: "i-am-not-doctor",
+            french: "Je ne suis pas docteur/docteure",
+            english: "I am not a doctor",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️❌"
+          },
+          {
+            id: "we-are-not-doctors",
+            french: "Nous ne sommes pas docteurs/docteures",
+            english: "We are not doctors",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️❌👥"
+          },
+          {
+            id: "you-are-nurse",
+            french: "Tu es infirmier/infirmière",
+            english: "You are a nurse",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️"
+          },
+          {
+            id: "he-is-nurse",
+            french: "Il est infirmier",
+            english: "He is a nurse",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️"
+          },
+          {
+            id: "she-is-nurse",
+            french: "Elle est infirmière",
+            english: "She is a nurse",
+            category: "profession-sentences",
+            emoji: "👩‍⚕️"
+          },
+          {
+            id: "we-are-nurses",
+            french: "Nous sommes infirmiers/infirmières",
+            english: "We are nurses",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️👥"
+          },
+          {
+            id: "you-plural-are-nurses",
+            french: "Vous êtes infirmiers/infirmières",
+            english: "You (plural) are nurses",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️👥"
+          },
+          {
+            id: "they-are-nurses",
+            french: "Ils/Elles sont infirmiers/infirmières",
+            english: "They are nurses",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️👥"
+          },
+          {
+            id: "you-are-not-nurse",
+            french: "Tu n'es pas infirmier/infirmière",
+            english: "You are not a nurse",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️❌"
+          },
+          {
+            id: "they-are-not-nurses",
+            french: "Ils/Elles ne sont pas infirmiers/infirmières",
+            english: "They are not nurses",
+            category: "profession-sentences",
+            emoji: "👨‍⚕️👩‍⚕️❌👥"
+          },
+          {
+            id: "i-am-teacher-enseignant",
+            french: "Je suis enseignant/enseignante",
+            english: "I am a teacher",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫"
+          },
+          {
+            id: "you-are-teacher-enseignant",
+            french: "Tu es enseignant/enseignante",
+            english: "You are a teacher",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫"
+          },
+          {
+            id: "he-is-teacher-enseignant",
+            french: "Il est enseignant",
+            english: "He is a teacher",
+            category: "profession-sentences",
+            emoji: "👨‍🏫"
+          },
+          {
+            id: "she-is-teacher-enseignante",
+            french: "Elle est enseignante",
+            english: "She is a teacher",
+            category: "profession-sentences",
+            emoji: "👩‍🏫"
+          },
+          {
+            id: "we-are-teachers-enseignants",
+            french: "Nous sommes enseignants/enseignantes",
+            english: "We are teachers",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫👥"
+          },
+          {
+            id: "you-plural-are-teachers-enseignants",
+            french: "Vous êtes enseignants/enseignantes",
+            english: "You (plural) are teachers",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫👥"
+          },
+          {
+            id: "they-are-teachers-enseignants",
+            french: "Ils/Elles sont enseignants/enseignantes",
+            english: "They are teachers",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫👥"
+          },
+          {
+            id: "i-am-not-teacher-enseignant",
+            french: "Je ne suis pas enseignant/enseignante",
+            english: "I am not a teacher",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫❌"
+          },
+          {
+            id: "we-are-not-teachers-enseignants",
+            french: "Nous ne sommes pas enseignants/enseignantes",
+            english: "We are not teachers",
+            category: "profession-sentences",
+            emoji: "👨‍🏫👩‍🏫❌👥"
           }
         ]
       },
@@ -4483,6 +4777,34 @@ export const lessonGroups: LessonGroup[] = [
             english: "I was in France for a hackathon in July",
             category: "personal-conversation-l3",
             emoji: "🇫🇷💻"
+          },
+          {
+            id: "i-am-american",
+            french: "Je suis américain/américaine",
+            english: "I am American",
+            category: "personal-conversation-l3",
+            emoji: "🇺🇸"
+          },
+          {
+            id: "my-last-name-is-beach",
+            french: "Mon nom de famille est Beach",
+            english: "My last name is Beach",
+            category: "personal-conversation-l3",
+            emoji: "🏖️"
+          },
+          {
+            id: "my-first-name-is-molly",
+            french: "Mon prénom est Molly",
+            english: "My first name is Molly",
+            category: "personal-conversation-l3",
+            emoji: "👋"
+          },
+          {
+            id: "i-am-american-software-engineer",
+            french: "Je suis américaine et ingénieure logiciel",
+            english: "I am American and a software engineer",
+            category: "personal-conversation-l3",
+            emoji: "🇺🇸👩‍💻"
           }
         ]
       },
@@ -4868,6 +5190,20 @@ export const lessonGroups: LessonGroup[] = [
             english: "My friend is Mexican (feminine)",
             category: "nationality-sentences",
             emoji: "🇲🇽👩‍🤝‍👩"
+          },
+          {
+            id: "i-am-english-baker-m",
+            french: "Je suis un boulanger anglais",
+            english: "I am an English baker (masculine)",
+            category: "nationality-sentences",
+            emoji: "🇬🇧🥖👨"
+          },
+          {
+            id: "i-am-english-baker-f",
+            french: "Je suis une boulangère anglaise",
+            english: "I am an English baker (feminine)",
+            category: "nationality-sentences",
+            emoji: "🇬🇧🥖👩"
           }
         ]
       }

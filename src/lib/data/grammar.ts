@@ -1183,7 +1183,27 @@ export const professionSentencesData = {
     'Ils sont coiffeurs': 'They are hairdressers (masculine)',
     'Elles sont coiffeuses': 'They are hairdressers (feminine)',
     'Nous sommes comédiens': 'We are comedians',
-    'Ils sont producteurs': 'They are producers'
+    'Ils sont producteurs': 'They are producers',
+    'Je suis serveur/serveuse': 'I am a server',
+    'Il est serveur': 'He is a server',
+    'Elle est serveuse': 'She is a server',
+    'Nous sommes serveurs/serveuses': 'We are servers',
+    'Je suis boulanger/boulangère': 'I am a baker',
+    'Il est boulanger': 'He is a baker',
+    'Elle est boulangère': 'She is a baker',
+    'Ils sont boulangers': 'They are bakers',
+    'Je suis docteur/docteure': 'I am a doctor',
+    'Il est docteur': 'He is a doctor',
+    'Elle est docteure': 'She is a doctor',
+    'Nous sommes docteurs': 'We are doctors',
+    'Tu es infirmier/infirmière': 'You are a nurse',
+    'Il est infirmier': 'He is a nurse',
+    'Elle est infirmière': 'She is a nurse',
+    'Ils sont infirmiers': 'They are nurses',
+    'Je suis enseignant/enseignante': 'I am a teacher',
+    'Il est enseignant': 'He is a teacher',
+    'Elle est enseignante': 'She is a teacher',
+    'Nous sommes enseignants': 'We are teachers'
   },
   rules: {
     'Verb Agreement': 'ÊTRE conjugates with the subject pronoun',
@@ -1267,6 +1287,8 @@ export const personalConversationL3Data = {
   type: 'personal-conversation-l3',
   introductions: {
     'Je m\'appelle...': 'My name is... (formal introduction)',
+    'Mon prénom est...': 'My first name is...',
+    'Mon nom de famille est...': 'My last name is...',
     'Comment allez-vous ?': 'How are you? (formal)',
     'Comment tu vas ?': 'How are you? (informal)',
     'Comment vous appelez-vous ?': 'What is your name? (formal)',
@@ -1299,6 +1321,13 @@ export const personalConversationL3Data = {
     'pour un hackathon': 'for a hackathon',
     'en juillet': 'in July',
     'l\'année dernière': 'last year'
+  },
+  nationalityAndIdentity: {
+    'Je suis américain/américaine': 'I am American (m/f)',
+    'Je suis français/française': 'I am French (m/f)',
+    'Je suis de...': 'I am from... (+ city/country)',
+    'Je viens de...': 'I come from... (+ place)',
+    'Ma nationalité est...': 'My nationality is...'
   },
   rules: {
     'Formal vs Informal': 'Use "vous" for formal, "tu" for informal situations',
@@ -1353,7 +1382,9 @@ export const nationalitySentencesData = {
     'Je ne suis pas américain/américaine': 'I am not American (m/f)',
     'Ils ne sont pas russes': 'They are not Russian',
     'Tu n\'es pas chinois/chinoise': 'You are not Chinese (m/f)',
-    'Elles ne sont pas japonaises': 'They are not Japanese (feminine)'
+    'Elles ne sont pas japonaises': 'They are not Japanese (feminine)',
+    'Je suis un boulanger anglais': 'I am an English baker (masculine)',
+    'Je suis une boulangère anglaise': 'I am an English baker (feminine)'
   },
   genderAgreementRules: {
     'Masculine Singular': 'français, anglais, mexicain, etc.',
