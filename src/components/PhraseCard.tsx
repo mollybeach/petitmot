@@ -39,13 +39,15 @@ import {
   conversationPracticeData,
   crossCulturalData,
   culturalAssessmentData,
-  verbEtrePracticeData
+  verbEtrePracticeData,
+  classificationWhyData,
+  questionWordsData
 } from '@/lib/data/grammar';
 
 interface PhraseCardProps {
   phrase: FrenchPhrase;
   isFormal?: boolean;
-  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice', data: unknown) => void;
+  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions', data: unknown) => void;
 }
 
 export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: PhraseCardProps) {
@@ -223,6 +225,12 @@ export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: 
         break;
       case 'verb-etre-practice':
         onOpenGrammar('Verb ÊTRE Practice', 'verb-etre-practice', verbEtrePracticeData);
+        break;
+      case 'classification-why':
+        onOpenGrammar('Pourquoi - Why', 'classification-why', classificationWhyData);
+        break;
+      case 'questions':
+        onOpenGrammar('Question Words', 'questions', questionWordsData);
         break;
       default:
         // For other categories, show subject pronouns as default

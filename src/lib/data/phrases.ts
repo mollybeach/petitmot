@@ -2393,7 +2393,7 @@ export const lessonGroups: LessonGroup[] = [
       {
         id: "question-words",
         title: "Question Words",
-        description: "Learn to ask questions with Où? Qui? Quand? Quoi?",
+        description: "Learn to ask questions with Où? Qui? Quand? Quoi? Pourquoi?",
         phrases: [
           {
             id: "where",
@@ -2429,6 +2429,13 @@ export const lessonGroups: LessonGroup[] = [
             english: "How much?",
             category: "questions",
             emoji: "💰"
+          },
+          {
+            id: "why",
+            french: "Pourquoi ?",
+            english: "Why?",
+            category: "questions",
+            emoji: "🤔"
           }
         ]
       },

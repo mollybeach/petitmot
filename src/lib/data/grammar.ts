@@ -879,6 +879,65 @@ export const classificationWhoData = {
   }
 };
 
+// Lesson 2 - Word Classification: Pourquoi (Why)
+export const classificationWhyData = {
+  type: 'classification-why',
+  questionWord: 'Pourquoi',
+  meaning: 'Why',
+  words: {
+    'parce que': 'because',
+    'car': 'because/for',
+    'à cause de': 'because of',
+    'grâce à': 'thanks to',
+    'pour': 'for/in order to'
+  },
+  examples: {
+    'Pourquoi tu apprends le français?': 'Why are you learning French?',
+    'Parce que j\'aime cette langue.': 'Because I love this language.',
+    'Pourquoi il voyage?': 'Why is he traveling?',
+    'Pour le travail.': 'For work.'
+  },
+  rules: {
+    'Question Word': 'Pourquoi = Why (asking about reasons)',
+    'Answers': 'Use "parce que" or "pour" to answer "Pourquoi?"',
+    'Common Responses': 'parce que + sentence, pour + noun/infinitive',
+    'Formal vs Informal': 'Same form in both registers'
+  }
+};
+
+// General Question Words Data
+export const questionWordsData = {
+  type: 'questions',
+  questionWords: {
+    'Où': 'Where - asking about location',
+    'Qui': 'Who - asking about people',
+    'Quand': 'When - asking about time',
+    'Quoi': 'What - asking about things',
+    'Combien': 'How much/many - asking about quantity',
+    'Pourquoi': 'Why - asking about reasons'
+  },
+  usage: {
+    'Question Formation': 'Question word + subject + verb + ?',
+    'Intonation': 'Rising intonation for all questions',
+    'Word Order': 'Question word usually comes first',
+    'Politeness': 'Add "Excusez-moi" for formal situations'
+  },
+  examples: {
+    'Où est la gare?': 'Where is the train station?',
+    'Qui parle français?': 'Who speaks French?',
+    'Quand arrive le train?': 'When does the train arrive?',
+    'Quoi de neuf?': 'What\'s new?',
+    'Combien ça coûte?': 'How much does it cost?',
+    'Pourquoi tu études?': 'Why are you studying?'
+  },
+  rules: {
+    'Essential Questions': 'These 6 question words cover most basic questions',
+    'Frequency': 'Most commonly used question words in French',
+    'Learning Strategy': 'Master these to ask about anything',
+    'Combination': 'Can be combined with polite formulas'
+  }
+};
+
 // Lesson 2 - Dialogue Completion
 export const dialogueCompletionData = {
   type: 'dialogue-completion',

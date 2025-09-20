@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { lessonGroups } from '@/lib/data/phrases';
-import type { FrenchPhrase } from '@/lib/data/phrases';
 import { speechService } from '@/lib/utils/speech';
 
 interface GameCard {
@@ -21,7 +20,6 @@ interface MatchingPair {
 
 export default function MatchingGame() {
   const [selectedLessonGroup, setSelectedLessonGroup] = useState<string>('');
-  const [selectedLesson, setSelectedLesson] = useState<string>('');
   const [gameCards, setGameCards] = useState<GameCard[]>([]);
   const [selectedCards, setSelectedCards] = useState<GameCard[]>([]);
   const [matches, setMatches] = useState<number>(0);
@@ -160,7 +158,6 @@ export default function MatchingGame() {
     setAttempts(0);
     setGameComplete(false);
     setSelectedLessonGroup('');
-    setSelectedLesson('');
     setSpeakingCards(new Set());
     setSpeechError(null);
   };
