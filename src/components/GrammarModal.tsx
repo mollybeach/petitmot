@@ -6,8 +6,8 @@ interface GrammarModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions';
-  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData;
+  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3';
+  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data;
 }
 
 interface VerbConjugation {
@@ -192,6 +192,68 @@ interface ConceptsData {
 interface IntroductionsData {
   type: 'introductions';
   phrases: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface PersonalInfoL3Data {
+  type: 'personal-info-l3';
+  phrases: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface NationalitiesL3Data {
+  type: 'nationalities-l3';
+  masculine: {
+    [key: string]: string;
+  };
+  feminine: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface ProfessionsL3Data {
+  type: 'professions-l3';
+  patterns: {
+    [key: string]: string;
+  };
+  masculine: {
+    [key: string]: string;
+  };
+  feminine: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface LanguagesL3Data {
+  type: 'languages-l3';
+  languages: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface IntonationL3Data {
+  type: 'intonation-l3';
+  patterns: {
+    [key: string]: string;
+  };
+  examples: {
     [key: string]: string;
   };
   rules: {
@@ -399,6 +461,160 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
     </div>
   );
 
+  const renderNationalitiesL3 = (data: NationalitiesL3Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Nationalities - Masculine & Feminine
+        </h3>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">Masculine</h4>
+          <div className="space-y-2">
+            {Object.entries(data.masculine).map(([key, value]) => (
+              <div key={key} className="p-3 border border-gray-300 rounded-lg">
+                <div className="font-medium text-gray-800">{key}</div>
+                <div className="text-gray-600">{value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">Feminine</h4>
+          <div className="space-y-2">
+            {Object.entries(data.feminine).map(([key, value]) => (
+              <div key={key} className="p-3 border border-gray-300 rounded-lg">
+                <div className="font-medium text-gray-800">{key}</div>
+                <div className="text-gray-600">{value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderProfessionsL3 = (data: ProfessionsL3Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Professions - Masculine & Feminine
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Formation Patterns</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.patterns).map(([pattern, examples]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600 text-sm">{examples}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">Masculine</h4>
+          <div className="space-y-2">
+            {Object.entries(data.masculine).map(([key, value]) => (
+              <div key={key} className="p-3 border border-gray-300 rounded-lg">
+                <div className="font-medium text-gray-800">{key}</div>
+                <div className="text-gray-600">{value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">Feminine</h4>
+          <div className="space-y-2">
+            {Object.entries(data.feminine).map(([key, value]) => (
+              <div key={key} className="p-3 border border-gray-300 rounded-lg">
+                <div className="font-medium text-gray-800">{key}</div>
+                <div className="text-gray-600">{value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderIntonationL3 = (data: IntonationL3Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          French Intonation
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Intonation Patterns</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.patterns).map(([pattern, explanation]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Examples</h4>
+        <div className="space-y-3">
+          {Object.entries(data.examples).map(([french, english]) => (
+            <div key={french} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{french}</div>
+              <div className="text-gray-600">{english}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   const renderContent = () => {
     switch (type) {
       case 'verb-conjugation':
@@ -472,6 +688,18 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
       case 'introductions':
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return renderGenericData(data as Record<string, any>, 'phrases', 'Introduction Phrases');
+      case 'personal-info-l3':
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        return renderGenericData(data as Record<string, any>, 'phrases', 'Personal Information - Lesson 3');
+      case 'nationalities-l3':
+        return renderNationalitiesL3(data as NationalitiesL3Data);
+      case 'professions-l3':
+        return renderProfessionsL3(data as ProfessionsL3Data);
+      case 'languages-l3':
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        return renderGenericData(data as Record<string, any>, 'languages', 'Languages - Lesson 3');
+      case 'intonation-l3':
+        return renderIntonationL3(data as IntonationL3Data);
       default:
         return <div>Unsupported grammar type</div>;
     }

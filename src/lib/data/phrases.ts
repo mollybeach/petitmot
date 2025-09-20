@@ -2517,6 +2517,306 @@ export const lessonGroups: LessonGroup[] = [
         ]
       }
     ]
+  },
+  {
+    id: "lesson_3",
+    title: "Leçon 3 Ils sont francophones / Lesson 3 They are French-speaking",
+    description: "Objectifs: Donner des informations personnelles - Le masculin et le féminin (métiers, nationalités) - L'intonation (la voix qui monte, la voix qui descend) / Objectives: Give personal information - Masculine and feminine (jobs, nationalities) - Intonation (rising voice, falling voice)",
+    lessons: [
+      {
+        id: "personal-information-lesson3",
+        title: "Personal Information",
+        description: "Learn to give personal information about yourself",
+        phrases: [
+          {
+            id: "my-name-is-lea",
+            french: "Je m'appelle Léa",
+            english: "My name is Léa",
+            category: "personal-info-l3",
+            emoji: "👋"
+          },
+          {
+            id: "i-am-french-feminine",
+            french: "Je suis française",
+            english: "I am French (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "i-speak-french-english",
+            french: "Je parle français et anglais",
+            english: "I speak French and English",
+            category: "languages-l3",
+            emoji: "🗣️"
+          },
+          {
+            id: "i-am-teacher-feminine",
+            french: "Je suis enseignante",
+            english: "I am a teacher (feminine)",
+            category: "professions-l3",
+            emoji: "👩‍🏫"
+          }
+        ]
+      },
+      {
+        id: "nationalities-masculine-feminine",
+        title: "Nationalities - Masculine and Feminine",
+        description: "Learn masculine and feminine forms of nationalities",
+        phrases: [
+          {
+            id: "camerounais-m",
+            french: "camerounais",
+            english: "Cameroonian (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇨🇲",
+            formal: {
+              french: "camerounaise",
+              english: "Cameroonian (feminine)"
+            }
+          },
+          {
+            id: "suedois-m",
+            french: "suédois",
+            english: "Swedish (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇸🇪",
+            formal: {
+              french: "suédoise",
+              english: "Swedish (feminine)"
+            }
+          },
+          {
+            id: "anglais-m",
+            french: "anglais",
+            english: "English (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇬🇧",
+            formal: {
+              french: "anglaise",
+              english: "English (feminine)"
+            }
+          },
+          {
+            id: "espagnol-m",
+            french: "espagnol",
+            english: "Spanish (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇪🇸",
+            formal: {
+              french: "espagnole",
+              english: "Spanish (feminine)"
+            }
+          },
+          {
+            id: "mexicain-m",
+            french: "mexicain",
+            english: "Mexican (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇲🇽",
+            formal: {
+              french: "mexicaine",
+              english: "Mexican (feminine)"
+            }
+          },
+          {
+            id: "algerien-m",
+            french: "algérien",
+            english: "Algerian (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇩🇿",
+            formal: {
+              french: "algérienne",
+              english: "Algerian (feminine)"
+            }
+          },
+          {
+            id: "indien-m",
+            french: "indien",
+            english: "Indian (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇮🇳",
+            formal: {
+              french: "indienne",
+              english: "Indian (feminine)"
+            }
+          },
+          {
+            id: "russe-m",
+            french: "russe",
+            english: "Russian (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇷🇺",
+            formal: {
+              french: "russe",
+              english: "Russian (feminine)"
+            }
+          },
+          {
+            id: "suisse-m",
+            french: "suisse",
+            english: "Swiss (masculine)",
+            category: "nationalities-l3",
+            emoji: "🇨🇭",
+            formal: {
+              french: "suisse",
+              english: "Swiss (feminine)"
+            }
+          }
+        ]
+      },
+      {
+        id: "professions-masculine-feminine",
+        title: "Professions - Masculine and Feminine",
+        description: "Learn masculine and feminine forms of professions",
+        phrases: [
+          {
+            id: "comedien-m",
+            french: "comédien",
+            english: "actor/comedian (masculine)",
+            category: "professions-l3",
+            emoji: "🎭",
+            formal: {
+              french: "comédienne",
+              english: "actress/comedian (feminine)"
+            }
+          },
+          {
+            id: "electricien-m",
+            french: "électricien",
+            english: "electrician (masculine)",
+            category: "professions-l3",
+            emoji: "⚡",
+            formal: {
+              french: "électricienne",
+              english: "electrician (feminine)"
+            }
+          },
+          {
+            id: "acteur-m",
+            french: "acteur",
+            english: "actor (masculine)",
+            category: "professions-l3",
+            emoji: "🎬",
+            formal: {
+              french: "actrice",
+              english: "actress (feminine)"
+            }
+          },
+          {
+            id: "instituteur-m",
+            french: "instituteur",
+            english: "elementary teacher (masculine)",
+            category: "professions-l3",
+            emoji: "👨‍🏫",
+            formal: {
+              french: "institutrice",
+              english: "elementary teacher (feminine)"
+            }
+          },
+          {
+            id: "chanteur-m",
+            french: "chanteur",
+            english: "singer (masculine)",
+            category: "professions-l3",
+            emoji: "🎤",
+            formal: {
+              french: "chanteuse",
+              english: "singer (feminine)"
+            }
+          },
+          {
+            id: "coiffeur-m",
+            french: "coiffeur",
+            english: "hairdresser (masculine)",
+            category: "professions-l3",
+            emoji: "💇‍♂️",
+            formal: {
+              french: "coiffeuse",
+              english: "hairdresser (feminine)"
+            }
+          },
+          {
+            id: "infirmier-m",
+            french: "infirmier",
+            english: "nurse (masculine)",
+            category: "professions-l3",
+            emoji: "👨‍⚕️",
+            formal: {
+              french: "infirmière",
+              english: "nurse (feminine)"
+            }
+          },
+          {
+            id: "boulanger-m",
+            french: "boulanger",
+            english: "baker (masculine)",
+            category: "professions-l3",
+            emoji: "🥖",
+            formal: {
+              french: "boulangère",
+              english: "baker (feminine)"
+            }
+          },
+          {
+            id: "journaliste-m",
+            french: "journaliste",
+            english: "journalist (masculine)",
+            category: "professions-l3",
+            emoji: "📰",
+            formal: {
+              french: "journaliste",
+              english: "journalist (feminine)"
+            }
+          },
+          {
+            id: "veterinaire-m",
+            french: "vétérinaire",
+            english: "veterinarian (masculine)",
+            category: "professions-l3",
+            emoji: "👨‍⚕️🐕",
+            formal: {
+              french: "vétérinaire",
+              english: "veterinarian (feminine)"
+            }
+          }
+        ]
+      },
+      {
+        id: "french-intonation",
+        title: "French Intonation",
+        description: "Learn rising and falling intonation patterns",
+        phrases: [
+          {
+            id: "are-you-english-rising",
+            french: "Tu es anglais ?",
+            english: "Are you English? (rising intonation)",
+            category: "intonation-l3",
+            emoji: "⬆️🗣️"
+          },
+          {
+            id: "no-i-am-american-falling",
+            french: "Non, je suis américain.",
+            english: "No, I am American. (falling intonation)",
+            category: "intonation-l3",
+            emoji: "⬇️🗣️"
+          },
+          {
+            id: "question-rising-voice",
+            french: "Question : La voix monte",
+            english: "Question: The voice rises",
+            category: "intonation-l3",
+            emoji: "❓⬆️"
+          },
+          {
+            id: "statement-falling-voice",
+            french: "Parler ou réponse : La voix descend",
+            english: "Statement or response: The voice falls",
+            category: "intonation-l3",
+            emoji: "💬⬇️"
+          }
+        ]
+      }
+    ]
   }
 ]
 

@@ -631,3 +631,139 @@ export const introductionsData = {
     'Reflexive': 'S\'appeler is a reflexive verb'
   }
 };
+
+// Lesson 3 - Personal Information
+export const personalInfoL3Data = {
+  type: 'personal-info-l3',
+  phrases: {
+    'Je m\'appelle Léa': 'My name is Léa',
+    'Je suis française': 'I am French (feminine)',
+    'Je parle français et anglais': 'I speak French and English',
+    'Je suis enseignante': 'I am a teacher (feminine)'
+  },
+  rules: {
+    'Self-introduction': 'Use "Je m\'appelle" for your name',
+    'Nationality': 'Nationality adjectives agree with gender',
+    'Languages': 'Use "Je parle" + language name',
+    'Profession': 'Profession names agree with gender'
+  }
+};
+
+// Lesson 3 - Nationalities with Gender
+export const nationalitiesL3Data = {
+  type: 'nationalities-l3',
+  masculine: {
+    'camerounais': 'Cameroonian',
+    'suédois': 'Swedish',
+    'anglais': 'English',
+    'espagnol': 'Spanish',
+    'mexicain': 'Mexican',
+    'algérien': 'Algerian',
+    'indien': 'Indian',
+    'russe': 'Russian',
+    'suisse': 'Swiss'
+  },
+  feminine: {
+    'camerounaise': 'Cameroonian',
+    'suédoise': 'Swedish',
+    'anglaise': 'English',
+    'espagnole': 'Spanish',
+    'mexicaine': 'Mexican',
+    'algérienne': 'Algerian',
+    'indienne': 'Indian',
+    'russe': 'Russian',
+    'suisse': 'Swiss'
+  },
+  rules: {
+    'Gender Agreement': 'Nationality adjectives must agree with the person\'s gender',
+    'Common Patterns': 'Most add -e for feminine (français → française)',
+    'Special Cases': 'Some are identical (russe, suisse)',
+    'Pronunciation': 'Some change pronunciation (algérien → algérienne [è])'
+  }
+};
+
+// Lesson 3 - Professions with Gender
+export const professionsL3Data = {
+  type: 'professions-l3',
+  patterns: {
+    '-ien → -ienne': 'comédien → comédienne, électricien → électricienne',
+    '-teur → -trice': 'acteur → actrice, instituteur → institutrice',
+    '-eur → -euse': 'chanteur → chanteuse, coiffeur → coiffeuse',
+    '-er → -ère': 'infirmier → infirmière, boulanger → boulangère',
+    'Identical': 'journaliste, vétérinaire (same for both genders)'
+  },
+  masculine: {
+    'comédien': 'actor/comedian',
+    'électricien': 'electrician',
+    'acteur': 'actor',
+    'instituteur': 'elementary teacher',
+    'chanteur': 'singer',
+    'coiffeur': 'hairdresser',
+    'infirmier': 'nurse',
+    'boulanger': 'baker',
+    'journaliste': 'journalist',
+    'vétérinaire': 'veterinarian'
+  },
+  feminine: {
+    'comédienne': 'actress/comedian',
+    'électricienne': 'electrician',
+    'actrice': 'actress',
+    'institutrice': 'elementary teacher',
+    'chanteuse': 'singer',
+    'coiffeuse': 'hairdresser',
+    'infirmière': 'nurse',
+    'boulangère': 'baker',
+    'journaliste': 'journalist',
+    'vétérinaire': 'veterinarian'
+  },
+  rules: {
+    'Gender Agreement': 'Profession names must agree with the person\'s gender',
+    'Articles': 'Use "un/une" with professions (un acteur, une actrice)',
+    'Verb Usage': 'Use "être" + profession (je suis enseignante)'
+  }
+};
+
+// Lesson 3 - Languages for Lesson 3
+export const languagesL3Data = {
+  type: 'languages-l3',
+  languages: {
+    'français': 'French',
+    'anglais': 'English',
+    'espagnol': 'Spanish',
+    'allemand': 'German',
+    'italien': 'Italian',
+    'chinois': 'Chinese',
+    'japonais': 'Japanese',
+    'arabe': 'Arabic',
+    'russe': 'Russian'
+  },
+  rules: {
+    'Speaking Languages': 'Use "Je parle" + language name',
+    'Multiple Languages': 'Connect with "et" (français et anglais)',
+    'Articles': 'Language names are masculine (le français)',
+    'No Capitalization': 'Language names are not capitalized in French'
+  }
+};
+
+// Lesson 3 - French Intonation
+export const intonationL3Data = {
+  type: 'intonation-l3',
+  patterns: {
+    'Questions': 'Voice rises at the end (Tu es anglais? ↗)',
+    'Statements': 'Voice falls at the end (Je suis américain. ↘)',
+    'Yes/No Questions': 'Rising intonation indicates a question',
+    'Declarative': 'Falling intonation indicates a statement or response'
+  },
+  examples: {
+    'Tu es anglais ?': 'Are you English? (rising ↗)',
+    'Non, je suis américain.': 'No, I am American. (falling ↘)',
+    'Tu parles français ?': 'Do you speak French? (rising ↗)',
+    'Oui, je parle français.': 'Yes, I speak French. (falling ↘)'
+  },
+  rules: {
+    'Question Intonation': 'Voice goes up at the end of yes/no questions',
+    'Statement Intonation': 'Voice goes down at the end of statements',
+    'Listening Practice': 'Pay attention to voice direction to understand meaning',
+    'Speaking Practice': 'Use correct intonation to sound natural'
+  }
+};
