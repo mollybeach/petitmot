@@ -767,3 +767,32 @@ export const intonationL3Data = {
     'Speaking Practice': 'Use correct intonation to sound natural'
   }
 };
+
+// Lesson 2 - Polite Formulas
+export const politeFormulasL2Data = {
+  type: 'polite-formulas-l2',
+  formulas: {
+    'Pardon Monsieur/Madame': 'Excuse me Sir/Madam (formal address)',
+    's\'il vous plaît': 'please (formal)',
+    'est-ce que': 'question marker (makes questions more polite)',
+    'Excusez-moi': 'Excuse me (alternative to Pardon)'
+  },
+  transformations: {
+    'Direct → Polite': 'Add "Pardon Monsieur/Madame" + "s\'il vous plaît"',
+    'Question Formation': 'Use "est-ce que" to make questions more polite',
+    'Gender Agreement': 'Use "Monsieur" for men, "Madame" for women',
+    'Formal Register': 'Always use "vous" in polite formulas'
+  },
+  examples: {
+    'Direct': 'Où est le quai n°10 ?',
+    'Polite': 'Pardon Monsieur, où est le quai n°10, s\'il vous plaît ?',
+    'Direct Request': 'Un billet de train pour Toulouse.',
+    'Polite Request': 'Pardon Madame, un billet de train pour Toulouse, s\'il vous plaît ?'
+  },
+  rules: {
+    'Address Forms': 'Always use Monsieur/Madame in formal situations',
+    'Please': 'Add "s\'il vous plaît" at the end of requests',
+    'Question Politeness': 'Use "est-ce que" to soften direct questions',
+    'Tone': 'Polite formulas show respect and courtesy'
+  }
+};

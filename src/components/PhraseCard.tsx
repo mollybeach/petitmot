@@ -28,13 +28,14 @@ import {
   nationalitiesL3Data,
   professionsL3Data,
   languagesL3Data,
-  intonationL3Data
+  intonationL3Data,
+  politeFormulasL2Data
 } from '@/lib/data/grammar';
 
 interface PhraseCardProps {
   phrase: FrenchPhrase;
   isFormal?: boolean;
-  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3', data: unknown) => void;
+  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2', data: unknown) => void;
 }
 
 export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: PhraseCardProps) {
@@ -179,6 +180,9 @@ export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: 
         break;
       case 'intonation-l3':
         onOpenGrammar('French Intonation', 'intonation-l3', intonationL3Data);
+        break;
+      case 'polite-formulas-l2':
+        onOpenGrammar('Polite Formulas', 'polite-formulas-l2', politeFormulasL2Data);
         break;
       default:
         // For other categories, show subject pronouns as default

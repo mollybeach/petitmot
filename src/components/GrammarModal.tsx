@@ -6,8 +6,8 @@ interface GrammarModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3';
-  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data;
+  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2';
+  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data | PoliteFormulasL2Data;
 }
 
 interface VerbConjugation {
@@ -251,6 +251,22 @@ interface LanguagesL3Data {
 interface IntonationL3Data {
   type: 'intonation-l3';
   patterns: {
+    [key: string]: string;
+  };
+  examples: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface PoliteFormulasL2Data {
+  type: 'polite-formulas-l2';
+  formulas: {
+    [key: string]: string;
+  };
+  transformations: {
     [key: string]: string;
   };
   examples: {
@@ -615,6 +631,64 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
     </div>
   );
 
+  const renderPoliteFormulasL2 = (data: PoliteFormulasL2Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Polite Formulas
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Formulas</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.formulas).map(([formula, explanation]) => (
+            <div key={formula} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{formula}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Transformations</h4>
+        <div className="space-y-3">
+          {Object.entries(data.transformations).map(([pattern, rule]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{rule}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Examples</h4>
+        <div className="space-y-3">
+          {Object.entries(data.examples).map(([type, example]) => (
+            <div key={type} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{type}</div>
+              <div className="text-gray-600 text-lg">{example}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   const renderContent = () => {
     switch (type) {
       case 'verb-conjugation':
@@ -700,6 +774,8 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
         return renderGenericData(data as Record<string, any>, 'languages', 'Languages - Lesson 3');
       case 'intonation-l3':
         return renderIntonationL3(data as IntonationL3Data);
+      case 'polite-formulas-l2':
+        return renderPoliteFormulasL2(data as PoliteFormulasL2Data);
       default:
         return <div>Unsupported grammar type</div>;
     }

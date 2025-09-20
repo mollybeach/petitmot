@@ -2515,6 +2515,83 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "💰"
           }
         ]
+      },
+      {
+        id: "polite-formulas",
+        title: "Polite Formulas",
+        description: "Learn to transform requests into polite formulas using 'Pardon Monsieur/Madame' and 's'il vous plaît'",
+        phrases: [
+          {
+            id: "where-is-platform-10-example",
+            french: "Pardon Monsieur, où est le quai n°10, s'il vous plaît ?",
+            english: "Excuse me Sir, where is platform number 10, please?",
+            category: "polite-formulas-l2",
+            emoji: "🎩🚂"
+          },
+          {
+            id: "train-ticket-toulouse-polite",
+            french: "Pardon Madame, un billet de train pour Toulouse, s'il vous plaît ?",
+            english: "Excuse me Madam, a train ticket for Toulouse, please?",
+            category: "polite-formulas-l2",
+            emoji: "👩‍💼🎫"
+          },
+          {
+            id: "is-this-train-geneva-polite",
+            french: "Pardon Monsieur, est-ce que c'est le train pour Genève, s'il vous plaît ?",
+            english: "Excuse me Sir, is this the train for Geneva, please?",
+            category: "polite-formulas-l2",
+            emoji: "🎩🚂"
+          },
+          {
+            id: "plane-ticket-stockholm-polite",
+            french: "Pardon Monsieur, un billet d'avion pour Stockholm, s'il vous plaît ?",
+            english: "Excuse me Sir, a plane ticket for Stockholm, please?",
+            category: "polite-formulas-l2",
+            emoji: "🎩✈️"
+          },
+          {
+            id: "where-is-station-polite",
+            french: "Pardon Madame, où est la gare, s'il vous plaît ?",
+            english: "Excuse me Madam, where is the train station, please?",
+            category: "polite-formulas-l2",
+            emoji: "👩‍💼🚉"
+          },
+          {
+            id: "direct-where-platform-10",
+            french: "Où est le quai n°10 ?",
+            english: "Where is platform number 10? (direct form)",
+            category: "polite-formulas-l2",
+            emoji: "❓🚂"
+          },
+          {
+            id: "direct-train-ticket-toulouse",
+            french: "Un billet de train pour Toulouse.",
+            english: "A train ticket for Toulouse. (direct form)",
+            category: "polite-formulas-l2",
+            emoji: "🎫🚂"
+          },
+          {
+            id: "direct-is-train-geneva",
+            french: "C'est le train pour Genève ?",
+            english: "Is this the train for Geneva? (direct form)",
+            category: "polite-formulas-l2",
+            emoji: "❓🚂"
+          },
+          {
+            id: "direct-plane-ticket-stockholm",
+            french: "Un billet d'avion pour Stockholm.",
+            english: "A plane ticket for Stockholm. (direct form)",
+            category: "polite-formulas-l2",
+            emoji: "🎫✈️"
+          },
+          {
+            id: "direct-where-station",
+            french: "Où est la gare ?",
+            english: "Where is the train station? (direct form)",
+            category: "polite-formulas-l2",
+            emoji: "❓🚉"
+          }
+        ]
       }
     ]
   },
