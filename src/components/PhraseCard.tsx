@@ -43,13 +43,15 @@ import {
   classificationWhyData,
   questionWordsData,
   francophoneProgramData,
-  professionSentencesData
+  professionSentencesData,
+  daysL3Data,
+  monthsL3Data
 } from '@/lib/data/grammar';
 
 interface PhraseCardProps {
   phrase: FrenchPhrase;
   isFormal?: boolean;
-  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences', data: unknown) => void;
+  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences' | 'days-l3' | 'months-l3', data: unknown) => void;
 }
 
 export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: PhraseCardProps) {
@@ -250,6 +252,12 @@ export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: 
         break;
       case 'profession-sentences':
         onOpenGrammar('Profession Sentences with ÊTRE', 'profession-sentences', professionSentencesData);
+        break;
+      case 'days-l3':
+        onOpenGrammar('Days of the Week - Lesson 3', 'days-l3', daysL3Data);
+        break;
+      case 'months-l3':
+        onOpenGrammar('Months of the Year - Lesson 3', 'months-l3', monthsL3Data);
         break;
       default:
         // For other categories, show subject pronouns as default

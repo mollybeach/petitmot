@@ -3238,6 +3238,13 @@ export const lessonGroups: LessonGroup[] = [
             }
           },
           {
+            id: "camerounaise-f",
+            french: "camerounaise",
+            english: "Cameroonian (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇨🇲"
+          },
+          {
             id: "suedois-m",
             french: "suédois",
             english: "Swedish (masculine)",
@@ -3247,6 +3254,13 @@ export const lessonGroups: LessonGroup[] = [
               french: "suédoise",
               english: "Swedish (feminine)"
             }
+          },
+          {
+            id: "suedoise-f",
+            french: "suédoise",
+            english: "Swedish (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇸🇪"
           },
           {
             id: "anglais-m",
@@ -3260,6 +3274,13 @@ export const lessonGroups: LessonGroup[] = [
             }
           },
           {
+            id: "anglaise-f",
+            french: "anglaise",
+            english: "English (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇬🇧"
+          },
+          {
             id: "espagnol-m",
             french: "espagnol",
             english: "Spanish (masculine)",
@@ -3269,6 +3290,13 @@ export const lessonGroups: LessonGroup[] = [
               french: "espagnole",
               english: "Spanish (feminine)"
             }
+          },
+          {
+            id: "espagnole-f",
+            french: "espagnole",
+            english: "Spanish (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇪🇸"
           },
           {
             id: "mexicain-m",
@@ -3282,6 +3310,13 @@ export const lessonGroups: LessonGroup[] = [
             }
           },
           {
+            id: "mexicaine-f",
+            french: "mexicaine",
+            english: "Mexican (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇲🇽"
+          },
+          {
             id: "algerien-m",
             french: "algérien",
             english: "Algerian (masculine)",
@@ -3291,6 +3326,13 @@ export const lessonGroups: LessonGroup[] = [
               french: "algérienne",
               english: "Algerian (feminine)"
             }
+          },
+          {
+            id: "algerienne-f",
+            french: "algérienne",
+            english: "Algerian (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇩🇿"
           },
           {
             id: "indien-m",
@@ -3304,6 +3346,13 @@ export const lessonGroups: LessonGroup[] = [
             }
           },
           {
+            id: "indienne-f",
+            french: "indienne",
+            english: "Indian (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇮🇳"
+          },
+          {
             id: "russe-m",
             french: "russe",
             english: "Russian (masculine)",
@@ -3315,6 +3364,13 @@ export const lessonGroups: LessonGroup[] = [
             }
           },
           {
+            id: "russe-f",
+            french: "russe",
+            english: "Russian (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇷🇺"
+          },
+          {
             id: "suisse-m",
             french: "suisse",
             english: "Swiss (masculine)",
@@ -3324,6 +3380,13 @@ export const lessonGroups: LessonGroup[] = [
               french: "suisse",
               english: "Swiss (feminine)"
             }
+          },
+          {
+            id: "suisse-f",
+            french: "suisse",
+            english: "Swiss (feminine)",
+            category: "nationalities-l3",
+            emoji: "🇨🇭"
           }
         ]
       },
@@ -4111,6 +4174,700 @@ export const lessonGroups: LessonGroup[] = [
             english: "They are comedians",
             category: "profession-sentences",
             emoji: "😂🎭"
+          }
+        ]
+      },
+      {
+        id: "days-of-week-lesson3",
+        title: "Days of the Week",
+        description: "Learn the French days of the week with pronunciation and usage",
+        phrases: [
+          {
+            id: "monday-l3",
+            french: "lundi",
+            english: "Monday",
+            category: "days-l3",
+            emoji: "📅"
+          },
+          {
+            id: "tuesday-l3",
+            french: "mardi",
+            english: "Tuesday",
+            category: "days-l3",
+            emoji: "📅"
+          },
+          {
+            id: "wednesday-l3",
+            french: "mercredi",
+            english: "Wednesday",
+            category: "days-l3",
+            emoji: "📅"
+          },
+          {
+            id: "thursday-l3",
+            french: "jeudi",
+            english: "Thursday",
+            category: "days-l3",
+            emoji: "📅"
+          },
+          {
+            id: "friday-l3",
+            french: "vendredi",
+            english: "Friday",
+            category: "days-l3",
+            emoji: "📅"
+          },
+          {
+            id: "saturday-l3",
+            french: "samedi",
+            english: "Saturday",
+            category: "days-l3",
+            emoji: "📅"
+          },
+          {
+            id: "sunday-l3",
+            french: "dimanche",
+            english: "Sunday",
+            category: "days-l3",
+            emoji: "📅"
+          },
+          {
+            id: "today-is-monday",
+            french: "Aujourd'hui, c'est lundi",
+            english: "Today is Monday",
+            category: "days-l3",
+            emoji: "📅✨"
+          },
+          {
+            id: "tomorrow-is-tuesday",
+            french: "Demain, c'est mardi",
+            english: "Tomorrow is Tuesday",
+            category: "days-l3",
+            emoji: "📅➡️"
+          },
+          {
+            id: "on-wednesday",
+            french: "Le mercredi",
+            english: "On Wednesday / Wednesdays",
+            category: "days-l3",
+            emoji: "📅🔄"
+          },
+          {
+            id: "this-thursday",
+            french: "Ce jeudi",
+            english: "This Thursday",
+            category: "days-l3",
+            emoji: "📅👉"
+          },
+          {
+            id: "next-friday",
+            french: "Vendredi prochain",
+            english: "Next Friday",
+            category: "days-l3",
+            emoji: "📅⏭️"
+          },
+          {
+            id: "last-saturday",
+            french: "Samedi dernier",
+            english: "Last Saturday",
+            category: "days-l3",
+            emoji: "📅⏮️"
+          },
+          {
+            id: "every-sunday",
+            french: "Tous les dimanches",
+            english: "Every Sunday",
+            category: "days-l3",
+            emoji: "📅🔁"
+          }
+        ]
+      },
+      {
+        id: "months-of-year-lesson3",
+        title: "Months of the Year",
+        description: "Learn the French months with pronunciation and seasonal context",
+        phrases: [
+          {
+            id: "january-l3",
+            french: "janvier",
+            english: "January",
+            category: "months-l3",
+            emoji: "❄️"
+          },
+          {
+            id: "february-l3",
+            french: "février",
+            english: "February",
+            category: "months-l3",
+            emoji: "💝"
+          },
+          {
+            id: "march-l3",
+            french: "mars",
+            english: "March",
+            category: "months-l3",
+            emoji: "🌸"
+          },
+          {
+            id: "april-l3",
+            french: "avril",
+            english: "April",
+            category: "months-l3",
+            emoji: "🌷"
+          },
+          {
+            id: "may-l3",
+            french: "mai",
+            english: "May",
+            category: "months-l3",
+            emoji: "🌺"
+          },
+          {
+            id: "june-l3",
+            french: "juin",
+            english: "June",
+            category: "months-l3",
+            emoji: "☀️"
+          },
+          {
+            id: "july-l3",
+            french: "juillet",
+            english: "July",
+            category: "months-l3",
+            emoji: "🏖️"
+          },
+          {
+            id: "august-l3",
+            french: "août",
+            english: "August",
+            category: "months-l3",
+            emoji: "🌞"
+          },
+          {
+            id: "september-l3",
+            french: "septembre",
+            english: "September",
+            category: "months-l3",
+            emoji: "🍂"
+          },
+          {
+            id: "october-l3",
+            french: "octobre",
+            english: "October",
+            category: "months-l3",
+            emoji: "🎃"
+          },
+          {
+            id: "november-l3",
+            french: "novembre",
+            english: "November",
+            category: "months-l3",
+            emoji: "🍁"
+          },
+          {
+            id: "december-l3",
+            french: "décembre",
+            english: "December",
+            category: "months-l3",
+            emoji: "🎄"
+          },
+          {
+            id: "in-january",
+            french: "En janvier",
+            english: "In January",
+            category: "months-l3",
+            emoji: "❄️📅"
+          },
+          {
+            id: "this-february",
+            french: "Ce février",
+            english: "This February",
+            category: "months-l3",
+            emoji: "💝📅"
+          },
+          {
+            id: "next-march",
+            french: "Mars prochain",
+            english: "Next March",
+            category: "months-l3",
+            emoji: "🌸📅"
+          },
+          {
+            id: "last-april",
+            french: "Avril dernier",
+            english: "Last April",
+            category: "months-l3",
+            emoji: "🌷📅"
+          },
+          {
+            id: "during-summer",
+            french: "Pendant l'été (juin, juillet, août)",
+            english: "During summer (June, July, August)",
+            category: "months-l3",
+            emoji: "☀️🏖️"
+          },
+          {
+            id: "during-winter",
+            french: "Pendant l'hiver (décembre, janvier, février)",
+            english: "During winter (December, January, February)",
+            category: "months-l3",
+            emoji: "❄️🌨️"
+          }
+        ]
+      },
+      {
+        id: "personal-conversation-lesson3",
+        title: "Personal Conversation Practice",
+        description: "Practice personal conversations with real-life phrases and responses",
+        phrases: [
+          {
+            id: "my-name-is-molly",
+            french: "Je m'appelle Molly",
+            english: "My name is Molly",
+            category: "personal-conversation-l3",
+            emoji: "👋"
+          },
+          {
+            id: "how-are-you-conversation",
+            french: "Comment allez-vous ?",
+            english: "How are you?",
+            category: "personal-conversation-l3",
+            emoji: "😊",
+            formal: {
+              french: "Comment tu vas ?",
+              english: "How are you? (informal)"
+            }
+          },
+          {
+            id: "how-was-your-week",
+            french: "Comment s'est passée votre semaine ?",
+            english: "How was your week?",
+            category: "personal-conversation-l3",
+            emoji: "📅",
+            formal: {
+              french: "Comment s'est passée ta semaine ?",
+              english: "How was your week? (informal)"
+            }
+          },
+          {
+            id: "my-week-was-good",
+            french: "Ma semaine s'est bien passée",
+            english: "My week was good",
+            category: "personal-conversation-l3",
+            emoji: "✅"
+          },
+          {
+            id: "learning-french-saturdays",
+            french: "J'apprends le français pour ne pas travailler le samedi",
+            english: "I'm learning French to get out of work on Saturdays",
+            category: "personal-conversation-l3",
+            emoji: "📚🏖️"
+          },
+          {
+            id: "i-like-to-run",
+            french: "J'aime courir",
+            english: "I like to run",
+            category: "personal-conversation-l3",
+            emoji: "🏃‍♀️"
+          },
+          {
+            id: "i-am-software-engineer",
+            french: "Je suis ingénieure logiciel",
+            english: "I am a software engineer",
+            category: "personal-conversation-l3",
+            emoji: "👩‍💻"
+          },
+          {
+            id: "was-in-france-hackathon",
+            french: "J'étais en France pour un hackathon en juillet",
+            english: "I was in France for a hackathon in July",
+            category: "personal-conversation-l3",
+            emoji: "🇫🇷💻"
+          }
+        ]
+      },
+      {
+        id: "nationality-sentences-etre",
+        title: "Nationality Sentences with ÊTRE",
+        description: "Practice nationalities in complete sentences with all pronouns using the verb être",
+        phrases: [
+          {
+            id: "je-suis-francais-m",
+            french: "Je suis français",
+            english: "I am French (masculine)",
+            category: "nationality-sentences",
+            emoji: "🇫🇷👨"
+          },
+          {
+            id: "je-suis-francaise-f",
+            french: "Je suis française",
+            english: "I am French (feminine)",
+            category: "nationality-sentences",
+            emoji: "🇫🇷👩"
+          },
+          {
+            id: "tu-es-anglais-m",
+            french: "Tu es anglais",
+            english: "You are English (masculine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇬🇧👨"
+          },
+          {
+            id: "tu-es-anglaise-f",
+            french: "Tu es anglaise",
+            english: "You are English (feminine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇬🇧👩"
+          },
+          {
+            id: "vous-etes-espagnol-m",
+            french: "Vous êtes espagnol",
+            english: "You are Spanish (masculine, formal)",
+            category: "nationality-sentences",
+            emoji: "🇪🇸👨"
+          },
+          {
+            id: "vous-etes-espagnole-f",
+            french: "Vous êtes espagnole",
+            english: "You are Spanish (feminine, formal)",
+            category: "nationality-sentences",
+            emoji: "🇪🇸👩"
+          },
+          {
+            id: "il-est-mexicain",
+            french: "Il est mexicain",
+            english: "He is Mexican",
+            category: "nationality-sentences",
+            emoji: "🇲🇽👨"
+          },
+          {
+            id: "elle-est-mexicaine",
+            french: "Elle est mexicaine",
+            english: "She is Mexican",
+            category: "nationality-sentences",
+            emoji: "🇲🇽👩"
+          },
+          {
+            id: "nous-sommes-canadiens",
+            french: "Nous sommes canadiens",
+            english: "We are Canadian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇨🇦👥"
+          },
+          {
+            id: "nous-sommes-canadiennes",
+            french: "Nous sommes canadiennes",
+            english: "We are Canadian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇨🇦👩‍👩‍👧‍👧"
+          },
+          {
+            id: "vous-etes-italiens",
+            french: "Vous êtes italiens",
+            english: "You all are Italian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇮🇹👥"
+          },
+          {
+            id: "vous-etes-italiennes",
+            french: "Vous êtes italiennes",
+            english: "You all are Italian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇮🇹👩‍👩‍👧‍👧"
+          },
+          {
+            id: "ils-sont-allemands",
+            french: "Ils sont allemands",
+            english: "They are German (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇩🇪👨‍👨‍👦‍👦"
+          },
+          {
+            id: "elles-sont-allemandes",
+            french: "Elles sont allemandes",
+            english: "They are German (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇩🇪👩‍👩‍👧‍👧"
+          },
+          {
+            id: "je-ne-suis-pas-americain",
+            french: "Je ne suis pas américain",
+            english: "I am not American (masculine)",
+            category: "nationality-sentences",
+            emoji: "🇺🇸❌👨"
+          },
+          {
+            id: "je-ne-suis-pas-americaine",
+            french: "Je ne suis pas américaine",
+            english: "I am not American (feminine)",
+            category: "nationality-sentences",
+            emoji: "🇺🇸❌👩"
+          },
+          {
+            id: "tu-n-es-pas-chinois",
+            french: "Tu n'es pas chinois",
+            english: "You are not Chinese (masculine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇨🇳❌👨"
+          },
+          {
+            id: "tu-n-es-pas-chinoise",
+            french: "Tu n'es pas chinoise",
+            english: "You are not Chinese (feminine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇨🇳❌👩"
+          },
+          {
+            id: "il-n-est-pas-japonais",
+            french: "Il n'est pas japonais",
+            english: "He is not Japanese",
+            category: "nationality-sentences",
+            emoji: "🇯🇵❌👨"
+          },
+          {
+            id: "elle-n-est-pas-japonaise",
+            french: "Elle n'est pas japonaise",
+            english: "She is not Japanese",
+            category: "nationality-sentences",
+            emoji: "🇯🇵❌👩"
+          },
+          {
+            id: "nous-ne-sommes-pas-bresiliens",
+            french: "Nous ne sommes pas brésiliens",
+            english: "We are not Brazilian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇧🇷❌👥"
+          },
+          {
+            id: "nous-ne-sommes-pas-bresiliennes",
+            french: "Nous ne sommes pas brésiliennes",
+            english: "We are not Brazilian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇧🇷❌👩‍👩‍👧‍👧"
+          },
+          {
+            id: "ils-ne-sont-pas-russes",
+            french: "Ils ne sont pas russes",
+            english: "They are not Russian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇷🇺❌👨‍👨‍👦‍👦"
+          },
+          {
+            id: "elles-ne-sont-pas-russes",
+            french: "Elles ne sont pas russes",
+            english: "They are not Russian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇷🇺❌👩‍👩‍👧‍👧"
+          },
+          {
+            id: "je-suis-camerounais",
+            french: "Je suis camerounais",
+            english: "I am Cameroonian (masculine)",
+            category: "nationality-sentences",
+            emoji: "🇨🇲👨"
+          },
+          {
+            id: "je-suis-camerounaise",
+            french: "Je suis camerounaise",
+            english: "I am Cameroonian (feminine)",
+            category: "nationality-sentences",
+            emoji: "🇨🇲👩"
+          },
+          {
+            id: "tu-es-suedois",
+            french: "Tu es suédois",
+            english: "You are Swedish (masculine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇸🇪👨"
+          },
+          {
+            id: "tu-es-suedoise",
+            french: "Tu es suédoise",
+            english: "You are Swedish (feminine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇸🇪👩"
+          },
+          {
+            id: "il-est-algerien",
+            french: "Il est algérien",
+            english: "He is Algerian",
+            category: "nationality-sentences",
+            emoji: "🇩🇿👨"
+          },
+          {
+            id: "elle-est-algerienne",
+            french: "Elle est algérienne",
+            english: "She is Algerian",
+            category: "nationality-sentences",
+            emoji: "🇩🇿👩"
+          },
+          {
+            id: "nous-sommes-indiens",
+            french: "Nous sommes indiens",
+            english: "We are Indian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇮🇳👥"
+          },
+          {
+            id: "nous-sommes-indiennes",
+            french: "Nous sommes indiennes",
+            english: "We are Indian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇮🇳👩‍👩‍👧‍👧"
+          },
+          {
+            id: "vous-etes-suisses-m",
+            french: "Vous êtes suisses",
+            english: "You all are Swiss (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇨🇭👥"
+          },
+          {
+            id: "vous-etes-suisses-f",
+            french: "Vous êtes suisses",
+            english: "You all are Swiss (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇨🇭👩‍👩‍👧‍👧"
+          },
+          {
+            id: "ils-sont-camerounais",
+            french: "Ils sont camerounais",
+            english: "They are Cameroonian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇨🇲👨‍👨‍👦‍👦"
+          },
+          {
+            id: "elles-sont-camerounaises",
+            french: "Elles sont camerounaises",
+            english: "They are Cameroonian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇨🇲👩‍👩‍👧‍👧"
+          },
+          {
+            id: "je-ne-suis-pas-suedois",
+            french: "Je ne suis pas suédois",
+            english: "I am not Swedish (masculine)",
+            category: "nationality-sentences",
+            emoji: "🇸🇪❌👨"
+          },
+          {
+            id: "je-ne-suis-pas-suedoise",
+            french: "Je ne suis pas suédoise",
+            english: "I am not Swedish (feminine)",
+            category: "nationality-sentences",
+            emoji: "🇸🇪❌👩"
+          },
+          {
+            id: "tu-n-es-pas-algerien",
+            french: "Tu n'es pas algérien",
+            english: "You are not Algerian (masculine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇩🇿❌👨"
+          },
+          {
+            id: "tu-n-es-pas-algerienne",
+            french: "Tu n'es pas algérienne",
+            english: "You are not Algerian (feminine, informal)",
+            category: "nationality-sentences",
+            emoji: "🇩🇿❌👩"
+          },
+          {
+            id: "il-n-est-pas-indien",
+            french: "Il n'est pas indien",
+            english: "He is not Indian",
+            category: "nationality-sentences",
+            emoji: "🇮🇳❌👨"
+          },
+          {
+            id: "elle-n-est-pas-indienne",
+            french: "Elle n'est pas indienne",
+            english: "She is not Indian",
+            category: "nationality-sentences",
+            emoji: "🇮🇳❌👩"
+          },
+          {
+            id: "nous-ne-sommes-pas-suisses-m",
+            french: "Nous ne sommes pas suisses",
+            english: "We are not Swiss (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇨🇭❌👥"
+          },
+          {
+            id: "nous-ne-sommes-pas-suisses-f",
+            french: "Nous ne sommes pas suisses",
+            english: "We are not Swiss (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇨🇭❌👩‍👩‍👧‍👧"
+          },
+          {
+            id: "vous-n-etes-pas-camerounais",
+            french: "Vous n'êtes pas camerounais",
+            english: "You all are not Cameroonian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇨🇲❌👥"
+          },
+          {
+            id: "vous-n-etes-pas-camerounaises",
+            french: "Vous n'êtes pas camerounaises",
+            english: "You all are not Cameroonian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇨🇲❌👩‍👩‍👧‍👧"
+          },
+          {
+            id: "ils-ne-sont-pas-suedois",
+            french: "Ils ne sont pas suédois",
+            english: "They are not Swedish (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇸🇪❌👨‍👨‍👦‍👦"
+          },
+          {
+            id: "elles-ne-sont-pas-suedoises",
+            french: "Elles ne sont pas suédoises",
+            english: "They are not Swedish (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇸🇪❌👩‍👩‍👧‍👧"
+          },
+          {
+            id: "ils-ne-sont-pas-algeriens",
+            french: "Ils ne sont pas algériens",
+            english: "They are not Algerian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇩🇿❌👨‍👨‍👦‍👦"
+          },
+          {
+            id: "elles-ne-sont-pas-algeriennes",
+            french: "Elles ne sont pas algériennes",
+            english: "They are not Algerian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇩🇿❌👩‍👩‍👧‍👧"
+          },
+          {
+            id: "ils-ne-sont-pas-indiens",
+            french: "Ils ne sont pas indiens",
+            english: "They are not Indian (masculine/mixed)",
+            category: "nationality-sentences",
+            emoji: "🇮🇳❌👨‍👨‍👦‍👦"
+          },
+          {
+            id: "elles-ne-sont-pas-indiennes",
+            french: "Elles ne sont pas indiennes",
+            english: "They are not Indian (all feminine)",
+            category: "nationality-sentences",
+            emoji: "🇮🇳❌👩‍👩‍👧‍👧"
+          },
+          {
+            id: "my-friend-is-mexican-m",
+            french: "Mon ami est mexicain",
+            english: "My friend is Mexican (masculine)",
+            category: "nationality-sentences",
+            emoji: "🇲🇽👨‍🤝‍👨"
+          },
+          {
+            id: "my-friend-is-mexican-f",
+            french: "Mon amie est mexicaine",
+            english: "My friend is Mexican (feminine)",
+            category: "nationality-sentences",
+            emoji: "🇲🇽👩‍🤝‍👩"
           }
         ]
       }

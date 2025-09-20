@@ -6,8 +6,8 @@ interface GrammarModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences';
-  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data | PoliteFormulasL2Data | ClassificationData | DialogueCompletionData | PronunciationStressData | ConversationPracticeData | CrossCulturalData | CulturalAssessmentData | VerbEtrePracticeData | QuestionWordsData | FrancophoneProgramData | ProfessionSentencesData;
+  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences' | 'days-l3' | 'months-l3';
+  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data | PoliteFormulasL2Data | ClassificationData | DialogueCompletionData | PronunciationStressData | ConversationPracticeData | CrossCulturalData | CulturalAssessmentData | VerbEtrePracticeData | QuestionWordsData | FrancophoneProgramData | ProfessionSentencesData | DaysL3Data | MonthsL3Data;
 }
 
 interface VerbConjugation {
@@ -436,6 +436,35 @@ interface ProfessionSentencesData {
     [key: string]: string;
   };
   professionExamples: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface DaysL3Data {
+  type: 'days-l3';
+  days: {
+    [key: string]: string;
+  };
+  timeExpressions: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface MonthsL3Data {
+  type: 'months-l3';
+  months: {
+    [key: string]: string;
+  };
+  seasons: {
+    [key: string]: string;
+  };
+  timeExpressions: {
     [key: string]: string;
   };
   rules: {
@@ -1482,6 +1511,116 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
     </div>
   );
 
+  const renderDaysL3 = (data: DaysL3Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Days of the Week - Lesson 3
+        </h3>
+        <p className="text-gray-600 mb-4">
+          Learn French days with time expressions and usage patterns
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Days of the Week</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.days).map(([french, english]) => (
+            <div key={french} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{french}</div>
+              <div className="text-gray-600">{english}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Time Expressions</h4>
+        <div className="space-y-3">
+          {Object.entries(data.timeExpressions).map(([pattern, explanation]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg bg-blue-50">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderMonthsL3 = (data: MonthsL3Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Months of the Year - Lesson 3
+        </h3>
+        <p className="text-gray-600 mb-4">
+          Learn French months with seasonal context and time expressions
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Months of the Year</h4>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {Object.entries(data.months).map(([french, english]) => (
+            <div key={french} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{french}</div>
+              <div className="text-gray-600">{english}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Seasons</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.seasons).map(([season, months]) => (
+            <div key={season} className="p-4 border border-gray-300 rounded-lg bg-green-50">
+              <div className="font-medium text-gray-800">{season}</div>
+              <div className="text-gray-600">{months}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Time Expressions</h4>
+        <div className="space-y-3">
+          {Object.entries(data.timeExpressions).map(([pattern, explanation]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg bg-blue-50">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   const renderContent = () => {
     switch (type) {
       case 'verb-conjugation':
@@ -1592,6 +1731,10 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
         return renderFrancophoneProgram(data as FrancophoneProgramData);
       case 'profession-sentences':
         return renderProfessionSentences(data as ProfessionSentencesData);
+      case 'days-l3':
+        return renderDaysL3(data as DaysL3Data);
+      case 'months-l3':
+        return renderMonthsL3(data as MonthsL3Data);
       default:
         return <div>Unsupported grammar type</div>;
     }

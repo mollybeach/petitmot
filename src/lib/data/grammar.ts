@@ -1194,3 +1194,182 @@ export const professionSentencesData = {
     'Profession Usage': 'No article needed after être + profession (Je suis acteur)'
   }
 };
+
+// Lesson 3 - Days of the Week
+export const daysL3Data = {
+  type: 'days-l3',
+  days: {
+    'lundi': 'Monday',
+    'mardi': 'Tuesday', 
+    'mercredi': 'Wednesday',
+    'jeudi': 'Thursday',
+    'vendredi': 'Friday',
+    'samedi': 'Saturday',
+    'dimanche': 'Sunday'
+  },
+  timeExpressions: {
+    'Aujourd\'hui, c\'est...': 'Today is...',
+    'Demain, c\'est...': 'Tomorrow is...',
+    'Le + day': 'On [day] / Every [day] (Le lundi = on Mondays)',
+    'Ce + day': 'This [day] (Ce jeudi = this Thursday)',
+    'Day + prochain': 'Next [day] (lundi prochain = next Monday)',
+    'Day + dernier': 'Last [day] (samedi dernier = last Saturday)',
+    'Tous les + day': 'Every [day] (tous les dimanches = every Sunday)'
+  },
+  rules: {
+    'No Capitalization': 'Days are not capitalized in French (lundi, not Lundi)',
+    'Articles': 'Use "le" for habitual actions (le lundi = on Mondays)',
+    'Demonstratives': 'Use "ce" for "this" (ce mercredi = this Wednesday)',
+    'Time Markers': 'prochain (next), dernier (last), tous les (every)'
+  }
+};
+
+// Lesson 3 - Months of the Year
+export const monthsL3Data = {
+  type: 'months-l3',
+  months: {
+    'janvier': 'January',
+    'février': 'February',
+    'mars': 'March',
+    'avril': 'April',
+    'mai': 'May',
+    'juin': 'June',
+    'juillet': 'July',
+    'août': 'August',
+    'septembre': 'September',
+    'octobre': 'October',
+    'novembre': 'November',
+    'décembre': 'December'
+  },
+  seasons: {
+    'le printemps': 'spring (mars, avril, mai)',
+    'l\'été': 'summer (juin, juillet, août)',
+    'l\'automne': 'autumn (septembre, octobre, novembre)',
+    'l\'hiver': 'winter (décembre, janvier, février)'
+  },
+  timeExpressions: {
+    'En + month': 'In [month] (en janvier = in January)',
+    'Ce + month': 'This [month] (ce février = this February)',
+    'Month + prochain': 'Next [month] (mars prochain = next March)',
+    'Month + dernier': 'Last [month] (avril dernier = last April)',
+    'Pendant + season': 'During [season] (pendant l\'été = during summer)'
+  },
+  rules: {
+    'No Capitalization': 'Months are not capitalized in French (janvier, not Janvier)',
+    'Preposition': 'Use "en" for "in" with months (en janvier)',
+    'Gender': 'All months are masculine',
+    'Seasons': 'Seasons have specific genders (le printemps, l\'été, l\'automne, l\'hiver)'
+  }
+};
+
+// Lesson 3 - Personal Conversation Practice
+export const personalConversationL3Data = {
+  type: 'personal-conversation-l3',
+  introductions: {
+    'Je m\'appelle...': 'My name is... (formal introduction)',
+    'Comment allez-vous ?': 'How are you? (formal)',
+    'Comment tu vas ?': 'How are you? (informal)',
+    'Comment vous appelez-vous ?': 'What is your name? (formal)',
+    'Comment tu t\'appelles ?': 'What is your name? (informal)'
+  },
+  weeklyConversation: {
+    'Comment s\'est passée votre semaine ?': 'How was your week? (formal)',
+    'Comment s\'est passée ta semaine ?': 'How was your week? (informal)',
+    'Ma semaine s\'est bien passée': 'My week was good',
+    'Ma semaine a été difficile': 'My week was difficult',
+    'J\'ai eu une bonne semaine': 'I had a good week'
+  },
+  personalInterests: {
+    'J\'aime...': 'I like... (+ infinitive verb)',
+    'J\'aime courir': 'I like to run',
+    'J\'aime lire': 'I like to read',
+    'J\'aime voyager': 'I like to travel',
+    'Je n\'aime pas...': 'I don\'t like... (negative form)'
+  },
+  professionAndWork: {
+    'Je suis...': 'I am... (+ profession)',
+    'Je travaille comme...': 'I work as...',
+    'J\'apprends le français pour...': 'I\'m learning French to...',
+    'Je ne travaille pas le...': 'I don\'t work on... (+ day)',
+    'pour ne pas travailler': 'to not work / to get out of work'
+  },
+  pastExperiences: {
+    'J\'étais...': 'I was... (imperfect tense)',
+    'J\'étais en France': 'I was in France',
+    'pour un hackathon': 'for a hackathon',
+    'en juillet': 'in July',
+    'l\'année dernière': 'last year'
+  },
+  rules: {
+    'Formal vs Informal': 'Use "vous" for formal, "tu" for informal situations',
+    'Reflexive Verbs': 's\'appeler (to be called) requires reflexive pronouns',
+    'Imperfect Tense': 'Use "j\'étais" for past states or ongoing actions',
+    'Infinitive After Verbs': 'Use infinitive after "aimer", "apprendre", etc.',
+    'Prepositions': 'Use "en" for months, "pour" for purpose',
+    'Negation': 'Use "ne...pas" around the verb for negation'
+  }
+};
+
+// Lesson 3 - Nationality Sentences with ÊTRE
+export const nationalitySentencesData = {
+  type: 'nationality-sentences',
+  verb: 'être',
+  meaning: 'to be',
+  conjugations: {
+    'Je suis': 'I am',
+    'Tu es': 'You are (informal)',
+    'Il est': 'He is',
+    'Elle est': 'She is',
+    'Nous sommes': 'We are',
+    'Vous êtes': 'You are (formal/plural)',
+    'Ils sont': 'They are (masculine)',
+    'Elles sont': 'They are (feminine)'
+  },
+  negativeConjugations: {
+    'Je ne suis pas': 'I am not',
+    'Tu n\'es pas': 'You are not (informal)',
+    'Il n\'est pas': 'He is not',
+    'Elle n\'est pas': 'She is not',
+    'Nous ne sommes pas': 'We are not',
+    'Vous n\'êtes pas': 'You are not (formal/plural)',
+    'Ils ne sont pas': 'They are not (masculine)',
+    'Elles ne sont pas': 'They are not (feminine)'
+  },
+  nationalityExamples: {
+    'Je suis français/française': 'I am French (m/f)',
+    'Tu es anglais/anglaise': 'You are English (m/f)',
+    'Il est mexicain': 'He is Mexican',
+    'Elle est mexicaine': 'She is Mexican',
+    'Nous sommes canadiens/canadiennes': 'We are Canadian (m/f)',
+    'Vous êtes italiens/italiennes': 'You are Italian (m/f)',
+    'Ils sont allemands': 'They are German (masculine)',
+    'Elles sont allemandes': 'They are German (feminine)',
+    'Je suis camerounais/camerounaise': 'I am Cameroonian (m/f)',
+    'Tu es suédois/suédoise': 'You are Swedish (m/f)',
+    'Il est algérien': 'He is Algerian',
+    'Elle est algérienne': 'She is Algerian',
+    'Nous sommes indiens/indiennes': 'We are Indian (m/f)',
+    'Vous êtes suisses': 'You are Swiss (identical forms)',
+    'Je ne suis pas américain/américaine': 'I am not American (m/f)',
+    'Ils ne sont pas russes': 'They are not Russian',
+    'Tu n\'es pas chinois/chinoise': 'You are not Chinese (m/f)',
+    'Elles ne sont pas japonaises': 'They are not Japanese (feminine)'
+  },
+  genderAgreementRules: {
+    'Masculine Singular': 'français, anglais, mexicain, etc.',
+    'Feminine Singular': 'Add -e: française, anglaise, mexicaine',
+    'Masculine Plural': 'Add -s: français → français, allemand → allemands',
+    'Feminine Plural': 'Add -es: française → françaises, allemande → allemandes',
+    'Identical Forms': 'Some nationalities are the same: russe, suisse',
+    'Mixed Groups': 'Use masculine plural for mixed gender groups'
+  },
+  rules: {
+    'Verb Agreement': 'ÊTRE conjugates with the subject pronoun',
+    'Gender Agreement': 'Nationalities agree with the person\'s gender',
+    'Plural Agreement': 'Add -s or -es for plural nationalities',
+    'Negation': 'Use ne...pas around the verb (Je ne suis pas)',
+    'Formal vs Informal': 'Tu/Vous changes the verb form (tu es / vous êtes)',
+    'Nationality Usage': 'No article needed after être + nationality (Je suis français)',
+    'Capitalization': 'Nationalities are not capitalized in French'
+  }
+};
