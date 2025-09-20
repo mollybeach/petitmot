@@ -2257,6 +2257,55 @@ export const lessonGroups: LessonGroup[] = [
         emoji: "7️⃣2️⃣"
       },
       {
+        id: "number-73",
+        french: "73 - soixante-treize\n(60 + 13)",
+        english: "73 - seventy-three\n(60 + 13)",
+        category: "numbers",
+        emoji: "7️⃣3️⃣"
+      },
+      {
+        id: "number-74",
+        french: "74 - soixante-quatorze\n(60 + 14)",
+        english: "74 - seventy-four\n(60 + 14)",
+        category: "numbers",
+        emoji: "7️⃣4️⃣"
+      },
+      {
+        id: "number-75",
+        french: "75 - soixante-quinze\n(60 + 15)",
+        english: "75 - seventy-five\n(60 + 15)",
+        category: "numbers",
+        emoji: "7️⃣5️⃣"
+      },
+      {
+        id: "number-76",
+        french: "76 - soixante-seize\n(60 + 16)",
+        english: "76 - seventy-six\n(60 + 16)",
+        category: "numbers",
+        emoji: "7️⃣6️⃣"
+      },
+      {
+        id: "number-77",
+        french: "77 - soixante-dix-sept\n(60 + 17)",
+        english: "77 - seventy-seven\n(60 + 17)",
+        category: "numbers",
+        emoji: "7️⃣7️⃣"
+      },
+      {
+        id: "number-78",
+        french: "78 - soixante-dix-huit\n(60 + 18)",
+        english: "78 - seventy-eight\n(60 + 18)",
+        category: "numbers",
+        emoji: "7️⃣8️⃣"
+      },
+      {
+        id: "number-79",
+        french: "79 - soixante-dix-neuf\n(60 + 19)",
+        english: "79 - seventy-nine\n(60 + 19)",
+        category: "numbers",
+        emoji: "7️⃣9️⃣"
+      },
+      {
         id: "number-80",
         french: "80 - quatre-vingt\n(4 × 20)",
         english: "80 - eighty\n(4 × 20)",
@@ -2276,6 +2325,55 @@ export const lessonGroups: LessonGroup[] = [
         english: "82 - eighty-two\n(4 × 20 + 2)",
         category: "numbers",
         emoji: "8️⃣2️⃣"
+      },
+      {
+        id: "number-83",
+        french: "83 - quatre-vingt-trois\n(4 × 20 + 3)",
+        english: "83 - eighty-three\n(4 × 20 + 3)",
+        category: "numbers",
+        emoji: "8️⃣3️⃣"
+      },
+      {
+        id: "number-84",
+        french: "84 - quatre-vingt-quatre\n(4 × 20 + 4)",
+        english: "84 - eighty-four\n(4 × 20 + 4)",
+        category: "numbers",
+        emoji: "8️⃣4️⃣"
+      },
+      {
+        id: "number-85",
+        french: "85 - quatre-vingt-cinq\n(4 × 20 + 5)",
+        english: "85 - eighty-five\n(4 × 20 + 5)",
+        category: "numbers",
+        emoji: "8️⃣5️⃣"
+      },
+      {
+        id: "number-86",
+        french: "86 - quatre-vingt-six\n(4 × 20 + 6)",
+        english: "86 - eighty-six\n(4 × 20 + 6)",
+        category: "numbers",
+        emoji: "8️⃣6️⃣"
+      },
+      {
+        id: "number-87",
+        french: "87 - quatre-vingt-sept\n(4 × 20 + 7)",
+        english: "87 - eighty-seven\n(4 × 20 + 7)",
+        category: "numbers",
+        emoji: "8️⃣7️⃣"
+      },
+      {
+        id: "number-88",
+        french: "88 - quatre-vingt-huit\n(4 × 20 + 8)",
+        english: "88 - eighty-eight\n(4 × 20 + 8)",
+        category: "numbers",
+        emoji: "8️⃣8️⃣"
+      },
+      {
+        id: "number-89",
+        french: "89 - quatre-vingt-neuf\n(4 × 20 + 9)",
+        english: "89 - eighty-nine\n(4 × 20 + 9)",
+        category: "numbers",
+        emoji: "8️⃣9️⃣"
       },
       {
         id: "number-90",
@@ -2304,6 +2402,48 @@ export const lessonGroups: LessonGroup[] = [
         english: "93 - ninety-three\n(4 × 20 + 13)",
         category: "numbers",
         emoji: "9️⃣3️⃣"
+      },
+      {
+        id: "number-94",
+        french: "94 - quatre-vingt-quatorze\n(4 × 20 + 14)",
+        english: "94 - ninety-four\n(4 × 20 + 14)",
+        category: "numbers",
+        emoji: "9️⃣4️⃣"
+      },
+      {
+        id: "number-95",
+        french: "95 - quatre-vingt-quinze\n(4 × 20 + 15)",
+        english: "95 - ninety-five\n(4 × 20 + 15)",
+        category: "numbers",
+        emoji: "9️⃣5️⃣"
+      },
+      {
+        id: "number-96",
+        french: "96 - quatre-vingt-seize\n(4 × 20 + 16)",
+        english: "96 - ninety-six\n(4 × 20 + 16)",
+        category: "numbers",
+        emoji: "9️⃣6️⃣"
+      },
+      {
+        id: "number-97",
+        french: "97 - quatre-vingt-dix-sept\n(4 × 20 + 17)",
+        english: "97 - ninety-seven\n(4 × 20 + 17)",
+        category: "numbers",
+        emoji: "9️⃣7️⃣"
+      },
+      {
+        id: "number-98",
+        french: "98 - quatre-vingt-dix-huit\n(4 × 20 + 18)",
+        english: "98 - ninety-eight\n(4 × 20 + 18)",
+        category: "numbers",
+        emoji: "9️⃣8️⃣"
+      },
+      {
+        id: "number-99",
+        french: "99 - quatre-vingt-dix-neuf\n(4 × 20 + 19)",
+        english: "99 - ninety-nine\n(4 × 20 + 19)",
+        category: "numbers",
+        emoji: "9️⃣9️⃣"
       },
       {
         id: "number-100",

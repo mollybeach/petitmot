@@ -134,6 +134,9 @@ interface NumbersData {
   numbers: {
     [key: string]: string;
   };
+  mathExplanations?: {
+    [key: string]: string;
+  };
   rules: {
     [key: string]: string;
   };
@@ -1300,8 +1303,8 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
           <div className="space-y-3">
             {Object.entries(data.mathExplanations).map(([equation, explanation]) => (
               <div key={equation} className="p-4 border border-gray-300 rounded-lg bg-blue-50">
-                <div className="font-bold text-gray-800 text-lg">{equation}</div>
-                <div className="text-gray-600">{explanation}</div>
+                <div className="font-bold text-gray-800 text-lg">{String(equation)}</div>
+                <div className="text-gray-600">{String(explanation)}</div>
               </div>
             ))}
           </div>
