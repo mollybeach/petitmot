@@ -29,13 +29,23 @@ import {
   professionsL3Data,
   languagesL3Data,
   intonationL3Data,
-  politeFormulasL2Data
+  politeFormulasL2Data,
+  classificationWhereData,
+  classificationWhenData,
+  classificationWhatData,
+  classificationWhoData,
+  dialogueCompletionData,
+  pronunciationStressData,
+  conversationPracticeData,
+  crossCulturalData,
+  culturalAssessmentData,
+  verbEtrePracticeData
 } from '@/lib/data/grammar';
 
 interface PhraseCardProps {
   phrase: FrenchPhrase;
   isFormal?: boolean;
-  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2', data: unknown) => void;
+  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice', data: unknown) => void;
 }
 
 export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: PhraseCardProps) {
@@ -183,6 +193,36 @@ export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: 
         break;
       case 'polite-formulas-l2':
         onOpenGrammar('Polite Formulas', 'polite-formulas-l2', politeFormulasL2Data);
+        break;
+      case 'classification-where':
+        onOpenGrammar('Où - Where', 'classification-where', classificationWhereData);
+        break;
+      case 'classification-when':
+        onOpenGrammar('Quand - When', 'classification-when', classificationWhenData);
+        break;
+      case 'classification-what':
+        onOpenGrammar('Quoi - What', 'classification-what', classificationWhatData);
+        break;
+      case 'classification-who':
+        onOpenGrammar('Qui - Who', 'classification-who', classificationWhoData);
+        break;
+      case 'dialogue-completion':
+        onOpenGrammar('Dialogue Completion', 'dialogue-completion', dialogueCompletionData);
+        break;
+      case 'pronunciation-stress':
+        onOpenGrammar('French Pronunciation - Stress', 'pronunciation-stress', pronunciationStressData);
+        break;
+      case 'conversation-practice':
+        onOpenGrammar('Conversation Practice', 'conversation-practice', conversationPracticeData);
+        break;
+      case 'cross-cultural':
+        onOpenGrammar('Cross-Cultural Greetings', 'cross-cultural', crossCulturalData);
+        break;
+      case 'cultural-assessment':
+        onOpenGrammar('Francophone Cultural Assessment', 'cultural-assessment', culturalAssessmentData);
+        break;
+      case 'verb-etre-practice':
+        onOpenGrammar('Verb ÊTRE Practice', 'verb-etre-practice', verbEtrePracticeData);
         break;
       default:
         // For other categories, show subject pronouns as default

@@ -50,6 +50,12 @@ export default function Header() {
               Lessons
             </Link>
             <Link 
+              href="/matching-game" 
+              className={`nav-link-french ${pathname === '/matching-game' ? 'font-semibold' : ''}`}
+            >
+              Matching Game
+            </Link>
+            <Link 
               href="/about" 
               className="nav-link-french"
             >

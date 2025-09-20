@@ -796,3 +796,250 @@ export const politeFormulasL2Data = {
     'Tone': 'Polite formulas show respect and courtesy'
   }
 };
+
+// Lesson 2 - Word Classification: Où (Where)
+export const classificationWhereData = {
+  type: 'classification-where',
+  questionWord: 'Où',
+  meaning: 'Where',
+  words: {
+    'le Maroc': 'Morocco',
+    'une gare routière': 'a bus station',
+    'une gare': 'a train station',
+    'un aéroport': 'an airport',
+    'Lyon': 'Lyon'
+  },
+  rules: {
+    'Question Word': 'Où = Where (asking about location or place)',
+    'Places': 'Countries, cities, buildings, and locations answer "Où?"',
+    'Articles': 'Places often use articles: le Maroc, une gare, un aéroport',
+    'Proper Nouns': 'City names like Lyon don\'t use articles'
+  }
+};
+
+// Lesson 2 - Word Classification: Quand (When)
+export const classificationWhenData = {
+  type: 'classification-when',
+  questionWord: 'Quand',
+  meaning: 'When',
+  words: {
+    'le matin': 'in the morning',
+    'lundi': 'Monday',
+    'l\'après-midi': 'in the afternoon',
+    'à midi': 'at noon',
+    'l\'été': 'summer',
+    'l\'automne': 'autumn'
+  },
+  rules: {
+    'Question Word': 'Quand = When (asking about time)',
+    'Time Expressions': 'Days, times of day, seasons answer "Quand?"',
+    'Articles': 'Time expressions often use articles: le matin, l\'été',
+    'Prepositions': 'Some use prepositions: à midi (at noon)'
+  }
+};
+
+// Lesson 2 - Word Classification: Quoi (What)
+export const classificationWhatData = {
+  type: 'classification-what',
+  questionWord: 'Quoi',
+  meaning: 'What',
+  words: {
+    'un échange de numéros de téléphone': 'an exchange of phone numbers',
+    'une rencontre': 'a meeting/encounter',
+    'un rendez-vous': 'an appointment'
+  },
+  rules: {
+    'Question Word': 'Quoi = What (asking about things, actions, events)',
+    'Events/Actions': 'Activities, meetings, and events answer "Quoi?"',
+    'Articles': 'Events use indefinite articles: un échange, une rencontre',
+    'Complex Phrases': 'Some are longer phrases describing specific actions'
+  }
+};
+
+// Lesson 2 - Word Classification: Qui (Who)
+export const classificationWhoData = {
+  type: 'classification-who',
+  questionWord: 'Qui',
+  meaning: 'Who',
+  words: {
+    'un homme': 'a man',
+    'une femme': 'a woman',
+    'une jeune femme': 'a young woman',
+    'un monsieur': 'a gentleman/sir',
+    'Marius Ndiaye': 'Marius Ndiaye'
+  },
+  rules: {
+    'Question Word': 'Qui = Who (asking about people)',
+    'People': 'All people, names, and person descriptions answer "Qui?"',
+    'Gender': 'French nouns for people have gender: un homme, une femme',
+    'Proper Names': 'Personal names like Marius Ndiaye don\'t use articles'
+  }
+};
+
+// Lesson 2 - Dialogue Completion
+export const dialogueCompletionData = {
+  type: 'dialogue-completion',
+  questionWords: {
+    'Quand': 'When - asking about time',
+    'Où': 'Where - asking about location',
+    'Qui': 'Who - asking about people'
+  },
+  examples: {
+    'Quand il arrive le train?': 'When does the train arrive?',
+    'C\'est où exactement?': 'Where is it exactly?',
+    'C\'est qui sur la photo?': 'Who is that in the photo?'
+  },
+  dialogueStructure: {
+    'Question': 'Use question word + subject + verb',
+    'Polite Address': 'Start with "Excusez-moi Monsieur/Madame"',
+    'Response': 'Answer directly with specific information',
+    'Courtesy': 'End with polite address (Madame/Monsieur)'
+  },
+  rules: {
+    'Question Formation': 'Question word + il/elle + verb (Quand il arrive?)',
+    'Politeness': 'Always use Monsieur/Madame in formal situations',
+    'Context': 'Questions and answers should match logically',
+    'Intonation': 'Questions have rising intonation'
+  }
+};
+
+// Lesson 2 - French Pronunciation Stress
+export const pronunciationStressData = {
+  type: 'pronunciation-stress',
+  concept: 'Final Syllable Stress',
+  rule: 'French words are stressed on the final syllable',
+  examples: {
+    'une gare': '[gare] - stress on final syllable',
+    'un train': '[train] - stress on final syllable',
+    'une voiture': '[voi-TURE] - stress on final syllable',
+    'le matin': '[ma-TIN] - stress on final syllable',
+    'l\'après-midi': '[a-près-mi-DI] - stress on final syllable'
+  },
+  patterns: {
+    'Single Syllable': 'Stress the only syllable (gare, train)',
+    'Multi-Syllable': 'Always stress the last syllable (voi-TURE)',
+    'Compound Words': 'Stress the final syllable of the last word',
+    'Names': 'Follow same rule (Trem-BLAY)'
+  },
+  rules: {
+    'Universal Rule': 'French always stresses the final syllable',
+    'No Exceptions': 'Unlike English, French stress is predictable',
+    'Rhythm': 'This creates French\'s characteristic rhythm',
+    'Practice': 'Listen and repeat to master the pattern'
+  }
+};
+
+// Lesson 2 - Conversation Practice
+export const conversationPracticeData = {
+  type: 'conversation-practice',
+  scenario: 'Organizing Activities',
+  keyPhrases: {
+    'J\'organise une activité': 'I\'m organizing an activity',
+    'Des propositions?': 'Any suggestions?',
+    'On peut visiter': 'We can visit',
+    'Ce serait bien': 'That would be good',
+    'Qu\'en penses-tu?': 'What do you think?'
+  },
+  conversationFlow: {
+    'Opening': 'Greeting + explaining purpose',
+    'Request': 'Asking for suggestions',
+    'Response': 'Providing specific suggestions',
+    'Details': 'When and where information',
+    'Closing': 'Asking for opinion + farewell'
+  },
+  rules: {
+    'Informal Register': 'Use "tu" with friends and classmates',
+    'Suggestions': 'Use "On peut..." (We can...) for suggestions',
+    'Conditional': 'Use "Ce serait..." (That would be...) for polite suggestions',
+    'Questions': 'End with question to engage the other person'
+  }
+};
+
+// Lesson 2 - Cross-Cultural Greetings
+export const crossCulturalData = {
+  type: 'cross-cultural',
+  comparison: 'French vs English Politeness',
+  formalGreetings: {
+    'French': 'Bonjour Madame/Monsieur',
+    'English': 'Good morning Sir/Madam'
+  },
+  usage: {
+    'French Frequency': 'Very often - Madame/Monsieur used constantly',
+    'English Frequency': 'Less frequent - Sir/Madam more formal'
+  },
+  culturalNotes: {
+    'French Politeness': 'Essential for daily interactions',
+    'Formality Level': 'Higher than many other cultures',
+    'Social Expectation': 'Not using titles can seem rude',
+    'Universal Usage': 'Used in shops, restaurants, streets'
+  },
+  rules: {
+    'When to Use': 'Always in formal situations and with strangers',
+    'Age Factor': 'Use with adults regardless of age difference',
+    'Professional': 'Essential in business and service contexts',
+    'Cultural Respect': 'Shows understanding of French social norms'
+  }
+};
+
+// Lesson 3 - Cultural Assessment
+export const culturalAssessmentData = {
+  type: 'cultural-assessment',
+  topic: 'Francophone Games',
+  facts: {
+    'Event Type': 'Cultural and sports celebration',
+    'Location': 'Abidjan, Ivory Coast',
+    'Participants': 'Francophone athletes and artists',
+    'Scope': 'International francophone event'
+  },
+  trueStatements: {
+    'Une fête culturelle': 'The games are a cultural celebration',
+    'Une fête sportive': 'The games are a sports celebration',
+    'Abidjan': 'The city hosting the games',
+    'Francophones': 'Participants are French-speaking'
+  },
+  falseStatements: {
+    'Un festival de cinéma': 'NOT a film festival',
+    'Paris': 'NOT held in Paris',
+    'Québec': 'NOT held in Quebec',
+    'Tous français': 'NOT all participants are French citizens'
+  },
+  rules: {
+    'Francophone vs French': 'Francophone = French-speaking, not necessarily French citizen',
+    'Cultural Events': 'Combine sports and cultural activities',
+    'Geography': 'Francophone events happen in various francophone countries',
+    'Gender Agreement': 'Professions agree with gender (chanteuse vs chanteur)'
+  }
+};
+
+// Lesson 3 - Verb ÊTRE Practice
+export const verbEtrePracticeData = {
+  type: 'verb-etre-practice',
+  verb: 'être',
+  meaning: 'to be',
+  conjugations: {
+    'je suis': 'I am',
+    'tu es': 'you are (informal)',
+    'il/elle est': 'he/she is',
+    'nous sommes': 'we are',
+    'vous êtes': 'you are (formal/plural)',
+    'ils/elles sont': 'they are'
+  },
+  questionFormation: {
+    'Tu es russe?': 'Are you Russian? (informal)',
+    'Elle est actrice?': 'Is she an actress?',
+    'Ils sont canadiens?': 'Are they Canadian?',
+    'Vous êtes francophones?': 'Are you French-speaking? (formal)'
+  },
+  answerPatterns: {
+    'Oui, je suis...': 'Yes, I am...',
+    'Oui, elle est...': 'Yes, she is...',
+    'Oui, ils sont...': 'Yes, they are...',
+    'Oui, nous sommes...': 'Yes, we are...'
+  },
+  rules: {
+    'Question Formation': 'Subject + être + adjective/noun + ?',
+    'Answer Pattern': 'Oui/Non + subject pronoun + être + adjective/noun',
+    'Gender Agreement': 'Adjectives agree with the subject (canadien/canadienne)',
+    'Nationality': 'Nationalities are adjectives that agree with gender'
+  }
+};

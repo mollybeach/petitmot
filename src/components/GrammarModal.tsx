@@ -6,8 +6,8 @@ interface GrammarModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2';
-  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data | PoliteFormulasL2Data;
+  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice';
+  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data | PoliteFormulasL2Data | ClassificationData | DialogueCompletionData | PronunciationStressData | ConversationPracticeData | CrossCulturalData | CulturalAssessmentData | VerbEtrePracticeData;
 }
 
 interface VerbConjugation {
@@ -270,6 +270,115 @@ interface PoliteFormulasL2Data {
     [key: string]: string;
   };
   examples: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface ClassificationData {
+  type: 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who';
+  questionWord: string;
+  meaning: string;
+  words: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface DialogueCompletionData {
+  type: 'dialogue-completion';
+  questionWords: {
+    [key: string]: string;
+  };
+  examples: {
+    [key: string]: string;
+  };
+  dialogueStructure: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface PronunciationStressData {
+  type: 'pronunciation-stress';
+  concept: string;
+  rule: string;
+  examples: {
+    [key: string]: string;
+  };
+  patterns: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface ConversationPracticeData {
+  type: 'conversation-practice';
+  scenario: string;
+  keyPhrases: {
+    [key: string]: string;
+  };
+  conversationFlow: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface CrossCulturalData {
+  type: 'cross-cultural';
+  comparison: string;
+  formalGreetings: {
+    [key: string]: string;
+  };
+  usage: {
+    [key: string]: string;
+  };
+  culturalNotes: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface CulturalAssessmentData {
+  type: 'cultural-assessment';
+  topic: string;
+  facts: {
+    [key: string]: string;
+  };
+  trueStatements: {
+    [key: string]: string;
+  };
+  falseStatements: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface VerbEtrePracticeData {
+  type: 'verb-etre-practice';
+  verb: string;
+  meaning: string;
+  conjugations: {
+    [key: string]: string;
+  };
+  questionFormation: {
+    [key: string]: string;
+  };
+  answerPatterns: {
     [key: string]: string;
   };
   rules: {
@@ -689,6 +798,385 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
     </div>
   );
 
+  const renderClassificationData = (data: ClassificationData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          {data.questionWord} - {data.meaning}
+        </h3>
+        <p className="text-gray-600 mb-4">
+          Words that answer the question "{data.questionWord}?"
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Vocabulary</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.words).map(([french, english]) => (
+            <div key={french} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{french}</div>
+              <div className="text-gray-600">{english}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderDialogueCompletion = (data: DialogueCompletionData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Dialogue Completion
+        </h3>
+        <p className="text-gray-600 mb-4">
+          Learn to complete dialogues using question words
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Question Words</h4>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {Object.entries(data.questionWords).map(([word, meaning]) => (
+            <div key={word} className="p-4 border border-gray-300 rounded-lg text-center">
+              <div className="font-bold text-gray-800 text-xl">{word}</div>
+              <div className="text-gray-600">{meaning}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Example Questions</h4>
+        <div className="space-y-3">
+          {Object.entries(data.examples).map(([french, english]) => (
+            <div key={french} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{french}</div>
+              <div className="text-gray-600">{english}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Dialogue Structure</h4>
+        <div className="space-y-2">
+          {Object.entries(data.dialogueStructure).map(([element, description]) => (
+            <div key={element} className="p-3 bg-blue-50 rounded-lg">
+              <div className="font-medium text-gray-800">{element}</div>
+              <div className="text-gray-600">{description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderPronunciationStress = (data: PronunciationStressData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          {data.concept}
+        </h3>
+        <p className="text-lg text-gray-600 mb-4 font-medium">
+          {data.rule}
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Examples</h4>
+        <div className="space-y-3">
+          {Object.entries(data.examples).map(([word, stress]) => (
+            <div key={word} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{word}</div>
+              <div className="text-gray-600">{stress}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Stress Patterns</h4>
+        <div className="space-y-2">
+          {Object.entries(data.patterns).map(([pattern, description]) => (
+            <div key={pattern} className="p-3 bg-blue-50 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderConversationPractice = (data: ConversationPracticeData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Conversation Practice
+        </h3>
+        <p className="text-lg text-gray-600 mb-4">
+          Scenario: {data.scenario}
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Phrases</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.keyPhrases).map(([french, english]) => (
+            <div key={french} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{french}</div>
+              <div className="text-gray-600">{english}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Conversation Flow</h4>
+        <div className="space-y-2">
+          {Object.entries(data.conversationFlow).map(([step, description]) => (
+            <div key={step} className="p-3 bg-green-50 rounded-lg">
+              <div className="font-medium text-gray-800">{step}</div>
+              <div className="text-gray-600">{description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderCrossCultural = (data: CrossCulturalData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Cross-Cultural Greetings
+        </h3>
+        <p className="text-lg text-gray-600 mb-4">
+          {data.comparison}
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Formal Greetings</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.formalGreetings).map(([language, greeting]) => (
+            <div key={language} className="p-4 border border-gray-300 rounded-lg text-center">
+              <div className="font-bold text-gray-800 text-lg">{language}</div>
+              <div className="text-gray-600">{greeting}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Usage Frequency</h4>
+        <div className="space-y-3">
+          {Object.entries(data.usage).map(([type, description]) => (
+            <div key={type} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{type}</div>
+              <div className="text-gray-600">{description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Cultural Notes</h4>
+        <div className="space-y-2">
+          {Object.entries(data.culturalNotes).map(([note, explanation]) => (
+            <div key={note} className="p-3 bg-purple-50 rounded-lg">
+              <div className="font-medium text-gray-800">{note}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Usage Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderCulturalAssessment = (data: CulturalAssessmentData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Cultural Assessment
+        </h3>
+        <p className="text-lg text-gray-600 mb-4">
+          Topic: {data.topic}
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Facts</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.facts).map(([fact, description]) => (
+            <div key={fact} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{fact}</div>
+              <div className="text-gray-600">{description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">✅ True Statements</h4>
+        <div className="space-y-2">
+          {Object.entries(data.trueStatements).map(([statement, explanation]) => (
+            <div key={statement} className="p-3 bg-green-50 border border-green-200 rounded-lg">
+              <div className="font-medium text-gray-800">{statement}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">❌ False Statements</h4>
+        <div className="space-y-2">
+          {Object.entries(data.falseStatements).map(([statement, explanation]) => (
+            <div key={statement} className="p-3 bg-red-50 border border-red-200 rounded-lg">
+              <div className="font-medium text-gray-800">{statement}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Cultural Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderVerbEtrePractice = (data: VerbEtrePracticeData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Verb ÊTRE Practice
+        </h3>
+        <p className="text-lg text-gray-600 mb-4">
+          {data.verb} = {data.meaning}
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Conjugations</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.conjugations).map(([subject, conjugation]) => (
+            <div key={subject} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{subject}</div>
+              <div className="text-gray-600">{conjugation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Question Formation</h4>
+        <div className="space-y-3">
+          {Object.entries(data.questionFormation).map(([question, translation]) => (
+            <div key={question} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{question}</div>
+              <div className="text-gray-600">{translation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Answer Patterns</h4>
+        <div className="space-y-2">
+          {Object.entries(data.answerPatterns).map(([pattern, translation]) => (
+            <div key={pattern} className="p-3 bg-blue-50 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{translation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   const renderContent = () => {
     switch (type) {
       case 'verb-conjugation':
@@ -776,6 +1264,23 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
         return renderIntonationL3(data as IntonationL3Data);
       case 'polite-formulas-l2':
         return renderPoliteFormulasL2(data as PoliteFormulasL2Data);
+      case 'classification-where':
+      case 'classification-when':
+      case 'classification-what':
+      case 'classification-who':
+        return renderClassificationData(data as ClassificationData);
+      case 'dialogue-completion':
+        return renderDialogueCompletion(data as DialogueCompletionData);
+      case 'pronunciation-stress':
+        return renderPronunciationStress(data as PronunciationStressData);
+      case 'conversation-practice':
+        return renderConversationPractice(data as ConversationPracticeData);
+      case 'cross-cultural':
+        return renderCrossCultural(data as CrossCulturalData);
+      case 'cultural-assessment':
+        return renderCulturalAssessment(data as CulturalAssessmentData);
+      case 'verb-etre-practice':
+        return renderVerbEtrePractice(data as VerbEtrePracticeData);
       default:
         return <div>Unsupported grammar type</div>;
     }

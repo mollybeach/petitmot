@@ -2592,6 +2592,377 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "❓🚉"
           }
         ]
+      },
+      {
+        id: "word-classification",
+        title: "Word Classification Exercise",
+        description: "Learn to classify words by question categories: Où (Where), Quand (When), Quoi (What), Qui (Who)",
+        phrases: [
+          {
+            id: "where-morocco",
+            french: "le Maroc",
+            english: "Morocco (Where)",
+            category: "classification-where",
+            emoji: "🇲🇦"
+          },
+          {
+            id: "where-bus-station",
+            french: "une gare routière",
+            english: "a bus station (Where)",
+            category: "classification-where",
+            emoji: "🚌"
+          },
+          {
+            id: "where-train-station",
+            french: "une gare",
+            english: "a train station (Where)",
+            category: "classification-where",
+            emoji: "🚉"
+          },
+          {
+            id: "where-airport",
+            french: "un aéroport",
+            english: "an airport (Where)",
+            category: "classification-where",
+            emoji: "✈️"
+          },
+          {
+            id: "where-lyon",
+            french: "Lyon",
+            english: "Lyon (Where)",
+            category: "classification-where",
+            emoji: "🏙️"
+          },
+          {
+            id: "when-morning",
+            french: "le matin",
+            english: "in the morning (When)",
+            category: "classification-when",
+            emoji: "🌅"
+          },
+          {
+            id: "when-monday",
+            french: "lundi",
+            english: "Monday (When)",
+            category: "classification-when",
+            emoji: "📅"
+          },
+          {
+            id: "when-afternoon",
+            french: "l'après-midi",
+            english: "in the afternoon (When)",
+            category: "classification-when",
+            emoji: "🌇"
+          },
+          {
+            id: "when-noon",
+            french: "à midi",
+            english: "at noon (When)",
+            category: "classification-when",
+            emoji: "🕐"
+          },
+          {
+            id: "when-summer",
+            french: "l'été",
+            english: "summer (When)",
+            category: "classification-when",
+            emoji: "☀️"
+          },
+          {
+            id: "when-autumn",
+            french: "l'automne",
+            english: "autumn (When)",
+            category: "classification-when",
+            emoji: "🍂"
+          },
+          {
+            id: "what-phone-exchange",
+            french: "un échange de numéros de téléphone",
+            english: "an exchange of phone numbers (What)",
+            category: "classification-what",
+            emoji: "📱"
+          },
+          {
+            id: "what-meeting",
+            french: "une rencontre",
+            english: "a meeting/encounter (What)",
+            category: "classification-what",
+            emoji: "🤝"
+          },
+          {
+            id: "what-appointment",
+            french: "un rendez-vous",
+            english: "an appointment (What)",
+            category: "classification-what",
+            emoji: "📅"
+          },
+          {
+            id: "who-man",
+            french: "un homme",
+            english: "a man (Who)",
+            category: "classification-who",
+            emoji: "👨"
+          },
+          {
+            id: "who-woman",
+            french: "une femme",
+            english: "a woman (Who)",
+            category: "classification-who",
+            emoji: "👩"
+          },
+          {
+            id: "who-young-woman",
+            french: "une jeune femme",
+            english: "a young woman (Who)",
+            category: "classification-who",
+            emoji: "👩‍🦱"
+          },
+          {
+            id: "who-gentleman",
+            french: "un monsieur",
+            english: "a gentleman/sir (Who)",
+            category: "classification-who",
+            emoji: "👔"
+          },
+          {
+            id: "who-marius",
+            french: "Marius Ndiaye",
+            english: "Marius Ndiaye (Who)",
+            category: "classification-who",
+            emoji: "👤"
+          }
+        ]
+      },
+      {
+        id: "dialogue-completion",
+        title: "Dialogue Completion Exercise",
+        description: "Complete dialogues using question words: qui (who), où (where), quand (when)",
+        phrases: [
+          {
+            id: "dialogue-1-question-when",
+            french: "Excusez-moi Monsieur, quand il arrive le train pour Nice ?",
+            english: "Excuse me Sir, when does the train for Nice arrive?",
+            category: "dialogue-completion",
+            emoji: "❓🚂"
+          },
+          {
+            id: "dialogue-1-answer-when",
+            french: "Dans 15 minutes.",
+            english: "In 15 minutes.",
+            category: "dialogue-completion",
+            emoji: "⏰"
+          },
+          {
+            id: "dialogue-1-question-where",
+            french: "Et c'est où exactement ?",
+            english: "And where is it exactly?",
+            category: "dialogue-completion",
+            emoji: "❓📍"
+          },
+          {
+            id: "dialogue-1-answer-where",
+            french: "Quai n°3, Madame.",
+            english: "Platform number 3, Madam.",
+            category: "dialogue-completion",
+            emoji: "🚉"
+          },
+          {
+            id: "dialogue-2-question-who",
+            french: "C'est qui sur la photo ?",
+            english: "Who is that in the photo?",
+            category: "dialogue-completion",
+            emoji: "❓📸"
+          },
+          {
+            id: "dialogue-2-answer-who",
+            french: "C'est Laura.",
+            english: "It's Laura.",
+            category: "dialogue-completion",
+            emoji: "👩"
+          },
+          {
+            id: "dialogue-2-question-where-2",
+            french: "Ah, et c'est où ?",
+            english: "Ah, and where is this?",
+            category: "dialogue-completion",
+            emoji: "❓🌍"
+          },
+          {
+            id: "dialogue-2-answer-where-2",
+            french: "À Amsterdam.",
+            english: "In Amsterdam.",
+            category: "dialogue-completion",
+            emoji: "🇳🇱"
+          },
+          {
+            id: "dialogue-2-question-when-2",
+            french: "Quand ?",
+            english: "When?",
+            category: "dialogue-completion",
+            emoji: "❓📅"
+          },
+          {
+            id: "dialogue-2-answer-when-2",
+            french: "En automne, pendant les vacances.",
+            english: "In autumn, during the holidays.",
+            category: "dialogue-completion",
+            emoji: "🍂🏖️"
+          }
+        ]
+      },
+      {
+        id: "french-pronunciation",
+        title: "French Pronunciation - Final Syllable Stress",
+        description: "Learn to stress the final syllable in French words",
+        phrases: [
+          {
+            id: "stress-gare",
+            french: "Une gare → gare [gare]",
+            english: "A train station → stress on 'gare'",
+            category: "pronunciation-stress",
+            emoji: "🚉🔊"
+          },
+          {
+            id: "stress-train",
+            french: "Un train → train [train]",
+            english: "A train → stress on 'train'",
+            category: "pronunciation-stress",
+            emoji: "🚂🔊"
+          },
+          {
+            id: "stress-voiture",
+            french: "Une voiture → ture [voi-ture]",
+            english: "A car → stress on 'ture'",
+            category: "pronunciation-stress",
+            emoji: "🚗🔊"
+          },
+          {
+            id: "stress-matin",
+            french: "Le matin → tin [ma-tin]",
+            english: "The morning → stress on 'tin'",
+            category: "pronunciation-stress",
+            emoji: "🌅🔊"
+          },
+          {
+            id: "stress-apres-midi",
+            french: "L'après-midi → di [mi-di]",
+            english: "The afternoon → stress on 'di'",
+            category: "pronunciation-stress",
+            emoji: "🌇🔊"
+          },
+          {
+            id: "stress-tremblay",
+            french: "Monsieur Tremblay → blay [Trem-blay]",
+            english: "Mr. Tremblay → stress on 'blay'",
+            category: "pronunciation-stress",
+            emoji: "👔🔊"
+          },
+          {
+            id: "stress-aeroport",
+            french: "Un aéroport → port [aéro-port]",
+            english: "An airport → stress on 'port'",
+            category: "pronunciation-stress",
+            emoji: "✈️🔊"
+          },
+          {
+            id: "stress-avion",
+            french: "Un billet d'avion → on [avi-on]",
+            english: "A plane ticket → stress on 'on'",
+            category: "pronunciation-stress",
+            emoji: "🎫🔊"
+          }
+        ]
+      },
+      {
+        id: "conversation-practice",
+        title: "Conversation Practice",
+        description: "Practice conversations about organizing activities and making plans",
+        phrases: [
+          {
+            id: "dimitri-message",
+            french: "Bonjour ! Ça va bien ? J'organise une activité touristique pour la classe. Des propositions ? Où ? Quand ? À bientôt !",
+            english: "Hello! How are you? I'm organizing a tourist activity for the class. Any suggestions? Where? When? See you soon!",
+            category: "conversation-practice",
+            emoji: "👋🎒"
+          },
+          {
+            id: "lea-response-greeting",
+            french: "Bonjour Dimitri ! Merci pour ton message.",
+            english: "Hello Dimitri! Thank you for your message.",
+            category: "conversation-practice",
+            emoji: "👋💌"
+          },
+          {
+            id: "lea-response-suggestion-1",
+            french: "On peut visiter le musée du Louvre à Paris.",
+            english: "We can visit the Louvre museum in Paris.",
+            category: "conversation-practice",
+            emoji: "🏛️🗼"
+          },
+          {
+            id: "lea-response-timing",
+            french: "Ce serait bien samedi matin.",
+            english: "Saturday morning would be good.",
+            category: "conversation-practice",
+            emoji: "📅🌅"
+          },
+          {
+            id: "lea-response-suggestion-2",
+            french: "On pourrait aussi faire un pique-nique dans un parc l'après-midi.",
+            english: "We could also have a picnic in a park in the afternoon.",
+            category: "conversation-practice",
+            emoji: "🧺🌳"
+          },
+          {
+            id: "lea-response-question",
+            french: "Qu'en penses-tu ?",
+            english: "What do you think?",
+            category: "conversation-practice",
+            emoji: "🤔💭"
+          },
+          {
+            id: "lea-response-closing",
+            french: "À bientôt, Léa.",
+            english: "See you soon, Léa.",
+            category: "conversation-practice",
+            emoji: "👋💝"
+          }
+        ]
+      },
+      {
+        id: "cross-cultural-greetings",
+        title: "Cross-Cultural Greetings",
+        description: "Compare formal greetings and politeness formulas across languages",
+        phrases: [
+          {
+            id: "formal-greeting-french",
+            french: "Bonjour Madame / Bonjour Monsieur",
+            english: "Good morning Madam / Good morning Sir (French formal greeting)",
+            category: "cross-cultural",
+            emoji: "🇫🇷👋"
+          },
+          {
+            id: "formal-greeting-english",
+            french: "Good morning Sir / Good morning Madam",
+            english: "Good morning Sir / Good morning Madam (English formal greeting)",
+            category: "cross-cultural",
+            emoji: "🇺🇸👋"
+          },
+          {
+            id: "politeness-french-usage",
+            french: "En français on utilise très souvent Madame et Monsieur.",
+            english: "In French we use Madam and Sir very often.",
+            category: "cross-cultural",
+            emoji: "🇫🇷🎩"
+          },
+          {
+            id: "politeness-english-usage",
+            french: "En anglais, on utilise Sir et Madam, mais moins fréquemment.",
+            english: "In English, we use Sir and Madam, but less frequently.",
+            category: "cross-cultural",
+            emoji: "🇺🇸🎩"
+          }
+        ]
       }
     ]
   },
@@ -2890,6 +3261,258 @@ export const lessonGroups: LessonGroup[] = [
             english: "Statement or response: The voice falls",
             category: "intonation-l3",
             emoji: "💬⬇️"
+          }
+        ]
+      },
+      {
+        id: "francophone-cultural-assessment",
+        title: "Francophone Cultural Assessment",
+        description: "Learn about francophone events and culture through comprehension exercises",
+        phrases: [
+          {
+            id: "francophone-games-country",
+            french: "Le pays des Jeux de la Francophonie est : la France, le Cameroun, la Côte-d'Ivoire.",
+            english: "The country of the Francophone Games is: France, Cameroon, Ivory Coast.",
+            category: "cultural-assessment",
+            emoji: "🌍🏆"
+          },
+          {
+            id: "francophone-games-cultural",
+            french: "Les Jeux de la Francophonie sont une fête culturelle",
+            english: "The Francophone Games are a cultural celebration",
+            category: "cultural-assessment",
+            emoji: "🎭✅"
+          },
+          {
+            id: "francophone-games-sports",
+            french: "Les Jeux de la Francophonie sont une fête sportive",
+            english: "The Francophone Games are a sports celebration",
+            category: "cultural-assessment",
+            emoji: "🏃‍♂️✅"
+          },
+          {
+            id: "francophone-games-not-cinema",
+            french: "Les Jeux de la Francophonie ne sont pas un festival de cinéma",
+            english: "The Francophone Games are not a film festival",
+            category: "cultural-assessment",
+            emoji: "🎬❌"
+          },
+          {
+            id: "francophone-games-city-abidjan",
+            french: "La ville des Jeux de la Francophonie est Abidjan",
+            english: "The city of the Francophone Games is Abidjan",
+            category: "cultural-assessment",
+            emoji: "🏙️✅"
+          },
+          {
+            id: "francophone-games-not-paris",
+            french: "La ville des Jeux de la Francophonie n'est pas Paris",
+            english: "The city of the Francophone Games is not Paris",
+            category: "cultural-assessment",
+            emoji: "🗼❌"
+          },
+          {
+            id: "francophone-games-not-quebec",
+            french: "La ville des Jeux de la Francophonie n'est pas Québec",
+            english: "The city of the Francophone Games is not Quebec",
+            category: "cultural-assessment",
+            emoji: "🍁❌"
+          },
+          {
+            id: "athletes-artists-francophone",
+            french: "Les sportifs et les artistes sont francophones",
+            english: "The athletes and artists are French-speaking",
+            category: "cultural-assessment",
+            emoji: "🏃‍♂️🎨✅"
+          },
+          {
+            id: "athletes-artists-not-french",
+            french: "Les sportifs et les artistes ne sont pas tous français",
+            english: "The athletes and artists are not all French",
+            category: "cultural-assessment",
+            emoji: "🇫🇷❌"
+          },
+          {
+            id: "continents-europe",
+            french: "L'Europe est représentée",
+            english: "Europe is represented",
+            category: "cultural-assessment",
+            emoji: "🇪🇺✅"
+          },
+          {
+            id: "continents-africa",
+            french: "L'Afrique est représentée",
+            english: "Africa is represented",
+            category: "cultural-assessment",
+            emoji: "🌍✅"
+          },
+          {
+            id: "continents-america",
+            french: "L'Amérique est représentée",
+            english: "America is represented",
+            category: "cultural-assessment",
+            emoji: "🌎✅"
+          },
+          {
+            id: "continents-not-oceania",
+            french: "L'Océanie n'est pas représentée",
+            english: "Oceania is not represented",
+            category: "cultural-assessment",
+            emoji: "🌏❌"
+          },
+          {
+            id: "continents-not-asia",
+            french: "L'Asie n'est pas représentée",
+            english: "Asia is not represented",
+            category: "cultural-assessment",
+            emoji: "🌏❌"
+          },
+          {
+            id: "kareyce-fotso-singer",
+            french: "Kareyce Fotso est une chanteuse camerounaise",
+            english: "Kareyce Fotso is a Cameroonian singer (feminine)",
+            category: "cultural-assessment",
+            emoji: "🎤👩🇨🇲✅"
+          },
+          {
+            id: "kareyce-fotso-not-male",
+            french: "Kareyce Fotso n'est pas un chanteur camerounais",
+            english: "Kareyce Fotso is not a Cameroonian singer (masculine)",
+            category: "cultural-assessment",
+            emoji: "🎤👨❌"
+          },
+          {
+            id: "sofiane-milous-athlete",
+            french: "Sofiane Milous est un sportif",
+            english: "Sofiane Milous is an athlete",
+            category: "cultural-assessment",
+            emoji: "🏃‍♂️✅"
+          },
+          {
+            id: "sofiane-milous-french",
+            french: "Sofiane Milous est français",
+            english: "Sofiane Milous is French",
+            category: "cultural-assessment",
+            emoji: "🇫🇷✅"
+          },
+          {
+            id: "sofiane-milous-not-artist",
+            french: "Sofiane Milous n'est pas un artiste",
+            english: "Sofiane Milous is not an artist",
+            category: "cultural-assessment",
+            emoji: "🎨❌"
+          },
+          {
+            id: "sofiane-milous-not-belgian",
+            french: "Sofiane Milous n'est pas belge",
+            english: "Sofiane Milous is not Belgian",
+            category: "cultural-assessment",
+            emoji: "🇧🇪❌"
+          }
+        ]
+      },
+      {
+        id: "verb-etre-practice",
+        title: "Verb ÊTRE Practice",
+        description: "Practice using the verb être (to be) for giving personal information",
+        phrases: [
+          {
+            id: "example-russian-question",
+            french: "Tu es russe ?",
+            english: "Are you Russian?",
+            category: "verb-etre-practice",
+            emoji: "❓🇷🇺"
+          },
+          {
+            id: "example-russian-answer",
+            french: "Oui, je suis russe.",
+            english: "Yes, I am Russian.",
+            category: "verb-etre-practice",
+            emoji: "✅🇷🇺"
+          },
+          {
+            id: "actress-question",
+            french: "Elle est actrice ?",
+            english: "Is she an actress?",
+            category: "verb-etre-practice",
+            emoji: "❓🎬"
+          },
+          {
+            id: "actress-answer",
+            french: "Oui, elle est actrice.",
+            english: "Yes, she is an actress.",
+            category: "verb-etre-practice",
+            emoji: "✅🎬"
+          },
+          {
+            id: "canadians-question",
+            french: "Ils sont canadiens ?",
+            english: "Are they Canadian?",
+            category: "verb-etre-practice",
+            emoji: "❓🇨🇦"
+          },
+          {
+            id: "canadians-answer",
+            french: "Oui, ils sont canadiens.",
+            english: "Yes, they are Canadian.",
+            category: "verb-etre-practice",
+            emoji: "✅🇨🇦"
+          },
+          {
+            id: "francophone-question",
+            french: "Vous êtes francophones ?",
+            english: "Are you French-speaking?",
+            category: "verb-etre-practice",
+            emoji: "❓🇫🇷"
+          },
+          {
+            id: "francophone-answer",
+            french: "Oui, nous sommes francophones.",
+            english: "Yes, we are French-speaking.",
+            category: "verb-etre-practice",
+            emoji: "✅🇫🇷"
+          },
+          {
+            id: "belgian-question",
+            french: "Tu es belge ?",
+            english: "Are you Belgian?",
+            category: "verb-etre-practice",
+            emoji: "❓🇧🇪"
+          },
+          {
+            id: "belgian-answer",
+            french: "Oui, je suis belge.",
+            english: "Yes, I am Belgian.",
+            category: "verb-etre-practice",
+            emoji: "✅🇧🇪"
+          },
+          {
+            id: "musicians-question",
+            french: "Elles sont musiciennes ?",
+            english: "Are they musicians (feminine)?",
+            category: "verb-etre-practice",
+            emoji: "❓🎵"
+          },
+          {
+            id: "musicians-answer",
+            french: "Oui, elles sont musiciennes.",
+            english: "Yes, they are musicians (feminine).",
+            category: "verb-etre-practice",
+            emoji: "✅🎵"
+          },
+          {
+            id: "director-question",
+            french: "Il est réalisateur ?",
+            english: "Is he a director?",
+            category: "verb-etre-practice",
+            emoji: "❓🎬"
+          },
+          {
+            id: "director-answer",
+            french: "Oui, il est réalisateur.",
+            english: "Yes, he is a director.",
+            category: "verb-etre-practice",
+            emoji: "✅🎬"
           }
         ]
       }
