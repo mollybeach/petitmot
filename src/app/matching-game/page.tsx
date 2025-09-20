@@ -99,7 +99,18 @@ export default function MatchingGame() {
       setSpeechError(null);
       
       try {
-        await speechService.speak(card.text, 'fr');
+        // Extract only the French words for speech (remove math equations)
+        let speechText = card.text;
+        if (speechText.includes('\n(')) {
+          // For numbers with math equations, extract only the part before the math
+          speechText = speechText.split('\n(')[0];
+          // Remove the Arabic numeral prefix for speech (e.g., "80 - quatre-vingt" → "quatre-vingt")
+          if (speechText.includes(' - ')) {
+            speechText = speechText.split(' - ')[1];
+          }
+        }
+        
+        await speechService.speak(speechText, 'fr');
       } catch (error) {
         setSpeechError(error instanceof Error ? error.message : 'Speech error occurred');
       } finally {

@@ -2041,254 +2041,311 @@ export const lessonGroups: LessonGroup[] = [
         phrases: [
       {
         id: "number-0",
-        french: "zéro",
-        english: "zero",
+        french: "0 - zéro",
+        english: "0 - zero",
         category: "numbers",
         emoji: "0️⃣"
       },
       {
         id: "number-1",
-        french: "un",
-        english: "one",
+        french: "1 - un",
+        english: "1 - one",
         category: "numbers",
         emoji: "1️⃣"
       },
       {
         id: "number-2",
-        french: "deux",
-        english: "two",
+        french: "2 - deux",
+        english: "2 - two",
         category: "numbers",
         emoji: "2️⃣"
       },
       {
         id: "number-3",
-        french: "trois",
-        english: "three",
+        french: "3 - trois",
+        english: "3 - three",
         category: "numbers",
         emoji: "3️⃣"
       },
       {
         id: "number-4",
-        french: "quatre",
-        english: "four",
+        french: "4 - quatre",
+        english: "4 - four",
         category: "numbers",
         emoji: "4️⃣"
       },
       {
         id: "number-5",
-        french: "cinq",
-        english: "five",
+        french: "5 - cinq",
+        english: "5 - five",
         category: "numbers",
         emoji: "5️⃣"
       },
       {
         id: "number-6",
-        french: "six",
-        english: "six",
+        french: "6 - six",
+        english: "6 - six",
         category: "numbers",
         emoji: "6️⃣"
       },
       {
         id: "number-7",
-        french: "sept",
-        english: "seven",
+        french: "7 - sept",
+        english: "7 - seven",
         category: "numbers",
         emoji: "7️⃣"
       },
       {
         id: "number-8",
-        french: "huit",
-        english: "eight",
+        french: "8 - huit",
+        english: "8 - eight",
         category: "numbers",
         emoji: "8️⃣"
       },
       {
         id: "number-9",
-        french: "neuf",
-        english: "nine",
+        french: "9 - neuf",
+        english: "9 - nine",
         category: "numbers",
         emoji: "9️⃣"
       },
       {
         id: "number-10",
-        french: "dix",
-        english: "ten",
+        french: "10 - dix",
+        english: "10 - ten",
         category: "numbers",
         emoji: "🔟"
       },
       {
         id: "number-11",
-        french: "onze",
-        english: "eleven",
-        category: "numbers"
+        french: "11 - onze",
+        english: "11 - eleven",
+        category: "numbers",
+        emoji: "1️⃣1️⃣"
       },
       {
         id: "number-12",
-        french: "douze",
-        english: "twelve",
-        category: "numbers"
+        french: "12 - douze",
+        english: "12 - twelve",
+        category: "numbers",
+        emoji: "1️⃣2️⃣"
       },
       {
         id: "number-13",
-        french: "treize",
-        english: "thirteen",
-        category: "numbers"
+        french: "13 - treize",
+        english: "13 - thirteen",
+        category: "numbers",
+        emoji: "1️⃣3️⃣"
       },
       {
         id: "number-14",
-        french: "quatorze",
-        english: "fourteen",
-        category: "numbers"
+        french: "14 - quatorze",
+        english: "14 - fourteen",
+        category: "numbers",
+        emoji: "1️⃣4️⃣"
       },
       {
         id: "number-15",
-        french: "quinze",
-        english: "fifteen",
-        category: "numbers"
+        french: "15 - quinze",
+        english: "15 - fifteen",
+        category: "numbers",
+        emoji: "1️⃣5️⃣"
       },
       {
         id: "number-16",
-        french: "seize",
-        english: "sixteen",
-        category: "numbers"
+        french: "16 - seize",
+        english: "16 - sixteen",
+        category: "numbers",
+        emoji: "1️⃣6️⃣"
       },
       {
         id: "number-17",
-        french: "dix-sept",
-        english: "seventeen",
-        category: "numbers"
+        french: "17 - dix-sept",
+        english: "17 - seventeen",
+        category: "numbers",
+        emoji: "1️⃣7️⃣"
       },
       {
         id: "number-18",
-        french: "dix-huit",
-        english: "eighteen",
-        category: "numbers"
+        french: "18 - dix-huit",
+        english: "18 - eighteen",
+        category: "numbers",
+        emoji: "1️⃣8️⃣"
       },
       {
         id: "number-19",
-        french: "dix-neuf",
-        english: "nineteen",
-        category: "numbers"
+        french: "19 - dix-neuf",
+        english: "19 - nineteen",
+        category: "numbers",
+        emoji: "1️⃣9️⃣"
       },
       {
         id: "number-20",
-        french: "vingt",
-        english: "twenty",
-        category: "numbers"
+        french: "20 - vingt",
+        english: "20 - twenty",
+        category: "numbers",
+        emoji: "2️⃣0️⃣"
+      },
+      {
+        id: "number-21",
+        french: "21 - vingt et un",
+        english: "21 - twenty-one",
+        category: "numbers",
+        emoji: "2️⃣1️⃣"
+      },
+      {
+        id: "number-22",
+        french: "22 - vingt-deux",
+        english: "22 - twenty-two",
+        category: "numbers",
+        emoji: "2️⃣2️⃣"
+      },
+      {
+        id: "number-29",
+        french: "29 - vingt-neuf",
+        english: "29 - twenty-nine",
+        category: "numbers",
+        emoji: "2️⃣9️⃣"
       },
       {
         id: "number-30",
-        french: "trente",
-        english: "thirty",
-        category: "numbers"
+        french: "30 - trente",
+        english: "30 - thirty",
+        category: "numbers",
+        emoji: "3️⃣0️⃣"
       },
       {
         id: "number-40",
-        french: "quarante",
-        english: "forty",
-        category: "numbers"
+        french: "40 - quarante",
+        english: "40 - forty",
+        category: "numbers",
+        emoji: "4️⃣0️⃣"
       },
       {
         id: "number-50",
-        french: "cinquante",
-        english: "fifty",
-        category: "numbers"
+        french: "50 - cinquante",
+        english: "50 - fifty",
+        category: "numbers",
+        emoji: "5️⃣0️⃣"
       },
       {
         id: "number-60",
-        french: "soixante",
-        english: "sixty",
-        category: "numbers"
+        french: "60 - soixante",
+        english: "60 - sixty",
+        category: "numbers",
+        emoji: "6️⃣0️⃣"
       },
       {
         id: "number-70",
-        french: "soixante-dix",
-        english: "seventy",
-        category: "numbers"
+        french: "70 - soixante-dix\n(60 + 10)",
+        english: "70 - seventy\n(60 + 10)",
+        category: "numbers",
+        emoji: "7️⃣0️⃣"
       },
       {
         id: "number-71",
-        french: "soixante et onze",
-        english: "seventy-one",
-        category: "numbers"
+        french: "71 - soixante et onze\n(60 + 11)",
+        english: "71 - seventy-one\n(60 + 11)",
+        category: "numbers",
+        emoji: "7️⃣1️⃣"
       },
       {
         id: "number-72",
-        french: "soixante-douze",
-        english: "seventy-two",
-        category: "numbers"
+        french: "72 - soixante-douze\n(60 + 12)",
+        english: "72 - seventy-two\n(60 + 12)",
+        category: "numbers",
+        emoji: "7️⃣2️⃣"
       },
       {
         id: "number-80",
-        french: "quatre-vingt",
-        english: "eighty",
-        category: "numbers"
+        french: "80 - quatre-vingt\n(4 × 20)",
+        english: "80 - eighty\n(4 × 20)",
+        category: "numbers",
+        emoji: "8️⃣0️⃣"
       },
       {
         id: "number-81",
-        french: "quatre-vingt-un",
-        english: "eighty-one",
-        category: "numbers"
+        french: "81 - quatre-vingt-un\n(4 × 20 + 1)",
+        english: "81 - eighty-one\n(4 × 20 + 1)",
+        category: "numbers",
+        emoji: "8️⃣1️⃣"
       },
       {
         id: "number-82",
-        french: "quatre-vingt-deux",
-        english: "eighty-two",
-        category: "numbers"
+        french: "82 - quatre-vingt-deux\n(4 × 20 + 2)",
+        english: "82 - eighty-two\n(4 × 20 + 2)",
+        category: "numbers",
+        emoji: "8️⃣2️⃣"
       },
       {
         id: "number-90",
-        french: "quatre-vingt-dix",
-        english: "ninety",
-        category: "numbers"
+        french: "90 - quatre-vingt-dix\n(4 × 20 + 10)",
+        english: "90 - ninety\n(4 × 20 + 10)",
+        category: "numbers",
+        emoji: "9️⃣0️⃣"
       },
       {
         id: "number-91",
-        french: "quatre-vingt-onze",
-        english: "ninety-one",
-        category: "numbers"
+        french: "91 - quatre-vingt-onze\n(4 × 20 + 11)",
+        english: "91 - ninety-one\n(4 × 20 + 11)",
+        category: "numbers",
+        emoji: "9️⃣1️⃣"
       },
       {
         id: "number-92",
-        french: "quatre-vingt-douze",
-        english: "ninety-two",
-        category: "numbers"
+        french: "92 - quatre-vingt-douze\n(4 × 20 + 12)",
+        english: "92 - ninety-two\n(4 × 20 + 12)",
+        category: "numbers",
+        emoji: "9️⃣2️⃣"
+      },
+      {
+        id: "number-93",
+        french: "93 - quatre-vingt-treize\n(4 × 20 + 13)",
+        english: "93 - ninety-three\n(4 × 20 + 13)",
+        category: "numbers",
+        emoji: "9️⃣3️⃣"
       },
       {
         id: "number-100",
-        french: "cent",
-        english: "one hundred",
-        category: "numbers"
+        french: "100 - cent",
+        english: "100 - one hundred",
+        category: "numbers",
+        emoji: "💯"
       },
       {
         id: "number-200",
-        french: "deux-cents",
-        english: "two hundred",
-        category: "numbers"
+        french: "200 - deux-cents",
+        english: "200 - two hundred",
+        category: "numbers",
+        emoji: "2️⃣💯"
       },
       {
         id: "number-300",
-        french: "trois-cents",
-        english: "three hundred",
-        category: "numbers"
+        french: "300 - trois-cents",
+        english: "300 - three hundred",
+        category: "numbers",
+        emoji: "3️⃣💯"
       },
       {
         id: "number-875",
-        french: "huit-cent-soixante-quinze",
-        english: "eight hundred seventy-five",
-        category: "numbers"
+        french: "875 - huit-cent-soixante-quinze",
+        english: "875 - eight hundred seventy-five",
+        category: "numbers",
+        emoji: "8️⃣7️⃣5️⃣"
       },
       {
         id: "number-1000",
-        french: "mille",
-        english: "one thousand",
-        category: "numbers"
+        french: "1000 - mille",
+        english: "1000 - one thousand",
+        category: "numbers",
+        emoji: "🔢"
       },
       {
         id: "number-1400",
-        french: "mille-quatre-cents",
-        english: "one thousand four hundred",
-        category: "numbers"
+        french: "1400 - mille-quatre-cents",
+        english: "1400 - one thousand four hundred",
+        category: "numbers",
+        emoji: "🔢"
       }
     ]
   }

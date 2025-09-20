@@ -1271,6 +1271,57 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
     </div>
   );
 
+  const renderNumbers = (data: NumbersData) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          French Numbers
+        </h3>
+        <p className="text-gray-600 mb-4">
+          Learn French number patterns and mathematical logic
+        </p>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Number Ranges</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.numbers).map(([range, numbers]) => (
+            <div key={range} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{range}</div>
+              <div className="text-gray-600 text-sm">{numbers}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      {data.mathExplanations && (
+        <div className="mb-6">
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">🧮 Mathematical Logic</h4>
+          <div className="space-y-3">
+            {Object.entries(data.mathExplanations).map(([equation, explanation]) => (
+              <div key={equation} className="p-4 border border-gray-300 rounded-lg bg-blue-50">
+                <div className="font-bold text-gray-800 text-lg">{equation}</div>
+                <div className="text-gray-600">{explanation}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   const renderContent = () => {
     switch (type) {
       case 'verb-conjugation':
@@ -1324,8 +1375,7 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return renderGenericData(data as Record<string, any>, 'sounds', 'French Sounds');
       case 'numbers':
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        return renderGenericData(data as Record<string, any>, 'numbers', 'French Numbers');
+        return renderNumbers(data as NumbersData);
       case 'languages':
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return renderGenericData(data as Record<string, any>, 'languages', 'Languages');

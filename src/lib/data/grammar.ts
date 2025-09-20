@@ -494,18 +494,28 @@ export const numbersData = {
     '0-10': 'zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix',
     '11-20': 'onze, douze, treize, quatorze, quinze, seize, dix-sept, dix-huit, dix-neuf, vingt',
     '21-30': 'vingt-et-un, vingt-deux, ..., trente',
-    '31-40': 'trente-et-un, trente-deux, ..., quarante',
-    '50': 'cinquante',
-    '60': 'soixante',
-    '70': 'soixante-dix',
-    '80': 'quatre-vingts',
-    '90': 'quatre-vingt-dix',
-    '100': 'cent'
+    '70s': 'soixante-dix (60 + 10), soixante et onze (60 + 11), soixante-douze (60 + 12)',
+    '80s': 'quatre-vingt (4 × 20), quatre-vingt-un (4 × 20 + 1), quatre-vingt-deux (4 × 20 + 2)',
+    '90s': 'quatre-vingt-dix (4 × 20 + 10), quatre-vingt-onze (4 × 20 + 11), quatre-vingt-douze (4 × 20 + 12)',
+    '100+': 'cent, deux-cents, mille'
+  },
+  mathExplanations: {
+    '70 = 60 + 10': 'soixante-dix (literally "sixty-ten")',
+    '71 = 60 + 11': 'soixante et onze (sixty and eleven)',
+    '72 = 60 + 12': 'soixante-douze (sixty-twelve)',
+    '80 = 4 × 20': 'quatre-vingt (literally "four-twenty")',
+    '81 = 4 × 20 + 1': 'quatre-vingt-un (four-twenty-one)',
+    '90 = 4 × 20 + 10': 'quatre-vingt-dix (four-twenty-ten)',
+    '91 = 4 × 20 + 11': 'quatre-vingt-onze (four-twenty-eleven)',
+    '92 = 4 × 20 + 12': 'quatre-vingt-douze (four-twenty-twelve)',
+    '93 = 4 × 20 + 13': 'quatre-vingt-treize (four-twenty-thirteen)'
   },
   rules: {
-    'Hyphens': 'Use hyphens for compound numbers (vingt-et-un)',
-    'Plural': 'Cent and vingt are invariable when followed by another number',
-    'Counting': 'Numbers agree in gender when used as adjectives'
+    'Hyphens': 'Use hyphens for compound numbers (vingt-deux)',
+    'Et Usage': 'Use "et" only for 21, 31, 41, 51, 61, 71 (vingt et un)',
+    'Mathematical Logic': 'French uses base-20 system for 80-99 (quatre-vingt = 4×20)',
+    'Belgian/Swiss': 'Belgium and Switzerland use septante (70), octante (80), nonante (90)',
+    'Plural Rules': 'Cent and vingt take -s when not followed by another number'
   }
 };
 

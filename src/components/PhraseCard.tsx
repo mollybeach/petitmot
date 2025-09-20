@@ -80,7 +80,18 @@ export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: 
     setSpeechError(null);
 
     try {
-      await speechService.speak(text, language);
+      // Extract only the French words for speech (remove math equations)
+      let speechText = text;
+      if (language === 'fr' && text.includes('\n(')) {
+        // For numbers with math equations, extract only the part before the math
+        speechText = text.split('\n(')[0];
+        // Remove the Arabic numeral prefix for speech (e.g., "80 - quatre-vingt" → "quatre-vingt")
+        if (speechText.includes(' - ')) {
+          speechText = speechText.split(' - ')[1];
+        }
+      }
+      
+      await speechService.speak(speechText, language);
     } catch (error) {
       setSpeechError(error instanceof Error ? error.message : 'Speech error occurred');
     } finally {
