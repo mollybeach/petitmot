@@ -3003,6 +3003,17 @@ export const lessonGroups: LessonGroup[] = [
             english: "I am a teacher (feminine)",
             category: "professions-l3",
             emoji: "👩‍🏫"
+          },
+          {
+            id: "i-am-software-engineer-m",
+            french: "Je suis ingénieur logiciel",
+            english: "I am a software engineer (masculine)",
+            category: "professions-l3",
+            emoji: "👨‍💻",
+            formal: {
+              french: "Je suis ingénieure logiciel",
+              english: "I am a software engineer (feminine)"
+            }
           }
         ]
       },
@@ -3225,6 +3236,17 @@ export const lessonGroups: LessonGroup[] = [
             formal: {
               french: "vétérinaire",
               english: "veterinarian (feminine)"
+            }
+          },
+          {
+            id: "software-engineer-m",
+            french: "ingénieur logiciel",
+            english: "software engineer (masculine)",
+            category: "professions-l3",
+            emoji: "👨‍💻",
+            formal: {
+              french: "ingénieure logiciel",
+              english: "software engineer (feminine)"
             }
           }
         ]

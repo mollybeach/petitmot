@@ -690,6 +690,7 @@ export const professionsL3Data = {
     '-teur → -trice': 'acteur → actrice, instituteur → institutrice',
     '-eur → -euse': 'chanteur → chanteuse, coiffeur → coiffeuse',
     '-er → -ère': 'infirmier → infirmière, boulanger → boulangère',
+    'ingénieur → ingénieure': 'ingénieur logiciel → ingénieure logiciel',
     'Identical': 'journaliste, vétérinaire (same for both genders)'
   },
   masculine: {
@@ -702,7 +703,8 @@ export const professionsL3Data = {
     'infirmier': 'nurse',
     'boulanger': 'baker',
     'journaliste': 'journalist',
-    'vétérinaire': 'veterinarian'
+    'vétérinaire': 'veterinarian',
+    'ingénieur logiciel': 'software engineer'
   },
   feminine: {
     'comédienne': 'actress/comedian',
@@ -714,7 +716,8 @@ export const professionsL3Data = {
     'infirmière': 'nurse',
     'boulangère': 'baker',
     'journaliste': 'journalist',
-    'vétérinaire': 'veterinarian'
+    'vétérinaire': 'veterinarian',
+    'ingénieure logiciel': 'software engineer'
   },
   rules: {
     'Gender Agreement': 'Profession names must agree with the person\'s gender',
