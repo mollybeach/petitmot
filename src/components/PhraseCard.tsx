@@ -45,13 +45,20 @@ import {
   francophoneProgramData,
   professionSentencesData,
   daysL3Data,
-  monthsL3Data
+  monthsL3Data,
+  parlerL4Data,
+  sappelerL4Data,
+  presentationL4Data,
+  avoirAgeL4Data,
+  interrogativeL4Data,
+  possessiveL4Data,
+  ilyaL4Data
 } from '@/lib/data/grammar';
 
 interface PhraseCardProps {
   phrase: FrenchPhrase;
   isFormal?: boolean;
-  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences' | 'days-l3' | 'months-l3', data: unknown) => void;
+  onOpenGrammar?: (title: string, type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences' | 'days-l3' | 'months-l3' | 'parler-l4' | 'sappeler-l4' | 'presentation-l4' | 'avoir-age-l4' | 'interrogative-l4' | 'possessive-l4' | 'ilya-l4', data: unknown) => void;
 }
 
 export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: PhraseCardProps) {
@@ -258,6 +265,27 @@ export default function PhraseCard({ phrase, isFormal = false, onOpenGrammar }: 
         break;
       case 'months-l3':
         onOpenGrammar('Months of the Year - Lesson 3', 'months-l3', monthsL3Data);
+        break;
+      case 'parler-l4':
+        onOpenGrammar('PARLER - To Speak', 'parler-l4', parlerL4Data);
+        break;
+      case 'sappeler-l4':
+        onOpenGrammar('S\'APPELER - To Be Called', 'sappeler-l4', sappelerL4Data);
+        break;
+      case 'presentation-l4':
+        onOpenGrammar('C\'est vs Il/Elle est', 'presentation-l4', presentationL4Data);
+        break;
+      case 'avoir-age-l4':
+        onOpenGrammar('AVOIR - To Have (Age)', 'avoir-age-l4', avoirAgeL4Data);
+        break;
+      case 'interrogative-l4':
+        onOpenGrammar('Interrogative Adjectives', 'interrogative-l4', interrogativeL4Data);
+        break;
+      case 'possessive-l4':
+        onOpenGrammar('Possessive Determiners', 'possessive-l4', possessiveL4Data);
+        break;
+      case 'ilya-l4':
+        onOpenGrammar('Il y a - There is/There are', 'ilya-l4', ilyaL4Data);
         break;
       default:
         // For other categories, show subject pronouns as default

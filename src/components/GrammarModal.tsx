@@ -6,8 +6,8 @@ interface GrammarModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences' | 'days-l3' | 'months-l3';
-  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data | PoliteFormulasL2Data | ClassificationData | DialogueCompletionData | PronunciationStressData | ConversationPracticeData | CrossCulturalData | CulturalAssessmentData | VerbEtrePracticeData | QuestionWordsData | FrancophoneProgramData | ProfessionSentencesData | DaysL3Data | MonthsL3Data;
+  type: 'verb-conjugation' | 'articles' | 'pronouns' | 'prepositions' | 'noun-gender' | 'days' | 'months' | 'time' | 'family' | 'directions' | 'colors' | 'letters' | 'sounds' | 'numbers' | 'languages' | 'marital' | 'events' | 'people' | 'concepts' | 'introductions' | 'personal-info-l3' | 'nationalities-l3' | 'professions-l3' | 'languages-l3' | 'intonation-l3' | 'polite-formulas-l2' | 'classification-where' | 'classification-when' | 'classification-what' | 'classification-who' | 'dialogue-completion' | 'pronunciation-stress' | 'conversation-practice' | 'cross-cultural' | 'cultural-assessment' | 'verb-etre-practice' | 'classification-why' | 'questions' | 'francophone-program' | 'profession-sentences' | 'days-l3' | 'months-l3' | 'parler-l4' | 'sappeler-l4' | 'presentation-l4' | 'avoir-age-l4' | 'interrogative-l4' | 'possessive-l4' | 'ilya-l4';
+  data: VerbConjugation | ArticleData | PronounData | Record<string, string> | NounGenderData | DaysData | MonthsData | TimeData | FamilyData | DirectionsData | ColorsData | LettersData | SoundsData | NumbersData | LanguagesData | MaritalData | EventsData | PeopleData | ConceptsData | IntroductionsData | PersonalInfoL3Data | NationalitiesL3Data | ProfessionsL3Data | LanguagesL3Data | IntonationL3Data | PoliteFormulasL2Data | ClassificationData | DialogueCompletionData | PronunciationStressData | ConversationPracticeData | CrossCulturalData | CulturalAssessmentData | VerbEtrePracticeData | QuestionWordsData | FrancophoneProgramData | ProfessionSentencesData | DaysL3Data | MonthsL3Data | ParlerL4Data | SappelerL4Data | PresentationL4Data | AvoirAgeL4Data | InterrogativeL4Data | PossessiveL4Data | IlyaL4Data;
 }
 
 interface VerbConjugation {
@@ -257,6 +257,91 @@ interface IntonationL3Data {
     [key: string]: string;
   };
   examples: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface ParlerL4Data {
+  type: 'parler-l4';
+  conjugation: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface SappelerL4Data {
+  type: 'sappeler-l4';
+  conjugation: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface PresentationL4Data {
+  type: 'presentation-l4';
+  cest_usage: {
+    [key: string]: string;
+  };
+  il_elle_est_usage: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface AvoirAgeL4Data {
+  type: 'avoir-age-l4';
+  conjugation: {
+    [key: string]: string;
+  };
+  age_expressions: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface InterrogativeL4Data {
+  type: 'interrogative-l4';
+  forms: {
+    [key: string]: string;
+  };
+  agreement_rules: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface PossessiveL4Data {
+  type: 'possessive-l4';
+  masculine_singular: {
+    [key: string]: string;
+  };
+  feminine_singular: {
+    [key: string]: string;
+  };
+  rules: {
+    [key: string]: string;
+  };
+}
+
+interface IlyaL4Data {
+  type: 'ilya-l4';
+  usage: {
+    [key: string]: string;
+  };
+  expressions: {
     [key: string]: string;
   };
   rules: {
@@ -1621,6 +1706,306 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
     </div>
   );
 
+  const renderParlerL4 = (data: ParlerL4Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          PARLER - To Speak
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Present Tense Conjugation</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.conjugation).map(([form, translation]) => (
+            <div key={form} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{form}</div>
+              <div className="text-gray-600">{translation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderSappelerL4 = (data: SappelerL4Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          S&apos;APPELER - To Be Called
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Present Tense Conjugation</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.conjugation).map(([form, translation]) => (
+            <div key={form} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{form}</div>
+              <div className="text-gray-600">{translation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderPresentationL4 = (data: PresentationL4Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          C&apos;est vs Il/Elle est
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">C&apos;est Usage</h4>
+        <div className="space-y-3">
+          {Object.entries(data.cest_usage).map(([pattern, example]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{example}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Il/Elle est Usage</h4>
+        <div className="space-y-3">
+          {Object.entries(data.il_elle_est_usage).map(([pattern, example]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600">{example}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderAvoirAgeL4 = (data: AvoirAgeL4Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          AVOIR - To Have (Age)
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Present Tense Conjugation</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.conjugation).map(([form, translation]) => (
+            <div key={form} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{form}</div>
+              <div className="text-gray-600">{translation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Age Expressions</h4>
+        <div className="space-y-3">
+          {Object.entries(data.age_expressions).map(([expression, translation]) => (
+            <div key={expression} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{expression}</div>
+              <div className="text-gray-600">{translation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderInterrogativeL4 = (data: InterrogativeL4Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Interrogative Adjectives
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Forms</h4>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {Object.entries(data.forms).map(([form, example]) => (
+            <div key={form} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{form}</div>
+              <div className="text-gray-600">{example}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Agreement Rules</h4>
+        <div className="space-y-3">
+          {Object.entries(data.agreement_rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderPossessiveL4 = (data: PossessiveL4Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Possessive Determiners
+        </h3>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">Masculine Singular</h4>
+          <div className="space-y-2">
+            {Object.entries(data.masculine_singular).map(([determiner, example]) => (
+              <div key={determiner} className="p-3 border border-gray-300 rounded-lg">
+                <div className="font-medium text-gray-800">{determiner}</div>
+                <div className="text-gray-600">{example}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div>
+          <h4 className="text-lg font-semibold text-gray-800 mb-3">Feminine Singular</h4>
+          <div className="space-y-2">
+            {Object.entries(data.feminine_singular).map(([determiner, example]) => (
+              <div key={determiner} className="p-3 border border-gray-300 rounded-lg">
+                <div className="font-medium text-gray-800">{determiner}</div>
+                <div className="text-gray-600">{example}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderIlyaL4 = (data: IlyaL4Data) => (
+    <div className="space-y-4">
+      <div className="text-center">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Il y a - There is/There are
+        </h3>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Usage Patterns</h4>
+        <div className="space-y-3">
+          {Object.entries(data.usage).map(([pattern, example]) => (
+            <div key={pattern} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800">{pattern}</div>
+              <div className="text-gray-600 text-lg">{example}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mb-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Common Expressions</h4>
+        <div className="space-y-3">
+          {Object.entries(data.expressions).map(([expression, translation]) => (
+            <div key={expression} className="p-4 border border-gray-300 rounded-lg">
+              <div className="font-medium text-gray-800 text-lg">{expression}</div>
+              <div className="text-gray-600">{translation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div className="mt-6">
+        <h4 className="text-lg font-semibold text-gray-800 mb-3">Grammar Rules</h4>
+        <div className="space-y-2">
+          {Object.entries(data.rules).map(([rule, explanation]) => (
+            <div key={rule} className="p-3 bg-gray-50 rounded-lg">
+              <div className="font-medium text-gray-800">{rule}</div>
+              <div className="text-gray-600">{explanation}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   const renderContent = () => {
     switch (type) {
       case 'verb-conjugation':
@@ -1735,6 +2120,20 @@ export default function GrammarModal({ isOpen, onClose, title, type, data }: Gra
         return renderDaysL3(data as DaysL3Data);
       case 'months-l3':
         return renderMonthsL3(data as MonthsL3Data);
+      case 'parler-l4':
+        return renderParlerL4(data as ParlerL4Data);
+      case 'sappeler-l4':
+        return renderSappelerL4(data as SappelerL4Data);
+      case 'presentation-l4':
+        return renderPresentationL4(data as PresentationL4Data);
+      case 'avoir-age-l4':
+        return renderAvoirAgeL4(data as AvoirAgeL4Data);
+      case 'interrogative-l4':
+        return renderInterrogativeL4(data as InterrogativeL4Data);
+      case 'possessive-l4':
+        return renderPossessiveL4(data as PossessiveL4Data);
+      case 'ilya-l4':
+        return renderIlyaL4(data as IlyaL4Data);
       default:
         return <div>Unsupported grammar type</div>;
     }

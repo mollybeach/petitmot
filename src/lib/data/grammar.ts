@@ -781,6 +781,163 @@ export const intonationL3Data = {
   }
 };
 
+// Lesson 4 - PARLER Verb Conjugation
+export const parlerL4Data = {
+  type: 'parler-l4',
+  conjugation: {
+    'je parle': 'I speak',
+    'tu parles': 'you speak (informal)',
+    'il/elle/on parle': 'he/she/one speaks',
+    'nous parlons': 'we speak',
+    'vous parlez': 'you speak (formal/plural)',
+    'ils/elles parlent': 'they speak'
+  },
+  rules: {
+    'Regular -er verb': 'PARLER follows regular -er verb patterns',
+    'Present tense': 'Use for current actions or habits',
+    'Pronunciation': 'Silent final consonants in je parle, tu parles, il/elle parle, ils/elles parlent',
+    'Liaison': 'Nous parlons [nous par-lons], vous parlez [vous par-lé], ils/elles parlent [ils/elles parle]'
+  }
+};
+
+// Lesson 4 - S'APPELER Verb Conjugation
+export const sappelerL4Data = {
+  type: 'sappeler-l4',
+  conjugation: {
+    'je m\'appelle': 'my name is / I am called',
+    'tu t\'appelles': 'your name is / you are called',
+    'il/elle/on s\'appelle': 'his/her/one\'s name is / he/she/one is called',
+    'nous nous appelons': 'our names are / we are called',
+    'vous vous appelez': 'your names are / you are called (formal/plural)',
+    'ils/elles s\'appellent': 'their names are / they are called'
+  },
+  rules: {
+    'Reflexive verb': 'S\'APPELER is a reflexive verb requiring pronouns',
+    'Double consonant': 'Double "l" in je m\'appelle, tu t\'appelles, il/elle s\'appelle, ils/elles s\'appellent',
+    'Pronunciation': 'Nous nous appelons [nous nous ap-lons], vous vous appelez [vous vous ap-lé]',
+    'Usage': 'Used for stating names and introductions'
+  }
+};
+
+// Lesson 4 - C'est vs Il/Elle est
+export const presentationL4Data = {
+  type: 'presentation-l4',
+  cest_usage: {
+    'C\'est + name': 'C\'est Gustave (This is Gustave)',
+    'C\'est + title': 'C\'est M. Eiffel (This is Mr. Eiffel)',
+    'C\'est + determiner + noun': 'C\'est mon ami (This is my friend)'
+  },
+  il_elle_est_usage: {
+    'Il/Elle est + nationality': 'Il est japonais (He is Japanese)',
+    'Il/Elle est + profession': 'Elle est boulangère (She is a baker)',
+    'No article': 'No un/une before profession with il/elle est'
+  },
+  rules: {
+    'C\'est identification': 'Use C\'est to identify or point out someone/something',
+    'Il/Elle est description': 'Use Il/Elle est to describe qualities, nationalities, professions',
+    'Article usage': 'C\'est requires article/determiner, Il/Elle est does not',
+    'Consistency': 'Choose one pattern and stick with it in context'
+  }
+};
+
+// Lesson 4 - AVOIR for Age
+export const avoirAgeL4Data = {
+  type: 'avoir-age-l4',
+  conjugation: {
+    'j\'ai': 'I have / I am (age)',
+    'tu as': 'you have / you are (age)',
+    'il/elle/on a': 'he/she/one has / is (age)',
+    'nous avons': 'we have / we are (age)',
+    'vous avez': 'you have / you are (age) (formal/plural)',
+    'ils/elles ont': 'they have / they are (age)'
+  },
+  age_expressions: {
+    'J\'ai 18 ans': 'I am 18 years old',
+    'Tu as quel âge ?': 'How old are you?',
+    'Quel âge avez-vous ?': 'How old are you? (formal)',
+    'Il/Elle a 25 ans': 'He/She is 25 years old'
+  },
+  rules: {
+    'AVOIR not ÊTRE': 'French uses AVOIR (to have) for age, not ÊTRE (to be)',
+    'ANS required': 'Always include "ans" (years) when stating age',
+    'Question formation': 'Use "quel âge" (what age) to ask about age',
+    'Pronunciation': 'Liaison in ils/elles ont [ils/elles ont]'
+  }
+};
+
+// Lesson 4 - Interrogative Adjectives
+export const interrogativeL4Data = {
+  type: 'interrogative-l4',
+  forms: {
+    'quel (masculine singular)': 'Quel est votre nom ? (What is your name?)',
+    'quelle (feminine singular)': 'Quelle est ta nationalité ? (What is your nationality?)',
+    'quels (masculine plural)': 'Quels sont vos numéros ? (What are your numbers?)',
+    'quelles (feminine plural)': 'Quelles langues parlez-vous ? (What languages do you speak?)'
+  },
+  agreement_rules: {
+    'Gender agreement': 'Quel/Quelle must agree with the gender of the noun',
+    'Number agreement': 'Quels/Quelles must agree with the number of the noun',
+    'Position': 'Interrogative adjectives come before the noun they modify'
+  },
+  rules: {
+    'Question formation': 'Use to ask "what" or "which" about specific nouns',
+    'Agreement required': 'Must agree in gender and number with the noun',
+    'Common usage': 'Quel âge (what age), quelle nationalité (what nationality)',
+    'Pronunciation': 'All forms pronounced the same [kel]'
+  }
+};
+
+// Lesson 4 - Possessive Determiners
+export const possessiveL4Data = {
+  type: 'possessive-l4',
+  masculine_singular: {
+    'mon': 'my (mon professeur - my teacher)',
+    'ton': 'your (ton ami - your friend)',
+    'son': 'his/her (son fils - his/her son)',
+    'notre': 'our (notre garçon - our boy)',
+    'votre': 'your (votre chat - your cat)',
+    'leur': 'their (leur jardin - their garden)'
+  },
+  feminine_singular: {
+    'ma': 'my (ma maison - my house)',
+    'ta': 'your (ta voiture - your car)',
+    'sa': 'his/her (sa fille - his/her daughter)',
+    'notre': 'our (notre sœur - our sister)',
+    'votre': 'your (votre cuisine - your kitchen)',
+    'leur': 'their (leur chambre - their room)'
+  },
+  rules: {
+    'Gender agreement': 'Possessive determiners agree with the OWNED object, not the owner',
+    'Masculine forms': 'Use mon/ton/son with masculine nouns',
+    'Feminine forms': 'Use ma/ta/sa with feminine nouns',
+    'Plural forms': 'Notre/votre/leur are the same for masculine and feminine',
+    'Pronunciation': 'Liaison with vowel-starting nouns (mon ami [mon-n-ami])'
+  }
+};
+
+// Lesson 4 - Il y a
+export const ilyaL4Data = {
+  type: 'ilya-l4',
+  usage: {
+    'Il y a + indefinite article': 'Il y a un téléphone (There is a telephone)',
+    'Il y a + definite article': 'Il y a le professeur (There is the teacher)',
+    'Il y a + possessive': 'Il y a ma sœur (There is my sister)',
+    'Il y a + plural': 'Il y a des étudiants (There are students)'
+  },
+  expressions: {
+    'Il y a beaucoup de': 'There are many/a lot of',
+    'Il y a peu de': 'There are few/little',
+    'Est-ce qu\'il y a... ?': 'Is there...? / Are there...?',
+    'Il n\'y a pas de': 'There is no... / There are no...'
+  },
+  rules: {
+    'Invariable': 'Il y a never changes form (same for singular and plural)',
+    'Presence/Existence': 'Used to express the presence or existence of something',
+    'Location': 'Often used with location (Il y a un livre sur la table)',
+    'Question formation': 'Est-ce qu\'il y a... ? or Y a-t-il... ?'
+  }
+};
+
 // Lesson 2 - Polite Formulas
 export const politeFormulasL2Data = {
   type: 'polite-formulas-l2',

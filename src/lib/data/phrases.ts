@@ -5208,6 +5208,440 @@ export const lessonGroups: LessonGroup[] = [
         ]
       }
     ]
+  },
+  {
+    id: "lesson_4",
+    title: "Leçon 4 Portraits / Lesson 4 Portraits",
+    description: "Objectifs: Présenter et identifier une personne - Questionner sur l'identité et parler de notre classe de français / Objectives: Present and identify a person - Ask about identity and talk about our French class",
+    lessons: [
+      {
+        id: "parler-verb-conjugation",
+        title: "PARLER - To Speak",
+        description: "Learn to conjugate the verb PARLER (to speak) in present tense",
+        phrases: [
+          {
+            id: "je-parle-francais",
+            french: "Je parle français",
+            english: "I speak French",
+            category: "parler-l4",
+            emoji: "🗣️"
+          },
+          {
+            id: "tu-parles-anglais",
+            french: "Tu parles anglais",
+            english: "You speak English",
+            category: "parler-l4",
+            emoji: "🇬🇧"
+          },
+          {
+            id: "il-elle-parle-russe",
+            french: "Il/Elle parle russe",
+            english: "He/She speaks Russian",
+            category: "parler-l4",
+            emoji: "🇷🇺"
+          },
+          {
+            id: "nous-parlons-francais",
+            french: "Nous parlons français",
+            english: "We speak French",
+            category: "parler-l4",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "vous-parlez-francais",
+            french: "Vous parlez français",
+            english: "You speak French (formal/plural)",
+            category: "parler-l4",
+            emoji: "👥"
+          },
+          {
+            id: "ils-elles-parlent-anglais",
+            french: "Ils/Elles parlent anglais",
+            english: "They speak English",
+            category: "parler-l4",
+            emoji: "🌍"
+          }
+        ]
+      },
+      {
+        id: "sappeler-verb-conjugation",
+        title: "S'APPELER - To Be Called",
+        description: "Learn to conjugate the reflexive verb S'APPELER (to be called) in present tense",
+        phrases: [
+          {
+            id: "je-mappelle-lea",
+            french: "Je m'appelle Léa",
+            english: "My name is Léa / I am called Léa",
+            category: "sappeler-l4",
+            emoji: "👋"
+          },
+          {
+            id: "tu-tappelles-luci",
+            french: "Tu t'appelles Luci",
+            english: "Your name is Luci / You are called Luci",
+            category: "sappeler-l4",
+            emoji: "👤"
+          },
+          {
+            id: "il-elle-sappelle-enola",
+            french: "Il/Elle s'appelle Enola",
+            english: "His/Her name is Enola / He/She is called Enola",
+            category: "sappeler-l4",
+            emoji: "👨‍👩‍👧"
+          },
+          {
+            id: "nous-nous-appelons-marie-lucie",
+            french: "Nous nous appelons Marie et Lucie",
+            english: "Our names are Marie and Lucie / We are called Marie and Lucie",
+            category: "sappeler-l4",
+            emoji: "👭"
+          },
+          {
+            id: "vous-vous-appelez-jean-pierre",
+            french: "Vous vous appelez Jean et Pierre",
+            english: "Your names are Jean and Pierre / You are called Jean and Pierre",
+            category: "sappeler-l4",
+            emoji: "👬"
+          },
+          {
+            id: "ils-elles-sappellent-georges",
+            french: "Ils/Elles s'appellent Georges",
+            english: "Their names are Georges / They are called Georges",
+            category: "sappeler-l4",
+            emoji: "👥"
+          }
+        ]
+      },
+      {
+        id: "presentation-cest-vs-il-elle",
+        title: "C'est vs Il/Elle est - Presentation",
+        description: "Learn when to use C'est vs Il/Elle est for presenting people",
+        phrases: [
+          {
+            id: "il-est-japonais",
+            french: "Il est japonais",
+            english: "He is Japanese",
+            category: "presentation-l4",
+            emoji: "🇯🇵"
+          },
+          {
+            id: "elle-est-francaise",
+            french: "Elle est française",
+            english: "She is French",
+            category: "presentation-l4",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "il-est-boulanger",
+            french: "Il est boulanger",
+            english: "He is a baker",
+            category: "presentation-l4",
+            emoji: "🥖"
+          },
+          {
+            id: "elle-est-boulangere",
+            french: "Elle est boulangère",
+            english: "She is a baker",
+            category: "presentation-l4",
+            emoji: "👩‍🍳"
+          },
+          {
+            id: "cest-gustave",
+            french: "C'est Gustave",
+            english: "This is Gustave",
+            category: "presentation-l4",
+            emoji: "👤"
+          },
+          {
+            id: "cest-mr-eiffel",
+            french: "C'est M. Eiffel",
+            english: "This is Mr. Eiffel",
+            category: "presentation-l4",
+            emoji: "🗼"
+          },
+          {
+            id: "cest-mon-ami",
+            french: "C'est mon ami",
+            english: "This is my friend",
+            category: "presentation-l4",
+            emoji: "👫"
+          },
+          {
+            id: "cest-son-chien",
+            french: "C'est son chien",
+            english: "This is his/her dog",
+            category: "presentation-l4",
+            emoji: "🐕"
+          }
+        ]
+      },
+      {
+        id: "avoir-age",
+        title: "AVOIR - To Have (Age)",
+        description: "Learn to use AVOIR to express age",
+        phrases: [
+          {
+            id: "jai-18-ans",
+            french: "J'ai 18 ans",
+            english: "I am 18 years old",
+            category: "avoir-age-l4",
+            emoji: "🎂"
+          },
+          {
+            id: "tu-as-quel-age",
+            french: "Tu as quel âge ?",
+            english: "How old are you?",
+            category: "avoir-age-l4",
+            emoji: "❓"
+          },
+          {
+            id: "il-elle-a-18-ans",
+            french: "Il/Elle a 18 ans",
+            english: "He/She is 18 years old",
+            category: "avoir-age-l4",
+            emoji: "👤"
+          },
+          {
+            id: "on-a-18-ans",
+            french: "On a 18 ans",
+            english: "We are 18 years old",
+            category: "avoir-age-l4",
+            emoji: "👥"
+          },
+          {
+            id: "nous-avons-22-et-23-ans",
+            french: "Nous avons 22 et 23 ans",
+            english: "We are 22 and 23 years old",
+            category: "avoir-age-l4",
+            emoji: "🎂🎂"
+          },
+          {
+            id: "vous-avez-quel-age",
+            french: "Vous avez quel âge ?",
+            english: "How old are you? (formal/plural)",
+            category: "avoir-age-l4",
+            emoji: "❓"
+          },
+          {
+            id: "ils-elles-ont-18-ans",
+            french: "Ils/Elles ont 18 ans",
+            english: "They are 18 years old",
+            category: "avoir-age-l4",
+            emoji: "👥"
+          }
+        ]
+      },
+      {
+        id: "interrogative-adjectives",
+        title: "Interrogative Adjectives - Quel/Quelle/Quels/Quelles",
+        description: "Learn to ask questions with interrogative adjectives",
+        phrases: [
+          {
+            id: "quel-est-votre-nom",
+            french: "Quel est votre nom ?",
+            english: "What is your name?",
+            category: "interrogative-l4",
+            emoji: "❓"
+          },
+          {
+            id: "quel-est-ton-numero",
+            french: "Quel est ton numéro de téléphone ?",
+            english: "What is your phone number?",
+            category: "interrogative-l4",
+            emoji: "📱"
+          },
+          {
+            id: "quel-age-avez-vous",
+            french: "Quel âge avez-vous ?",
+            english: "How old are you?",
+            category: "interrogative-l4",
+            emoji: "🎂"
+          },
+          {
+            id: "quelle-est-ta-nationalite",
+            french: "Quelle est ta nationalité ?",
+            english: "What is your nationality?",
+            category: "interrogative-l4",
+            emoji: "🌍"
+          },
+          {
+            id: "quelle-est-ton-adresse",
+            french: "Quelle est ton adresse ?",
+            english: "What is your address?",
+            category: "interrogative-l4",
+            emoji: "🏠"
+          },
+          {
+            id: "quelle-langue-tu-parles",
+            french: "Quelle langue tu parles ?",
+            english: "What language do you speak?",
+            category: "interrogative-l4",
+            emoji: "🗣️"
+          },
+          {
+            id: "quelles-sont-tes-coordonnees",
+            french: "Quelles sont tes coordonnées ?",
+            english: "What are your contact details?",
+            category: "interrogative-l4",
+            emoji: "📞"
+          },
+          {
+            id: "quelles-langues-parlez-vous",
+            french: "Quelles langues parlez-vous ?",
+            english: "What languages do you speak?",
+            category: "interrogative-l4",
+            emoji: "🌍"
+          },
+          {
+            id: "quels-sont-vos-numeros",
+            french: "Quels sont vos numéros de téléphones ?",
+            english: "What are your phone numbers?",
+            category: "interrogative-l4",
+            emoji: "📱"
+          }
+        ]
+      },
+      {
+        id: "possessive-determiners",
+        title: "Possessive Determiners - Mon/Ma/Ton/Ta/Son/Sa",
+        description: "Learn possessive determiners to indicate possession",
+        phrases: [
+          {
+            id: "mon-professeur",
+            french: "mon professeur",
+            english: "my teacher (masculine)",
+            category: "possessive-l4",
+            emoji: "👨‍🏫"
+          },
+          {
+            id: "ton-ami",
+            french: "ton ami",
+            english: "your friend (masculine)",
+            category: "possessive-l4",
+            emoji: "👫"
+          },
+          {
+            id: "son-fils",
+            french: "son fils",
+            english: "his/her son",
+            category: "possessive-l4",
+            emoji: "👶"
+          },
+          {
+            id: "notre-garcon",
+            french: "notre garçon",
+            english: "our boy",
+            category: "possessive-l4",
+            emoji: "👦"
+          },
+          {
+            id: "votre-chat",
+            french: "votre chat",
+            english: "your cat",
+            category: "possessive-l4",
+            emoji: "🐱"
+          },
+          {
+            id: "leur-jardin",
+            french: "leur jardin",
+            english: "their garden",
+            category: "possessive-l4",
+            emoji: "🌻"
+          },
+          {
+            id: "ma-maison",
+            french: "ma maison",
+            english: "my house (feminine)",
+            category: "possessive-l4",
+            emoji: "🏠"
+          },
+          {
+            id: "ta-voiture",
+            french: "ta voiture",
+            english: "your car (feminine)",
+            category: "possessive-l4",
+            emoji: "🚗"
+          },
+          {
+            id: "sa-fille",
+            french: "sa fille",
+            english: "his/her daughter",
+            category: "possessive-l4",
+            emoji: "👧"
+          },
+          {
+            id: "notre-soeur",
+            french: "notre sœur",
+            english: "our sister",
+            category: "possessive-l4",
+            emoji: "👩"
+          },
+          {
+            id: "votre-cuisine",
+            french: "votre cuisine",
+            english: "your kitchen",
+            category: "possessive-l4",
+            emoji: "🍳"
+          },
+          {
+            id: "leur-chambre",
+            french: "leur chambre",
+            english: "their room",
+            category: "possessive-l4",
+            emoji: "🛏️"
+          }
+        ]
+      },
+      {
+        id: "il-y-a-presence",
+        title: "Il y a - There is/There are",
+        description: "Learn to express presence with Il y a",
+        phrases: [
+          {
+            id: "il-y-a-un-telephone",
+            french: "Il y a un téléphone",
+            english: "There is a telephone",
+            category: "ilya-l4",
+            emoji: "📞"
+          },
+          {
+            id: "il-y-a-ma-soeur",
+            french: "Il y a ma sœur",
+            english: "There is my sister",
+            category: "ilya-l4",
+            emoji: "👩"
+          },
+          {
+            id: "il-y-a-des-etudiants",
+            french: "Il y a des étudiants",
+            english: "There are students",
+            category: "ilya-l4",
+            emoji: "👨‍🎓"
+          },
+          {
+            id: "il-y-a-une-classe",
+            french: "Il y a une classe",
+            english: "There is a class",
+            category: "ilya-l4",
+            emoji: "🏫"
+          },
+          {
+            id: "il-y-a-mon-professeur",
+            french: "Il y a mon professeur",
+            english: "There is my teacher",
+            category: "ilya-l4",
+            emoji: "👨‍🏫"
+          },
+          {
+            id: "il-y-a-beaucoup-de-livres",
+            french: "Il y a beaucoup de livres",
+            english: "There are many books",
+            category: "ilya-l4",
+            emoji: "📚"
+          }
+        ]
+      }
+    ]
   }
 ]
 
