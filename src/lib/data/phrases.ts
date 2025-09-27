@@ -6130,6 +6130,601 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "✅"
           }
         ]
+      },
+      {
+        id: "gemma-bovery-film-document",
+        title: "Gemma Bovery - Document du film",
+        description: "Film document and comprehension questions about Gemma Bovery",
+        phrases: [
+          {
+            id: "gemma-bovery-franco-britannique",
+            french: "Gemma Bovery est un film franco-britannique",
+            english: "Gemma Bovery is a Franco-British film",
+            category: "film-document-l4",
+            emoji: "🎬"
+          },
+          {
+            id: "sortie-2014",
+            french: "Sortie : 2014",
+            english: "Release: 2014",
+            category: "film-document-l4",
+            emoji: "📅"
+          },
+          {
+            id: "realisatrice-anne-fontaine",
+            french: "Réalisatrice : Anne Fontaine",
+            english: "Director: Anne Fontaine",
+            category: "film-document-l4",
+            emoji: "🎬"
+          },
+          {
+            id: "actrice-gemma-arterton",
+            french: "Actrice : Gemma Arterton",
+            english: "Actress: Gemma Arterton",
+            category: "film-document-l4",
+            emoji: "🎭"
+          },
+          {
+            id: "acteur-fabrice-luchini",
+            french: "Acteur : Fabrice Luchini",
+            english: "Actor: Fabrice Luchini",
+            category: "film-document-l4",
+            emoji: "🎭"
+          },
+          {
+            id: "histoire-normandie",
+            french: "L'histoire se passe dans un petit village en Normandie",
+            english: "The story takes place in a small village in Normandy",
+            category: "film-document-l4",
+            emoji: "🏘️"
+          },
+          {
+            id: "il-sappelle-martin",
+            french: "Il s'appelle Martin. Il est parisien",
+            english: "His name is Martin. He is Parisian",
+            category: "film-document-l4",
+            emoji: "👨"
+          },
+          {
+            id: "ils-sappellent-gemma-charles",
+            french: "Ils s'appellent Gemma et Charles Bovery. Ils sont anglais",
+            english: "They are called Gemma and Charles Bovery. They are English",
+            category: "film-document-l4",
+            emoji: "👫"
+          },
+          {
+            id: "inspire-madame-bovary",
+            french: "Origines : inspiré de Madame Bovary de Flaubert",
+            english: "Origins: inspired by Madame Bovary by Flaubert",
+            category: "film-document-l4",
+            emoji: "📚"
+          },
+          {
+            id: "elle-sappelle-anne-fontaine",
+            french: "Elle s'appelle Anne Fontaine",
+            english: "Her name is Anne Fontaine",
+            category: "film-document-l4",
+            emoji: "👩"
+          },
+          {
+            id: "les-acteurs-gemma-fabrice",
+            french: "Les acteurs sont Gemma Arterton et Fabrice Luchini",
+            english: "The actors are Gemma Arterton and Fabrice Luchini",
+            category: "film-document-l4",
+            emoji: "🎭"
+          },
+          {
+            id: "film-se-passe-normandie",
+            french: "Le film se passe en Normandie, dans un petit village",
+            english: "The film takes place in Normandy, in a small village",
+            category: "film-document-l4",
+            emoji: "🏘️"
+          },
+          {
+            id: "personnages-gemma-charles-martin",
+            french: "Ils s'appellent Gemma et Charles Bovery, et Martin",
+            english: "They are called Gemma and Charles Bovery, and Martin",
+            category: "film-document-l4",
+            emoji: "👥"
+          }
+        ]
+      },
+      {
+        id: "gemma-arterton-interview",
+        title: "Interview de Gemma Arterton",
+        description: "Listening comprehension about Gemma Arterton interview",
+        phrases: [
+          {
+            id: "elle-est-anglaise-correct",
+            french: "Elle est anglaise",
+            english: "She is English",
+            category: "interview-l4",
+            emoji: "✅"
+          },
+          {
+            id: "elle-est-realisatrice-incorrect",
+            french: "Elle est réalisatrice",
+            english: "She is a director",
+            category: "interview-l4",
+            emoji: "❌"
+          },
+          {
+            id: "elle-est-actrice-correct",
+            french: "Elle est actrice",
+            english: "She is an actress",
+            category: "interview-l4",
+            emoji: "✅"
+          },
+          {
+            id: "elle-est-francaise-incorrect",
+            french: "Elle est française",
+            english: "She is French",
+            category: "interview-l4",
+            emoji: "❌"
+          },
+          {
+            id: "elle-parle-anglais-francais-correct",
+            french: "Elle parle anglais et français",
+            english: "She speaks English and French",
+            category: "interview-l4",
+            emoji: "✅"
+          }
+        ]
+      },
+      {
+        id: "focus-verbes-parler-sappeler",
+        title: "Focus Langue - Verbes parler et s'appeler",
+        description: "Grammar focus exercises for parler and s'appeler verbs",
+        phrases: [
+          {
+            id: "je-parle-francais-focus",
+            french: "Je parle français",
+            english: "I speak French",
+            category: "focus-verbes-l4",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "tu-parles-anglais-focus",
+            french: "Tu parles anglais",
+            english: "You speak English",
+            category: "focus-verbes-l4",
+            emoji: "🇬🇧"
+          },
+          {
+            id: "il-parle-russe-focus",
+            french: "Il parle russe",
+            english: "He speaks Russian",
+            category: "focus-verbes-l4",
+            emoji: "🇷🇺"
+          },
+          {
+            id: "elle-parle-japonais-focus",
+            french: "Elle parle japonais",
+            english: "She speaks Japanese",
+            category: "focus-verbes-l4",
+            emoji: "🇯🇵"
+          },
+          {
+            id: "nous-parlons-francais-focus",
+            french: "Nous parlons français",
+            english: "We speak French",
+            category: "focus-verbes-l4",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "vous-parlez-francais-focus",
+            french: "Vous parlez français",
+            english: "You speak French",
+            category: "focus-verbes-l4",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "ils-parlent-anglais-focus",
+            french: "Ils parlent anglais",
+            english: "They speak English",
+            category: "focus-verbes-l4",
+            emoji: "🇬🇧"
+          },
+          {
+            id: "elles-parlent-francais-focus",
+            french: "Elles parlent français",
+            english: "They speak French",
+            category: "focus-verbes-l4",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "je-mappelle-gemma-focus",
+            french: "Je m'appelle Gemma",
+            english: "My name is Gemma",
+            category: "focus-verbes-l4",
+            emoji: "👩"
+          },
+          {
+            id: "tu-tappelles-comment-focus",
+            french: "Tu t'appelles comment ?",
+            english: "What is your name?",
+            category: "focus-verbes-l4",
+            emoji: "❓"
+          },
+          {
+            id: "il-sappelle-martin-focus",
+            french: "Il s'appelle Martin",
+            english: "His name is Martin",
+            category: "focus-verbes-l4",
+            emoji: "👨"
+          },
+          {
+            id: "elle-sappelle-thu-anh-focus",
+            french: "Elle s'appelle Thu Anh",
+            english: "Her name is Thu Anh",
+            category: "focus-verbes-l4",
+            emoji: "👩"
+          },
+          {
+            id: "nous-nous-appelons-xavier-saidou-focus",
+            french: "Nous nous appelons Xavier et Saïdou",
+            english: "Our names are Xavier and Saïdou",
+            category: "focus-verbes-l4",
+            emoji: "👬"
+          },
+          {
+            id: "vous-vous-appelez-comment-focus",
+            french: "Vous vous appelez comment ?",
+            english: "What is your name?",
+            category: "focus-verbes-l4",
+            emoji: "❓"
+          },
+          {
+            id: "ils-sappellent-gemma-charles-focus",
+            french: "Ils s'appellent Gemma et Charles",
+            english: "They are called Gemma and Charles",
+            category: "focus-verbes-l4",
+            emoji: "👫"
+          },
+          {
+            id: "elles-sappellent-gemma-veronique-focus",
+            french: "Elles s'appellent Gemma et Véronique",
+            english: "They are called Gemma and Véronique",
+            category: "focus-verbes-l4",
+            emoji: "👭"
+          }
+        ]
+      },
+      {
+        id: "sons-francais-lettres-muettes",
+        title: "Sons du français - Lettres muettes et liaison",
+        description: "Sound practice for silent letters and verbal liaison",
+        phrases: [
+          {
+            id: "je-parle-sound",
+            french: "Je parle [ʒəpaʁl]",
+            english: "I speak [ʒəpaʁl]",
+            category: "sons-francais-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "jecoute-sound",
+            french: "J'écoute [ʒekut]",
+            english: "I listen [ʒekut]",
+            category: "sons-francais-l4",
+            emoji: "👂"
+          },
+          {
+            id: "tu-parles-sound",
+            french: "Tu parles [typaʁl]",
+            english: "You speak [typaʁl]",
+            category: "sons-francais-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "tu-ecoutes-sound",
+            french: "Tu écoutes [tyekut]",
+            english: "You listen [tyekut]",
+            category: "sons-francais-l4",
+            emoji: "👂"
+          },
+          {
+            id: "il-parle-sound",
+            french: "Il parle [ilpaʁl]",
+            english: "He speaks [ilpaʁl]",
+            category: "sons-francais-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "il-ecoute-sound",
+            french: "Il écoute [ilekut]",
+            english: "He listens [ilekut]",
+            category: "sons-francais-l4",
+            emoji: "👂"
+          },
+          {
+            id: "elle-parle-sound",
+            french: "Elle parle [ɛlpaʁl]",
+            english: "She speaks [ɛlpaʁl]",
+            category: "sons-francais-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "elle-ecoute-sound",
+            french: "Elle écoute [ɛlekut]",
+            english: "She listens [ɛlekut]",
+            category: "sons-francais-l4",
+            emoji: "👂"
+          },
+          {
+            id: "ils-parlent-sound",
+            french: "Ils parlent [ilpaʁl]",
+            english: "They speak [ilpaʁl]",
+            category: "sons-francais-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "ils-ecoutent-sound",
+            french: "Ils écoutent [ilzekut]",
+            english: "They listen [ilzekut]",
+            category: "sons-francais-l4",
+            emoji: "👂"
+          },
+          {
+            id: "elles-parlent-sound",
+            french: "Elles parlent [ɛlpaʁl]",
+            english: "They speak [ɛlpaʁl]",
+            category: "sons-francais-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "elles-ecoutent-sound",
+            french: "Elles écoutent [ɛlzekut]",
+            english: "They listen [ɛlzekut]",
+            category: "sons-francais-l4",
+            emoji: "👂"
+          }
+        ]
+      },
+      {
+        id: "personnes-celebres-presentation",
+        title: "Personnes célèbres - Présentation",
+        description: "Activity to present famous people who speak French",
+        phrases: [
+          {
+            id: "hugh-laurie-exemple",
+            french: "Il s'appelle Hugh Laurie (Docteur House!). Il est anglais. Il est acteur. Il parle anglais et français",
+            english: "His name is Hugh Laurie (Dr. House!). He is English. He is an actor. He speaks English and French",
+            category: "celebrites-l4",
+            emoji: "👨‍⚕️"
+          },
+          {
+            id: "cherchez-personnes-celebres",
+            french: "Cherchez des personnes célèbres qui parlent français",
+            english: "Find famous people who speak French",
+            category: "celebrites-l4",
+            emoji: "🔍"
+          },
+          {
+            id: "presentez-personnes",
+            french: "Présentez les personnes aux autres groupes (nom, prénom, nationalité, profession, langues parlées)",
+            english: "Present the people to other groups (name, first name, nationality, profession, languages spoken)",
+            category: "celebrites-l4",
+            emoji: "👥"
+          },
+          {
+            id: "illustrez-photo",
+            french: "Illustrez votre présentation avec une photo",
+            english: "Illustrate your presentation with a photo",
+            category: "celebrites-l4",
+            emoji: "📸"
+          }
+        ]
+      },
+      {
+        id: "blog-alliance-francaise-quito",
+        title: "Blog des étudiants - Alliance Française de Quito",
+        description: "Blog reading comprehension about Mingze",
+        phrases: [
+          {
+            id: "cest-mingze-blog",
+            french: "C'est Mingze. C'est mon ami",
+            english: "This is Mingze. He is my friend",
+            category: "blog-l4",
+            emoji: "👨"
+          },
+          {
+            id: "il-sappelle-mingze-ni",
+            french: "Il s'appelle Mingze Ni",
+            english: "His name is Mingze Ni",
+            category: "blog-l4",
+            emoji: "👤"
+          },
+          {
+            id: "il-a-deux-nationalites",
+            french: "Il a deux nationalités : il est chinois et équatorien",
+            english: "He has two nationalities: he is Chinese and Ecuadorian",
+            category: "blog-l4",
+            emoji: "🇨🇳🇪🇨"
+          },
+          {
+            id: "il-habite-quito",
+            french: "Il habite à Quito",
+            english: "He lives in Quito",
+            category: "blog-l4",
+            emoji: "🏠"
+          },
+          {
+            id: "il-est-etudiant-universite",
+            french: "Il est étudiant à l'université",
+            english: "He is a university student",
+            category: "blog-l4",
+            emoji: "🎓"
+          },
+          {
+            id: "il-parle-trois-langues",
+            french: "Il parle trois langues : anglais, espagnol et chinois",
+            english: "He speaks three languages: English, Spanish and Chinese",
+            category: "blog-l4",
+            emoji: "🌍"
+          },
+          {
+            id: "il-est-fantastique",
+            french: "Il est fantastique !",
+            english: "He is fantastic!",
+            category: "blog-l4",
+            emoji: "✨"
+          },
+          {
+            id: "ecrit-par-michelle",
+            french: "Écrit par Michelle, étudiante de l'Alliance française",
+            english: "Written by Michelle, student at the Alliance française",
+            category: "blog-l4",
+            emoji: "✍️"
+          },
+          {
+            id: "cest-un-blog-correct",
+            french: "C'est un blog",
+            english: "It's a blog",
+            category: "blog-l4",
+            emoji: "✅"
+          },
+          {
+            id: "michelle-etudiante-alliance",
+            french: "Michelle est étudiante à l'Alliance française",
+            english: "Michelle is a student at the Alliance française",
+            category: "blog-l4",
+            emoji: "✅"
+          },
+          {
+            id: "mingze-etudie-equateur",
+            french: "Mingze étudie en Équateur",
+            english: "Mingze studies in Ecuador",
+            category: "blog-l4",
+            emoji: "✅"
+          },
+          {
+            id: "formulaire-inscription-mingze",
+            french: "Nom : Ni, Prénom : Mingze, Langues parlées : anglais, espagnol, chinois, Nationalité(s) : chinoise, équatorienne, Profession : étudiant",
+            english: "Name: Ni, First name: Mingze, Languages spoken: English, Spanish, Chinese, Nationality(ies): Chinese, Ecuadorian, Profession: student",
+            category: "blog-l4",
+            emoji: "📝"
+          }
+        ]
+      },
+      {
+        id: "focus-grammaire-cest-vs-il-elle-est",
+        title: "Focus Grammaire - C'est vs Il/Elle est",
+        description: "Grammar focus on when to use C'est vs Il/Elle est",
+        phrases: [
+          {
+            id: "cest-un-acteur",
+            french: "C'est un acteur",
+            english: "This is an actor",
+            category: "focus-grammaire-l4",
+            emoji: "👨"
+          },
+          {
+            id: "il-est-chinois",
+            french: "Il est chinois",
+            english: "He is Chinese",
+            category: "focus-grammaire-l4",
+            emoji: "🇨🇳"
+          },
+          {
+            id: "cest-une-secretaire",
+            french: "C'est une secrétaire",
+            english: "This is a secretary",
+            category: "focus-grammaire-l4",
+            emoji: "👩"
+          },
+          {
+            id: "elle-est-japonaise",
+            french: "Elle est japonaise",
+            english: "She is Japanese",
+            category: "focus-grammaire-l4",
+            emoji: "🇯🇵"
+          },
+          {
+            id: "cest-une-etudiante",
+            french: "C'est une étudiante",
+            english: "This is a student",
+            category: "focus-grammaire-l4",
+            emoji: "👩‍🎓"
+          },
+          {
+            id: "cest-une-realisatrice",
+            french: "C'est une réalisatrice",
+            english: "This is a director",
+            category: "focus-grammaire-l4",
+            emoji: "🎬"
+          },
+          {
+            id: "cest-une-actrice",
+            french: "C'est une actrice",
+            english: "This is an actress",
+            category: "focus-grammaire-l4",
+            emoji: "🎭"
+          },
+          {
+            id: "cest-un-humoriste",
+            french: "C'est un humoriste",
+            english: "This is a comedian",
+            category: "focus-grammaire-l4",
+            emoji: "😄"
+          },
+          {
+            id: "regle-cest-nom-prenom",
+            french: "Pour présenter/identifier : … + un nom ou un prénom (exemple : Vladimir) → C'est",
+            english: "To present/identify: … + a name or first name (example: Vladimir) → C'est",
+            category: "focus-grammaire-l4",
+            emoji: "📝"
+          },
+          {
+            id: "regle-cest-profession",
+            french: "… + une profession (exemple : humoriste) → C'est",
+            english: "… + a profession (example: comedian) → C'est",
+            category: "focus-grammaire-l4",
+            emoji: "📝"
+          },
+          {
+            id: "regle-cest-profession-nom",
+            french: "… + une profession + un nom (exemple : mon ami) → C'est",
+            english: "… + a profession + a name (example: my friend) → C'est",
+            category: "focus-grammaire-l4",
+            emoji: "📝"
+          },
+          {
+            id: "regle-il-elle-est-nationalite",
+            french: "… + une nationalité (exemple : chinois[e]) → Il est / Elle est",
+            english: "… + a nationality (example: Chinese) → Il est / Elle est",
+            category: "focus-grammaire-l4",
+            emoji: "📝"
+          }
+        ]
+      },
+      {
+        id: "presentation-groupe-activite",
+        title: "Présentation de notre groupe",
+        description: "Group presentation activity",
+        phrases: [
+          {
+            id: "prenez-photo-groupe",
+            french: "Prenez une photo de votre groupe",
+            english: "Take a photo of your group",
+            category: "presentation-groupe-l4",
+            emoji: "📸"
+          },
+          {
+            id: "ecrivez-legende",
+            french: "Écrivez une légende pour présenter vos camarades (prénoms, professions, nationalités, langues parlées…)",
+            english: "Write a caption to present your classmates (first names, professions, nationalities, languages spoken…)",
+            category: "presentation-groupe-l4",
+            emoji: "✍️"
+          },
+          {
+            id: "affichez-production",
+            french: "Affichez votre production dans la classe",
+            english: "Display your work in the classroom",
+            category: "presentation-groupe-l4",
+            emoji: "📌"
+          }
+        ]
       }
     ]
   }
