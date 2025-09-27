@@ -5640,6 +5640,496 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "📚"
           }
         ]
+      },
+      {
+        id: "moriarty-listening-comprehension",
+        title: "Moriarty - Comprendre une présentation",
+        description: "Listening comprehension activity about the band Moriarty",
+        phrases: [
+          {
+            id: "moriarty-game",
+            french: "un jeu",
+            english: "a game",
+            category: "moriarty-l4",
+            emoji: "🎮"
+          },
+          {
+            id: "moriarty-interview",
+            french: "une interview",
+            english: "an interview",
+            category: "moriarty-l4",
+            emoji: "🎤"
+          },
+          {
+            id: "moriarty-radio-show",
+            french: "une émission de radio",
+            english: "a radio show",
+            category: "moriarty-l4",
+            emoji: "📻"
+          },
+          {
+            id: "stephan-moriarty",
+            french: "Stephan Moriarty",
+            english: "Stephan Moriarty",
+            category: "moriarty-l4",
+            emoji: "👨‍🎤"
+          },
+          {
+            id: "langues-francais-anglais",
+            french: "français, anglais",
+            english: "French, English",
+            category: "moriarty-l4",
+            emoji: "🇫🇷🇬🇧"
+          },
+          {
+            id: "nationalite-suisse",
+            french: "suisse",
+            english: "Swiss",
+            category: "moriarty-l4",
+            emoji: "🇨🇭"
+          },
+          {
+            id: "profession-chanteur-musicien",
+            french: "chanteur et musicien",
+            english: "singer and musician",
+            category: "moriarty-l4",
+            emoji: "🎵"
+          }
+        ]
+      },
+      {
+        id: "presentation-moriarty-group",
+        title: "Présentation du groupe Moriarty",
+        description: "Practice presenting people using C'est vs Il/Elle est",
+        phrases: [
+          {
+            id: "cest-rosemary",
+            french: "C'est Rosemary",
+            english: "This is Rosemary",
+            category: "presentation-moriarty-l4",
+            emoji: "👩"
+          },
+          {
+            id: "elle-est-chanteuse",
+            french: "Elle est chanteuse",
+            english: "She is a singer",
+            category: "presentation-moriarty-l4",
+            emoji: "🎤"
+          },
+          {
+            id: "elle-est-franco-americaine",
+            french: "Elle est franco-américaine",
+            english: "She is Franco-American",
+            category: "presentation-moriarty-l4",
+            emoji: "🇫🇷🇺🇸"
+          },
+          {
+            id: "cest-stephan",
+            french: "C'est Stephan",
+            english: "This is Stephan",
+            category: "presentation-moriarty-l4",
+            emoji: "👨"
+          },
+          {
+            id: "il-est-suisse",
+            french: "Il est suisse",
+            english: "He is Swiss",
+            category: "presentation-moriarty-l4",
+            emoji: "🇨🇭"
+          },
+          {
+            id: "il-est-chanteur-musicien",
+            french: "Il est chanteur et musicien",
+            english: "He is a singer and musician",
+            category: "presentation-moriarty-l4",
+            emoji: "🎵"
+          },
+          {
+            id: "il-est-ami-rosemary",
+            french: "Il est l'ami de Rosemary",
+            english: "He is Rosemary's friend",
+            category: "presentation-moriarty-l4",
+            emoji: "👫"
+          }
+        ]
+      },
+      {
+        id: "grammar-corrections-cest-vs-il-est",
+        title: "Corrections - C'est vs Il/Elle est",
+        description: "Practice correcting expressions using C'est vs Il/Elle est",
+        phrases: [
+          {
+            id: "cest-juliette-correct",
+            french: "C'est Juliette",
+            english: "This is Juliette",
+            category: "grammar-corrections-l4",
+            emoji: "👩"
+          },
+          {
+            id: "elle-est-fantastique-correct",
+            french: "Elle est fantastique",
+            english: "She is fantastic",
+            category: "grammar-corrections-l4",
+            emoji: "✨"
+          },
+          {
+            id: "elle-est-actrice-correct",
+            french: "Elle est actrice",
+            english: "She is an actress",
+            category: "grammar-corrections-l4",
+            emoji: "🎭"
+          },
+          {
+            id: "il-sappelle-lambert-correct",
+            french: "Il s'appelle Lambert",
+            english: "His name is Lambert",
+            category: "grammar-corrections-l4",
+            emoji: "👨"
+          },
+          {
+            id: "il-est-franco-britannique-correct",
+            french: "Il est franco-britannique",
+            english: "He is Franco-British",
+            category: "grammar-corrections-l4",
+            emoji: "🇫🇷🇬🇧"
+          },
+          {
+            id: "il-est-acteur-chanteur-correct",
+            french: "Il est acteur et chanteur",
+            english: "He is an actor and singer",
+            category: "grammar-corrections-l4",
+            emoji: "🎭🎤"
+          },
+          {
+            id: "il-est-tres-celebre-correct",
+            french: "Il est très célèbre",
+            english: "He is very famous",
+            category: "grammar-corrections-l4",
+            emoji: "⭐"
+          },
+          {
+            id: "nous-nous-appelons-jean-pierre-luc-correct",
+            french: "Nous nous appelons Jean-Pierre et Luc",
+            english: "Our names are Jean-Pierre and Luc",
+            category: "grammar-corrections-l4",
+            emoji: "👬"
+          },
+          {
+            id: "nous-sommes-realisateurs-correct",
+            french: "Nous sommes réalisateurs",
+            english: "We are directors",
+            category: "grammar-corrections-l4",
+            emoji: "🎬"
+          },
+          {
+            id: "nous-sommes-belges-correct",
+            french: "Nous sommes belges",
+            english: "We are Belgian",
+            category: "grammar-corrections-l4",
+            emoji: "🇧🇪"
+          },
+          {
+            id: "vous-etes-peintre-correct",
+            french: "Vous êtes peintre ?",
+            english: "Are you a painter?",
+            category: "grammar-corrections-l4",
+            emoji: "🎨"
+          },
+          {
+            id: "vous-vous-appelez-comment-correct",
+            french: "Vous vous appelez comment ?",
+            english: "What is your name?",
+            category: "grammar-corrections-l4",
+            emoji: "❓"
+          },
+          {
+            id: "vous-etes-chinois-correct",
+            french: "Vous êtes chinois ?",
+            english: "Are you Chinese?",
+            category: "grammar-corrections-l4",
+            emoji: "🇨🇳"
+          },
+          {
+            id: "ce-sont-des-artistes-correct",
+            french: "Ce sont des artistes",
+            english: "These are artists",
+            category: "grammar-corrections-l4",
+            emoji: "🎨"
+          },
+          {
+            id: "ils-parlent-espagnol-francais-anglais-correct",
+            french: "Ils parlent espagnol, français et anglais",
+            english: "They speak Spanish, French and English",
+            category: "grammar-corrections-l4",
+            emoji: "🇪🇸🇫🇷🇬🇧"
+          }
+        ]
+      },
+      {
+        id: "verb-conjugation-parler-sappeler",
+        title: "Les verbes parler et s'appeler au présent",
+        description: "Practice conjugating parler and s'appeler verbs in present tense",
+        phrases: [
+          {
+            id: "je-mappelle-luyi",
+            french: "Je m'appelle Luyi, je suis chinoise et je parle chinois, français et anglais",
+            english: "My name is Luyi, I am Chinese and I speak Chinese, French and English",
+            category: "verb-conjugation-l4",
+            emoji: "👩🇨🇳"
+          },
+          {
+            id: "il-sappelle-david",
+            french: "Il s'appelle David",
+            english: "His name is David",
+            category: "verb-conjugation-l4",
+            emoji: "👨"
+          },
+          {
+            id: "il-parle-espagnol-francais",
+            french: "Il parle espagnol et français",
+            english: "He speaks Spanish and French",
+            category: "verb-conjugation-l4",
+            emoji: "🇪🇸🇫🇷"
+          },
+          {
+            id: "vous-vous-appelez-comment",
+            french: "Vous vous appelez comment ?",
+            english: "What is your name?",
+            category: "verb-conjugation-l4",
+            emoji: "❓"
+          },
+          {
+            id: "vous-parlez-francais",
+            french: "Vous parlez français ?",
+            english: "Do you speak French?",
+            category: "verb-conjugation-l4",
+            emoji: "🇫🇷"
+          },
+          {
+            id: "nous-nous-appelons-elvira-christopher",
+            french: "Nous nous appelons Elvira et Christopher",
+            english: "Our names are Elvira and Christopher",
+            category: "verb-conjugation-l4",
+            emoji: "👫"
+          },
+          {
+            id: "nous-parlons-francais-anglais",
+            french: "Nous parlons français et anglais",
+            english: "We speak French and English",
+            category: "verb-conjugation-l4",
+            emoji: "🇫🇷🇬🇧"
+          },
+          {
+            id: "les-etudiants-parlent-francais",
+            french: "Les étudiants parlent français",
+            english: "The students speak French",
+            category: "verb-conjugation-l4",
+            emoji: "👨‍🎓🇫🇷"
+          }
+        ]
+      },
+      {
+        id: "reading-practice-cest-il-elle-est",
+        title: "Lecture - C'est et Il/Elle est",
+        description: "Reading practice with C'est and Il/Elle est constructions",
+        phrases: [
+          {
+            id: "cest-andre",
+            french: "C'est André",
+            english: "This is André",
+            category: "reading-practice-l4",
+            emoji: "👨"
+          },
+          {
+            id: "il-est-couturier",
+            french: "Il est couturier",
+            english: "He is a fashion designer",
+            category: "reading-practice-l4",
+            emoji: "✂️"
+          },
+          {
+            id: "cest-un-couturier-burkinabe",
+            french: "C'est un couturier burkinabé",
+            english: "This is a Burkinabe fashion designer",
+            category: "reading-practice-l4",
+            emoji: "🇧🇫"
+          },
+          {
+            id: "cest-helene",
+            french: "C'est Hélène",
+            english: "This is Hélène",
+            category: "reading-practice-l4",
+            emoji: "👩"
+          },
+          {
+            id: "elle-est-bresilienne",
+            french: "Elle est brésilienne",
+            english: "She is Brazilian",
+            category: "reading-practice-l4",
+            emoji: "🇧🇷"
+          },
+          {
+            id: "cest-lamie-de-marjolaine",
+            french: "C'est l'amie de Marjolaine",
+            english: "This is Marjolaine's friend",
+            category: "reading-practice-l4",
+            emoji: "👫"
+          }
+        ]
+      },
+      {
+        id: "writing-exercise-example",
+        title: "Exemple d'écriture - C'est et Il/Elle est",
+        description: "Example of writing exercise with C'est and Il/Elle est",
+        phrases: [
+          {
+            id: "cest-juliette-exemple",
+            french: "C'est Juliette",
+            english: "This is Juliette",
+            category: "writing-example-l4",
+            emoji: "👩"
+          },
+          {
+            id: "elle-est-actrice-exemple",
+            french: "Elle est actrice",
+            english: "She is an actress",
+            category: "writing-example-l4",
+            emoji: "🎭"
+          },
+          {
+            id: "elle-est-francaise-exemple",
+            french: "Elle est française",
+            english: "She is French",
+            category: "writing-example-l4",
+            emoji: "🇫🇷"
+          }
+        ]
+      },
+      {
+        id: "sound-classification-verb-endings",
+        title: "Sons du français - Les terminaisons muettes ou prononcées",
+        description: "Classify verbs by their ending sounds - pronounced or silent",
+        phrases: [
+          {
+            id: "terminaison-non-prononcee-appellent",
+            french: "appellent",
+            english: "they call (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-non-prononcee-appelles",
+            french: "appelles",
+            english: "you call (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-non-prononcee-appelle",
+            french: "appelle",
+            english: "he/she calls (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-non-prononcee-parler",
+            french: "parler",
+            english: "to speak (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-non-prononcee-parlons",
+            french: "parlons",
+            english: "we speak (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-non-prononcee-parles",
+            french: "parles",
+            english: "you speak (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-non-prononcee-parlent",
+            french: "parlent",
+            english: "they speak (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-non-prononcee-parle",
+            french: "parle",
+            english: "he/she speaks (silent ending)",
+            category: "sound-classification-l4",
+            emoji: "🔇"
+          },
+          {
+            id: "terminaison-prononcee-appelez",
+            french: "appelez",
+            english: "you call (pronounced ending)",
+            category: "sound-classification-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "terminaison-prononcee-appelons",
+            french: "appelons",
+            english: "we call (pronounced ending)",
+            category: "sound-classification-l4",
+            emoji: "🔊"
+          },
+          {
+            id: "terminaison-prononcee-parlez",
+            french: "parlez",
+            english: "you speak (pronounced ending)",
+            category: "sound-classification-l4",
+            emoji: "🔊"
+          }
+        ]
+      },
+      {
+        id: "language-exchange-conversation",
+        title: "Échange linguistique - Conversation",
+        description: "Language exchange conversation example",
+        phrases: [
+          {
+            id: "lucas-introduction",
+            french: "Salut ! Je m'appelle Lucas et je suis français. Je suis étudiant. Je veux pratiquer des langues. Tu parles quelle(s) langue(s) ?",
+            english: "Hi! My name is Lucas and I am French. I am a student. I want to practice languages. What language(s) do you speak?",
+            category: "language-exchange-l4",
+            emoji: "👋🇫🇷"
+          },
+          {
+            id: "lucas-proposition",
+            french: "Une idée : 30 minutes de conversation en français et 30 minutes dans une autre langue. OK ?",
+            english: "An idea: 30 minutes of conversation in French and 30 minutes in another language. OK?",
+            category: "language-exchange-l4",
+            emoji: "⏰"
+          },
+          {
+            id: "molly-response-intro",
+            french: "Bonjour Lucas ! Je m'appelle Molly et je parle anglais et un peu français.",
+            english: "Hello Lucas! My name is Molly and I speak English and a little French.",
+            category: "language-exchange-l4",
+            emoji: "👋🇺🇸"
+          },
+          {
+            id: "molly-response-student",
+            french: "Je suis étudiante et je veux améliorer mon français.",
+            english: "I am a student and I want to improve my French.",
+            category: "language-exchange-l4",
+            emoji: "📚"
+          },
+          {
+            id: "molly-response-agreement",
+            french: "Ton idée est parfaite : 30 minutes en français et 30 minutes en anglais. À bientôt !",
+            english: "Your idea is perfect: 30 minutes in French and 30 minutes in English. See you soon!",
+            category: "language-exchange-l4",
+            emoji: "✅"
+          }
+        ]
       }
     ]
   }
