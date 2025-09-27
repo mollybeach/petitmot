@@ -5365,6 +5365,13 @@ export const lessonGroups: LessonGroup[] = [
             english: "What are their names? / What are they called?",
             category: "sappeler-l4",
             emoji: "❓"
+          },
+          {
+            id: "timothee-chalamet-profile",
+            french: "Il s'appelle Timothée Chalamet. Il est américain. Il est acteur. Il parle anglais et français",
+            english: "His name is Timothée Chalamet. He is American. He is an actor. He speaks English and French",
+            category: "sappeler-l4",
+            emoji: "🎭"
           }
         ]
       },
