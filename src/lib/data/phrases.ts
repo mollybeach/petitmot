@@ -5276,6 +5276,13 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "👋"
           },
           {
+            id: "comment-tu-tappelles",
+            french: "Comment tu t'appelles ?",
+            english: "What is your name? / What are you called?",
+            category: "sappeler-l4",
+            emoji: "❓"
+          },
+          {
             id: "tu-tappelles-luci",
             french: "Tu t'appelles Luci",
             english: "Your name is Luci / You are called Luci",
@@ -5283,11 +5290,32 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "👤"
           },
           {
-            id: "il-elle-sappelle-enola",
-            french: "Il/Elle s'appelle Enola",
-            english: "His/Her name is Enola / He/She is called Enola",
+            id: "il-sappelle-enola",
+            french: "Il s'appelle Enola",
+            english: "His name is Enola / He is called Enola",
             category: "sappeler-l4",
-            emoji: "👨‍👩‍👧"
+            emoji: "👨"
+          },
+          {
+            id: "elle-sappelle-enola",
+            french: "Elle s'appelle Enola",
+            english: "Her name is Enola / She is called Enola",
+            category: "sappeler-l4",
+            emoji: "👩"
+          },
+          {
+            id: "comment-il-sappelle",
+            french: "Comment il s'appelle ?",
+            english: "What is his name? / What is he called?",
+            category: "sappeler-l4",
+            emoji: "❓"
+          },
+          {
+            id: "comment-elle-sappelle",
+            french: "Comment elle s'appelle ?",
+            english: "What is her name? / What is she called?",
+            category: "sappeler-l4",
+            emoji: "❓"
           },
           {
             id: "nous-nous-appelons-marie-lucie",
@@ -5297,6 +5325,13 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "👭"
           },
           {
+            id: "comment-vous-vous-appelez",
+            french: "Comment vous vous appelez ?",
+            english: "What are your names? / What are you called?",
+            category: "sappeler-l4",
+            emoji: "❓"
+          },
+          {
             id: "vous-vous-appelez-jean-pierre",
             french: "Vous vous appelez Jean et Pierre",
             english: "Your names are Jean and Pierre / You are called Jean and Pierre",
@@ -5304,11 +5339,32 @@ export const lessonGroups: LessonGroup[] = [
             emoji: "👬"
           },
           {
-            id: "ils-elles-sappellent-georges",
-            french: "Ils/Elles s'appellent Georges",
+            id: "ils-sappellent-georges",
+            french: "Ils s'appellent Georges",
             english: "Their names are Georges / They are called Georges",
             category: "sappeler-l4",
-            emoji: "👥"
+            emoji: "👨‍👨‍👦"
+          },
+          {
+            id: "elles-sappellent-georges",
+            french: "Elles s'appellent Georges",
+            english: "Their names are Georges / They are called Georges",
+            category: "sappeler-l4",
+            emoji: "👩‍👩‍👧"
+          },
+          {
+            id: "comment-ils-sappellent",
+            french: "Comment ils s'appellent ?",
+            english: "What are their names? / What are they called?",
+            category: "sappeler-l4",
+            emoji: "❓"
+          },
+          {
+            id: "comment-elles-sappellent",
+            french: "Comment elles s'appellent ?",
+            english: "What are their names? / What are they called?",
+            category: "sappeler-l4",
+            emoji: "❓"
           }
         ]
       },
